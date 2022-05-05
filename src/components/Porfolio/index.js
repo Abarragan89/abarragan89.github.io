@@ -1,8 +1,11 @@
+import Project from "../Project";
+
 function Portfolio () {
     return (
-        <section>
-            This is my portfolio
-        </section>
+        <>
+        <h3 className="section-heading">Projects</h3>
+        <Project />
+        </>
     )
 }
 

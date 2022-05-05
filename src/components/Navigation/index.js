@@ -45,11 +45,11 @@ function Navigation({
 
     return (
                 <Nav>
-                     <NavLink id='homepage' className='text-white' onClick={renderHomepage}>Home</NavLink>
-                    <NavLink id='about-me' className='text-white' onClick={renderAboutme}>About me</NavLink>
-                    <NavLink id='portfolio' className='text-white' onClick={renderPortfolio}>Portfolio</NavLink>
-                    <NavLink id='contact' className='text-white' onClick={renderContact}>Contact</NavLink>
-                    <NavLink id='resume' className='text-white' onClick={renderResume}>Resume</NavLink>
+                    <NavLink id='homepage' onClick={renderHomepage}><span className='link-el'>Home</span></NavLink>
+                    <NavLink id='about-me' onClick={renderAboutme}><span className='link-el'>About me</span></NavLink>
+                    <NavLink id='portfolio' onClick={renderPortfolio}><span className='link-el'>Portfolio</span></NavLink>
+                    <NavLink id='contact' onClick={renderContact}><span className='link-el'>Contact</span></NavLink>
+                    <NavLink id='resume' onClick={renderResume}><span className='link-el'>Resume</span></NavLink>
                 </Nav>
     );
 }

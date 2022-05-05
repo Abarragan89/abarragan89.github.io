@@ -1,41 +1,120 @@
+:root {
+    --main-color: rgb(0, 255, 76);
+    --font-color: rgb(160, 171, 183);
+}
+
 html {
-    background-color: rgb(11, 14, 25);
+    background-color: rgb(19, 20, 23);
 }
 
 body {
     background-image: url("../public/background.png");
     background-size:cover;                 
     background-position: center; 
-    background-repeat: no-repeat;
-    height: 800px;  
+    height: auto;  
 }
 
 /* Header and Navigation */
+#navigation-list {
+    margin: 0;
+    padding: 0;
+}
+#navigation-list li {
+    display: inline;
+}
+.link-el {
+    margin-left: 2vw;
+    font-size: 1.8vw;
+    color: var(--font-color);
+    text-decoration: none;
+}
+.link-el:hover {
+    color: var(--main-color);
+}
+.hamburger {
+    color: var(--main-color)
+}
+.navIsActive {
+    color: var(--main-color)
+}
+
+/* Styles for the homepage */
+#homepage-title {
+    text-align: center;
+    margin-top: 20vw;
+}
+#homepage-title h1 {
+    margin: auto;
+    border-bottom: 1px solid var(--main-color);
+    width: 70%;
+    padding-bottom: 2vw;
+    color: var(--font-color)
+}
+#homepage-title h2 {
+    margin-top: 2vw;
+    color: var(--font-color);
+    margin-bottom: 20vw;
+}
 
 /* About me section */
-section {
-    color: white;
-}
-#profile {
-    padding: 5px;
-    text-align: center;
-}
-#profile h3 {
-    font-size: 2em;
-    border-bottom: 1px solid white;
+.section-heading {
+    font-size: 3.5vw;
+    border-bottom: 1px solid var(--main-color);
     width: 80%;
     margin: 4vw auto 0;
     padding-bottom: 3vw;
+    color: var(--font-color);
+    text-align: center;
+    padding: 5px;
 }
 #profile-pic {
-    margin-bottom: 5vh;
-    width: 15vw;
-    border-radius: 10px;
+    display: block;
+    width: 10vw;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 10vw;
 }
 
 #about-me-write {
-    font-size: 1.4em;
+    font-size: 2vw;
     width: 90%;
     text-align: center;
-    margin: 7vw auto;
+    margin: 5vw auto;
+    color: var(--font-color)
+}
+
+/* Styles for the portfolio */
+.project-display {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.gallery-cards {
+    margin-bottom: 6vw ;
+    position: relative;
+    flex: 2 40%;
+    margin-right: 20px;
+}
+.gallery-cards img {
+    width: 80%;
+    opacity: 40%;
+}
+.gallery-cards img:hover {
+    opacity: 100%;
+    transform: skew(3deg, 3deg);
+    transition: 2s;
+}
+.gallery-cards img:not( :hover ) {
+    transition: 2s;
+}
+/* Styles for Footer */
+footer a {
+    font-size: 4vw;
+    color: var(--main-color)
+}
+footer a:hover {
+    color: var(--font-color)
 }
