@@ -1,6 +1,3 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-
 function Homepage() {
     return (
                 <section id='homepage-title'>

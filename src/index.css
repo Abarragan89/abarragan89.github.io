@@ -120,6 +120,7 @@ body {
 
 /* About me section */
 .section-heading {
+    letter-spacing: .2em;
     font-size: 3.5vw;
     border-bottom: 1px solid var(--main-color);
     width: 80%;
@@ -198,8 +199,9 @@ body {
 }
 
 .modal-picture {
-    width: 45%;
+    width: 50%;
 }
+
 .modal-title {
     color: var(--main-color);
 }
@@ -208,9 +210,86 @@ body {
     width: 85%;
     text-align: center;
     margin: 0 auto;
+    line-height: 1.2em;
+    font-size: 1.1em;
+}
+
+#modal-btn-group {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
 }
 .modal-links {
-    display: block;
+    padding: .25vw;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--main-color);
+    transition: .3s;
+}
+.modal-links:hover {
+    color: red;
+    cursor: pointer;
+}
+.modal-links:active {
+    background-color: var(--font-color);
+}
+.modal-btn-close {
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(198, 4, 4);
+    border: none;
+    transition: .3s;
+}
+.modal-btn-close:active {
+    background-color: var(--font-color);
+}
+.modal-btn-close:hover {
+    color: black;
+}
+
+/* Styles for Contact Component */
+#contact-form {
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+}
+label {
+    color: var(--font-color);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.form-div {
+    width: 40%;
+    margin: 0 auto 2vw;
+    text-align: left;
+    justify-items: center;
+}
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px
+}
+input {
+    height: 2.2em;
+}
+#contact-submit {
+    padding: .25vw;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: var(--main-color);
+    transition: .3s;
+}
+#contact-submit:hover {
+    color: red;
+    cursor: pointer;
+}
+#contact-submit:active {
+    background-color: var(--font-color);
 }
 
 /* Styles for Footer */

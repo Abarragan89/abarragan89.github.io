@@ -1,7 +1,7 @@
 function Resume() {
     return (
         <section>
-            This is my resume
+            <h3 className='section-heading'>Resume</h3>
         </section>
     )
 }
