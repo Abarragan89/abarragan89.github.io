@@ -31,9 +31,7 @@ body {
 .link-el:hover {
     color: var(--main-color);
 }
-.hamburger {
-    color: var(--main-color)
-}
+
 .navIsActive {
     color: var(--main-color)
 }
@@ -43,17 +41,81 @@ body {
     text-align: center;
     margin-top: 20vw;
 }
-#homepage-title h1 {
-    margin: auto;
-    border-bottom: 1px solid var(--main-color);
+
+#homepage-title H1 {
+    font-size: 6vw;
+    left: 0;
+    margin: 0 auto;
+    position: relative;
     width: 70%;
     padding-bottom: 2vw;
-    color: var(--font-color)
+    color: var(--font-color);
+    animation: slideName 2s;
+}
+@keyframes slideName {
+    from {
+        font-size: 6vw;
+        position: relative;
+        left: -1000px;
+        width: 70%;
+        padding-bottom: 2vw;
+        color: var(--font-color);
+    }
+    to {
+        font-size: 6vw;
+        margin: 0 auto;
+        position: relative;
+        width: 70%;
+        padding-bottom: 2vw;
+        color: var(--font-color);
+    }
 }
 #homepage-title h2 {
+    font-size: 4vw;
+    position: relative;
+    right: 0px;
     margin-top: 2vw;
     color: var(--font-color);
     margin-bottom: 20vw;
+    animation: slideTitle 2s;
+}
+@keyframes slideTitle {
+    from {
+        font-size: 4vw;
+        position: relative;
+        right: -1000px;
+        margin-top: 2vw;
+        color: var(--font-color);
+        margin-bottom: 20vw;
+    }
+    to {
+        font-size: 4vw;
+        position: relative;
+        right: 0px;
+        margin-top: 2vw;
+        color: var(--font-color);
+        margin-bottom: 20vw;
+    }
+}
+
+/* grow line in homepage */
+#homepage-bar {
+    border-bottom: 1px solid var(--main-color);
+    width: 85%;
+    margin: 0 auto;
+    animation: growLine 2.5s;
+}
+@keyframes growLine {
+    from {
+        border-bottom: 1px solid var(--main-color);
+        width: 2%;
+        margin: 0 auto;
+    }
+    to {
+        border-bottom: 1px solid var(--main-color);
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 /* About me section */
@@ -93,7 +155,7 @@ body {
     text-align: center;
 }
 .gallery-cards {
-    margin-bottom: 6vw ;
+    margin-bottom: 10vw ;
     position: relative;
     flex: 2 40%;
     margin-right: 20px;
@@ -110,6 +172,47 @@ body {
 .gallery-cards img:not( :hover ) {
     transition: 2s;
 }
+.reveal {
+    border: 3px solid var(--main-color)
+}
+
+/* styles for the modal */
+.modalBackdrop {
+	background: rgba(0, 0, 0, .65);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.modalContainer {
+	background: var(--darker);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modal-picture {
+    width: 45%;
+}
+.modal-title {
+    color: var(--main-color);
+}
+.modal-description {
+    color: var(--font-color);
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.modal-links {
+    display: block;
+}
+
 /* Styles for Footer */
 footer a {
     font-size: 4vw;

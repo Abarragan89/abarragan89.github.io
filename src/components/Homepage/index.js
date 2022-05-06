@@ -1,9 +1,13 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 function Homepage() {
     return (
-        <section id='homepage-title'>
-            <h1>Anthony Barragan</h1>
-            <h2>Full Stacker Developer</h2>
-        </section>
+                <section id='homepage-title'>
+                <h1>Anthony Barragan</h1>
+                <p id='homepage-bar'></p>
+                <h2>Full Stacker Developer</h2>
+            </section>
     )
 }
 

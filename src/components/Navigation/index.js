@@ -3,9 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navigation({
     setIsAbout, 
+    isAbout,
+    isPortfolio,
     setIsPortfolio, 
+    isContact,
     setIsContact,
+    isResume,
     setIsResume,
+    isHomepage,
     setIsHomepage }) {
     function renderAboutme () {
         setIsHomepage(false);
@@ -45,11 +50,11 @@ function Navigation({
 
     return (
                 <Nav>
-                    <NavLink id='homepage' onClick={renderHomepage}><span className='link-el'>Home</span></NavLink>
-                    <NavLink id='about-me' onClick={renderAboutme}><span className='link-el'>About me</span></NavLink>
-                    <NavLink id='portfolio' onClick={renderPortfolio}><span className='link-el'>Portfolio</span></NavLink>
-                    <NavLink id='contact' onClick={renderContact}><span className='link-el'>Contact</span></NavLink>
-                    <NavLink id='resume' onClick={renderResume}><span className='link-el'>Resume</span></NavLink>
+                    <NavLink onClick={renderHomepage}><span className={`link-el ${isHomepage && 'navIsActive'}`}>Home</span></NavLink>
+                    <NavLink onClick={renderAboutme}><span className={`link-el ${isAbout && 'navIsActive'}`}>About me</span></NavLink>
+                    <NavLink onClick={renderPortfolio}><span className={`link-el ${isPortfolio && 'navIsActive'}`}>Portfolio</span></NavLink>
+                    <NavLink onClick={renderContact}><span className={`link-el ${isContact && 'navIsActive'}`}>Contact</span></NavLink>
+                    <NavLink onClick={renderResume}><span className={`link-el ${isResume && 'navIsActive'}`}>Resume</span></NavLink>
                 </Nav>
     );
 }

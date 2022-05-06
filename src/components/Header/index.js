@@ -2,15 +2,16 @@ import { Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../Navigation';
 
-
-
-
-
 function Header({
     setIsAbout,
+    isAbout,
     setIsPortfolio,
+    isPortfolio,
+    isContact,
     setIsContact,
+    isResume,
     setIsResume,
+    isHomepage,
     setIsHomepage }) {
     return (
         <header>
@@ -19,9 +20,18 @@ function Header({
                 <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end '>
                     <Navigation
                         setIsAbout={setIsAbout}
+                        isAbout={isAbout}
+
+                        isPortfolio={isPortfolio}
                         setIsPortfolio={setIsPortfolio}
+                        
+                        isContact={isContact}
                         setIsContact={setIsContact}
+
                         setIsResume={setIsResume}
+                        isResume={isResume}
+
+                        isHomepage={isHomepage}
                         setIsHomepage={setIsHomepage}
                     />
                 </Navbar.Collapse>

@@ -16,10 +16,20 @@ function App() {
   return (
     <>
     <Header 
+    // About Bar
+    isAbout={isAbout}
     setIsAbout={setIsAbout}
+    // Portfolio Var
+    isPortfolio={isPortfolio}
     setIsPortfolio={setIsPortfolio}
+    // Contact Var
+    isContact={isContact}
     setIsContact={setIsContact}
+    // Resume Var
+    isResume={isResume}
     setIsResume={setIsResume}
+    // Homepage Var
+    isHomepage={isHomepage}
     setIsHomepage={setIsHomepage}
     />
     <main>
