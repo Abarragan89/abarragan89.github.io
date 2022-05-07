@@ -2,7 +2,7 @@
   # react-portfolio [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
   ![markdown logo](./src/assets/small/deployed-screenshot.png)
   ## Description
-  This is my react portfolio website. I've included react packages for sound effects, some Bootstrap, lots of custom CSS, and scroll animations. This portfolio continues to be a work-in-progress.
+  This is my react portfolio website. I've included react packages for sound effects, and animations, lots of custom CSS, and scroll animations. This portfolio continues to be a work-in-progress.
   ## Tables of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)

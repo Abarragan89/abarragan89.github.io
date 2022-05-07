@@ -15,6 +15,7 @@ function App() {
   const [isResume, setIsResume] = useState(false);
 
   const[hasEntered, setHasEntered] = useState(false)
+
   return (
     <>{hasEntered &&
     <Header 

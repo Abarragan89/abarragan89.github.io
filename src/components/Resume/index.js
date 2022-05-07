@@ -4,7 +4,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function Resume() {
     return (
-        <>
+        <div className='section'>
         <h3 className='section-heading'>Resume</h3>
         <p className='heading-bar'></p>
         <Document file={resume}>
@@ -14,7 +14,7 @@ function Resume() {
               <br></br>
               <Page pageNumber={2} />
         </Document>
-        </>
+        </div>
     )
 }
 

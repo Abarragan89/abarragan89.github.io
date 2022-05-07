@@ -1,5 +1,4 @@
 import Aos from 'aos';
-import { AOS } from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import Modal from '../Modal';
@@ -92,7 +91,7 @@ function Project() {
         setIsModal(!isModal);
     }
     return (
-        <section className='project-display'>
+        <section className='project-display section'>
             {isModal && <Modal project={currentProject} onClose={closeModal} />}
             {photoData.map((project, i) => {
                 if(i % 2 === 0) {

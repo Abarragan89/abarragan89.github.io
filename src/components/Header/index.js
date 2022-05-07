@@ -1,8 +1,5 @@
-import { Navbar } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../Navigation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCaretSquareDown} from '@fortawesome/free-regular-svg-icons';
+import MobileNav from '../MobileNav';
 
 
 function Header({
@@ -17,35 +14,44 @@ function Header({
     isHomepage,
     setIsHomepage }) {
     return (
-        <header>
-            <Navbar collapseOnSelect expand='sm' className='container-fluid'>
-                <Navbar.Toggle aria-controls='responsive-navbar-nav' className='bg-success'>
-                <span>
-                    <FontAwesomeIcon className='hamburger-menu'
-                        icon={faCaretSquareDown} color="#20FC8F" size="2x"
-                    />
-                    </span>
-                </Navbar.Toggle>
-                <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end '>
-                    <Navigation
-                        setIsAbout={setIsAbout}
-                        isAbout={isAbout}
+        <div className='header'>
+            <nav>
+                <MobileNav
+                 isAbout={isAbout}
+                 setIsAbout={setIsAbout}
+                 // Portfolio Var
+                 isPortfolio={isPortfolio}
+                 setIsPortfolio={setIsPortfolio}
+                 // Contact Var
+                 isContact={isContact}
+                 setIsContact={setIsContact}
+                 // Resume Var
+                 isResume={isResume}
+                 setIsResume={setIsResume}
+                 // Homepage Var
+                 isHomepage={isHomepage}
+                 setIsHomepage={setIsHomepage}
+                 />
 
-                        isPortfolio={isPortfolio}
-                        setIsPortfolio={setIsPortfolio}
-                        
-                        isContact={isContact}
-                        setIsContact={setIsContact}
+                <Navigation 
+                isAbout={isAbout}
+                setIsAbout={setIsAbout}
+                // Portfolio Var
+                isPortfolio={isPortfolio}
+                setIsPortfolio={setIsPortfolio}
+                // Contact Var
+                isContact={isContact}
+                setIsContact={setIsContact}
+                // Resume Var
+                isResume={isResume}
+                setIsResume={setIsResume}
+                // Homepage Var
+                isHomepage={isHomepage}
+                setIsHomepage={setIsHomepage}
+                />
+            </nav>
+        </div> 
 
-                        setIsResume={setIsResume}
-                        isResume={isResume}
-
-                        isHomepage={isHomepage}
-                        setIsHomepage={setIsHomepage}
-                    />
-                </Navbar.Collapse>
-            </Navbar>
-        </header>
     )
 }
 

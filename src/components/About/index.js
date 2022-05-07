@@ -1,8 +1,7 @@
-// import photo from '../../assets/small/profile-pic.JPG'
 function About () {
     return (   
         <section>
-            <div>
+            <div className='section'>
                 <h3 className='section-heading'>About  Me</h3>
                 <p className='heading-bar'></p>
                 <div id='profile-section'>
