@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.177af6b4.css",
+    "main.js": "/react-portfolio/static/js/main.7cedd103.js",
+    "static/js/845.c7e3dbac.chunk.js": "/react-portfolio/static/js/845.c7e3dbac.chunk.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/background.png": "/react-portfolio/static/media/background.0e7a8a1abb7b1e3828f4.png",
+    "static/media/emailSubmit.wav": "/react-portfolio/static/media/emailSubmit.dc457de4a9677485c41e.wav",
+    "static/media/treasure-map-large.png": "/react-portfolio/static/media/treasure-map-large.d915de0be9b0efe16907.png",
+    "static/media/run-buddy-large.png": "/react-portfolio/static/media/run-buddy-large.a5b32cf6ea5e688139d9.png",
+    "static/media/html-canvas-large.png": "/react-portfolio/static/media/html-canvas-large.a906cb0b8fbc2fe78124.png",
+    "static/media/dinner-drinks-large.png": "/react-portfolio/static/media/dinner-drinks-large.ed985404058822056dc3.png",
+    "static/media/expense-tracker-large.png": "/react-portfolio/static/media/expense-tracker-large.bc5ef18d6bd70a83a66c.png",
+    "static/media/math-madness-large.png": "/react-portfolio/static/media/math-madness-large.a8971362688d7f4d658e.png",
+    "static/media/weather-watcher-large.png": "/react-portfolio/static/media/weather-watcher-large.70840557fa5af56c6c80.png",
+    "static/media/bootcamp-large.png": "/react-portfolio/static/media/bootcamp-large.09b0fcc5bd70253b83b6.png",
+    "static/media/swish.wav": "/react-portfolio/static/media/swish.5ca833d84ca04fdbf132.wav",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.1721fa6b13a129411ae6.pdf",
+    "static/media/work-scheduler-large.png": "/react-portfolio/static/media/work-scheduler-large.eb1a5b17e99fd09510f7.png",
+    "static/media/snake-game-large.png": "/react-portfolio/static/media/snake-game-large.8c1b3d8a017a50526577.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.177af6b4.css.map": "/react-portfolio/static/css/main.177af6b4.css.map",
+    "main.7cedd103.js.map": "/react-portfolio/static/js/main.7cedd103.js.map",
+    "845.c7e3dbac.chunk.js.map": "/react-portfolio/static/js/845.c7e3dbac.chunk.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.177af6b4.css",
+    "static/js/main.7cedd103.js"
+  ]
+}
