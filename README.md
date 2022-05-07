@@ -16,7 +16,7 @@
   npm install
   ```
   ## Usage
-  NA [How To Video](NA)
+  [Deployed Site](https://abarragan89.github.io/react-portfolio/)
   ## Contribution
   Fork and make a pull request
   ## Tests
