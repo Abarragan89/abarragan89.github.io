@@ -33,7 +33,9 @@ function Contact () {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState)
-        emailNoise();
+        if(!errorMessage) {
+            emailNoise();
+        }
         setFormState({name: '', email: '', message: ''})
     }
 

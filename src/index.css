@@ -436,7 +436,7 @@ label {
     margin-bottom: 5px;
 }
 .form-div {
-    width: 40%;
+    width: 60%;
     margin: 0 auto 2vw;
     text-align: left;
     justify-items: center;
@@ -445,26 +445,29 @@ input, textarea {
     width: 100%;
     font-family: var(--body-font);
     border-radius: 5px;
-    padding: 8px;
+    padding: 5px;
     background-color: var(--font-color);
     font-weight: 500;
 }
 input {
-    height: 2em;
+    height: 1.2em;
 }
 input:focus, textarea:focus {
     background-color: rgb(243, 233, 233);
     border: 2px solid var(--main-color);
 }
 #contact-submit {
-    padding: .25vw;
+    padding: 2vw, 7vw;
     border-radius: 5px;
+    font-size: 1.2em;
     font-family: var(--body-font);
     border: none;
     text-decoration: none;
     color: black;
     background-color: var(--main-color);
     transition: .3s;
+    display: block;
+    margin: 0 auto;
 }
 #contact-submit:hover {
     color: red;
