@@ -13,8 +13,10 @@ function App() {
   const [isPortfolio, setIsPortfolio] = useState(false);
   const [isContact, setIsContact] = useState(false);
   const [isResume, setIsResume] = useState(false);
+
+  const[hasEntered, setHasEntered] = useState(false)
   return (
-    <>
+    <>{hasEntered &&
     <Header 
     // About Bar
     isAbout={isAbout}
@@ -31,15 +33,15 @@ function App() {
     // Homepage Var
     isHomepage={isHomepage}
     setIsHomepage={setIsHomepage}
-    />
+    />}
     <main>
-      {isHomepage && <Homepage />}
+      {isHomepage && <Homepage hasEntered={hasEntered} setHasEntered={setHasEntered}/>}
       {isAbout && <About />}
       {isPortfolio && <Portfolio />}
       {isContact && <Contact/>}
       {isResume && <Resume />}
     </main>
-    <Footer />
+    {hasEntered &&<Footer />}
     </>
     
   );

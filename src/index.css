@@ -1,6 +1,8 @@
 :root {
     --main-color: rgb(0, 255, 76);
     --font-color: rgb(160, 171, 183);
+    --body-font: 'Lato', 'sans-serif';
+    --title-font: 'Merriweather', serif;
 }
 
 html {
@@ -8,23 +10,29 @@ html {
 }
 
 body {
-    background-image: url("../public/background.png");
     background-size:cover;                 
     background-position: center; 
-    height: auto;  
+    background-repeat: no-repeat;
+    background-image: url("../public/background.png");
+}
+/* Header and Navigation */
+/* hamburger menu */
+.hamburger-menu {
+    width: .5em;
 }
 
-/* Header and Navigation */
 #navigation-list {
     margin: 0;
     padding: 0;
 }
 #navigation-list li {
     display: inline;
+    
 }
 .link-el {
     margin-left: 2vw;
     font-size: 1.8vw;
+    font-family: var(--body-font);
     color: var(--font-color);
     text-decoration: none;
 }
@@ -37,6 +45,54 @@ body {
 }
 
 /* Styles for the homepage */
+#button-background {
+    padding: 10vw 10vw;
+}
+#homepage-enter {
+    padding: 1vw 5vw;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    opacity: 90%;
+    border: none;
+    color: black;
+    background-color: var(--main-color);
+    margin: 20vw auto 30vw;
+    display: block;
+    animation: showEnterBtn 2.5s ease-in;
+    transition: 1.5s;
+}
+@keyframes showEnterBtn {
+    from {
+        padding: 1vw 5vw;
+        border-radius: 5px;
+        opacity: 0%;
+        font-family: var(--body-font);
+        text-decoration: none;
+        border: none;
+        color: black;
+        background-color: var(--main-color);
+        margin: 20vw auto 30vw;
+        display: block;
+    }
+    to {
+        padding: 1vw 5vw;
+        border-radius: 5px;
+        opacity: 90%;
+        font-family: var(--body-font);
+        text-decoration: none;
+        border: none;
+        color: black;
+        background-color: var(--main-color);
+        margin: 20vw auto 30vw;
+        display: block;
+    }
+    
+}
+
+#homepage-enter:hover {
+    background-color: rgb(198, 4, 4);
+}
+
 #homepage-title {
     text-align: center;
     margin-top: 20vw;
@@ -44,19 +100,21 @@ body {
 
 #homepage-title H1 {
     font-size: 6vw;
+    font-family: var(--title-font);
+    font-weight: 600;
     left: 0;
     margin: 0 auto;
     position: relative;
     width: 70%;
     padding-bottom: 2vw;
     color: var(--font-color);
-    animation: slideName 2s;
+    animation: slideName 2s 1s both;
 }
 @keyframes slideName {
     from {
         font-size: 6vw;
         position: relative;
-        left: -1000px;
+        left: -2000px;
         width: 70%;
         padding-bottom: 2vw;
         color: var(--font-color);
@@ -73,17 +131,18 @@ body {
 #homepage-title h2 {
     font-size: 4vw;
     position: relative;
+    font-family: var(--body-font);
     right: 0px;
     margin-top: 2vw;
     color: var(--font-color);
     margin-bottom: 20vw;
-    animation: slideTitle 2s;
+    animation: slideTitle 2s 1s both;
 }
 @keyframes slideTitle {
     from {
         font-size: 4vw;
         position: relative;
-        right: -1000px;
+        right: -2000px;
         margin-top: 2vw;
         color: var(--font-color);
         margin-bottom: 20vw;
@@ -99,11 +158,11 @@ body {
 }
 
 /* grow line in homepage */
-#homepage-bar {
+.heading-bar {
     border-bottom: 1px solid var(--main-color);
     width: 85%;
     margin: 0 auto;
-    animation: growLine 2.5s;
+    animation: growLine 2s ease-in;
 }
 @keyframes growLine {
     from {
@@ -122,14 +181,45 @@ body {
 .section-heading {
     letter-spacing: .2em;
     font-size: 3.5vw;
-    border-bottom: 1px solid var(--main-color);
+    position: relative;
+    top: 0;
+    font-family: var(--title-font);
     width: 80%;
     margin: 4vw auto 0;
     padding-bottom: 3vw;
     color: var(--font-color);
     text-align: center;
     padding: 5px;
+    animation: slideHeadingDown 2s .5s both;
 }
+@keyframes slideHeadingDown {
+    from {
+        letter-spacing: .2em;
+        position: relative;
+        top: -1000px;
+        font-size: 3.5vw;
+        width: 80%;
+        margin: 4vw auto 0;
+        padding-bottom: 3vw;
+        color: var(--font-color);
+        text-align: center;
+        padding: 5px;
+    }
+    to {
+        letter-spacing: .2em;
+        font-size: 3.5vw;
+        position: relative;
+        top: 0;
+        width: 80%;
+        margin: 4vw auto 0;
+        padding-bottom: 3vw;
+        color: var(--font-color);
+        text-align: center;
+        padding: 5px;
+    }
+    
+}
+
 #profile-pic {
     display: block;
     width: 10vw;
@@ -140,12 +230,33 @@ body {
 
 #about-me-write {
     font-size: 2vw;
+    letter-spacing: .01em;
+    font-family: var(--body-font);
     width: 90%;
     text-align: center;
     margin: 5vw auto;
     color: var(--font-color)
 }
-
+#quote {
+    font-size: 1.5vw;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--font-color);
+    font-style: italic;
+}
+#profile-section {
+    opacity: 100%;
+    animation: fadeInAboutMe 2s 2.5s both;
+}
+@keyframes fadeInAboutMe {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 /* Styles for the portfolio */
 .project-display {
     margin-top: 5vw;
@@ -204,9 +315,11 @@ body {
 
 .modal-title {
     color: var(--main-color);
+    font-size: var(--body-font);
 }
 .modal-description {
     color: var(--font-color);
+    font-size: var(--body-font);
     width: 85%;
     text-align: center;
     margin: 0 auto;
@@ -225,6 +338,7 @@ body {
 .modal-links {
     padding: .25vw;
     border-radius: 5px;
+    font-family: var(--body-font);
     text-decoration: none;
     color: black;
     background-color: var(--main-color);
@@ -239,6 +353,7 @@ body {
 }
 .modal-btn-close {
     border-radius: 5px;
+    font-family: var(--body-font);
     color: white;
     background-color: rgb(198, 4, 4);
     border: none;
@@ -255,10 +370,13 @@ body {
 #contact-form {
     margin-top: 5vw;
     margin-bottom: 6vw;
+    opacity: 100%;
+    animation: fadeInContactForm 2s 2.5s both;
 }
 label {
     color: var(--font-color);
-    font-size: 1.2em;
+    font-family: var(--body-font);
+    font-size: 1em;
     margin-bottom: 5px;
 }
 .form-div {
@@ -269,15 +387,23 @@ label {
 }
 input, textarea {
     width: 100%;
+    font-family: var(--body-font);
     border-radius: 5px;
-    padding: 8px
+    padding: 8px;
+    background-color: var(--font-color);
+    font-weight: 500;
 }
 input {
-    height: 2.2em;
+    height: 2em;
+}
+input:focus, textarea:focus {
+    background-color: rgb(243, 233, 233);
+    border: 2px solid var(--main-color);
 }
 #contact-submit {
     padding: .25vw;
     border-radius: 5px;
+    font-family: var(--body-font);
     border: none;
     text-decoration: none;
     color: black;
@@ -290,6 +416,46 @@ input {
 }
 #contact-submit:active {
     background-color: var(--font-color);
+}
+.error-text {
+    color: red;
+    text-align: center;
+}
+
+@keyframes fadeInContactForm {
+    from {
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+        opacity: 0%;
+    }
+    to {
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+        opacity: 100%;
+    }
+}
+
+/* Styles for the Resume */
+.react-pdf__Page__canvas {
+    margin: 5vw auto;
+    opacity: 100%;
+    position: relative;
+    bottom: 0;
+    animation: slideUpResume 2s 2s both;
+}
+@keyframes slideUpResume {
+    from {
+        margin: 5vw auto;
+        opacity: 0%;
+        position: relative;
+        bottom: -2000px;
+    }
+    to {
+        margin: 5vw auto;
+        opacity: 100%;
+        position: relative;
+        bottom: -0;
+    }
 }
 
 /* Styles for Footer */

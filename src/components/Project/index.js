@@ -57,7 +57,7 @@ function Project() {
         {
             name: 'Treasure Map',
             photoRoute: 'treasure-map-large',
-            description: 'This is a game where you have to click on a page and find the buried treasure. Use the "hot" and "cold" clues to help you!',
+            description: 'This is a game where you have to click on a page and find the buried treasure. Use the \'hot\' and \'cold\' clues to help you!',
             url: 'https://abarragan89.github.io/treasure-map/',
             github: 'https://github.com/Abarragan89/treasure-map',
             alt: 'landing page for Treasure Map Game website'
@@ -79,33 +79,32 @@ function Project() {
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
 
-    function toggleModal (project) {
+    function toggleModal(project) {
         setCurrentProject(project)
         setIsModal(!isModal)
     }
 
-    function closeModal () {
+    function closeModal() {
         setIsModal(!isModal);
     }
-
     return (
         <section className='project-display'>
             {isModal && <Modal project={currentProject} onClose={closeModal} />}
             {photoData.map((project, i) =>
-            ( [
+            ([
                 <figure
                     data-aos='flip-up'
-                    data-aos-delay="500"
-                    data-aos-offset="100"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
-                    data-aos-anchor-placement="top-center"
+                    data-aos-delay='2000'
+                    // data-aos-offset='0'
+                    data-aos-duration='2000'
+                    // data-aos-easing='ease-in-out'
+                    // data-aos-mirror='true'
+                    // data-aos-once='true'
+                    // data-aos-anchor-placement='top-center'
                     className='gallery-cards' key={i}>
-                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)}/>
+                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>
-                ]
+            ]
             )
             )}
         </section>

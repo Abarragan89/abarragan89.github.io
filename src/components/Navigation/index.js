@@ -1,5 +1,6 @@
 import { Nav, NavLink } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import useSound from 'use-sound';
 
 function Navigation({
     setIsAbout, 
@@ -9,9 +10,10 @@ function Navigation({
     isContact,
     setIsContact,
     isResume,
-    setIsResume,
+    setIsResume, 
     isHomepage,
     setIsHomepage }) {
+
     function renderAboutme () {
         setIsHomepage(false);
         setIsAbout(true);
@@ -47,7 +49,7 @@ function Navigation({
         setIsContact(false);
         setIsResume(false);
     }
-
+   
     return (
                 <Nav>
                     <NavLink onClick={renderHomepage}><span className={`link-el ${isHomepage && 'navIsActive'}`}>Home</span></NavLink>
