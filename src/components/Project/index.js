@@ -1,6 +1,7 @@
 import Aos from 'aos';
+import { AOS } from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import Modal from '../Modal';
 
 function Project() {
@@ -75,6 +76,9 @@ function Project() {
     ];
     useEffect(() => {
         Aos.init({});
+    });
+    useLayoutEffect(() => {
+        setTimeout(() => Aos.refresh(), 100)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
@@ -94,26 +98,14 @@ function Project() {
                 if(i % 2 === 0) {
                     return(<figure
                     data-aos='slide-right'
-                    // data-aos-delay='600'
-                    // data-aos-offset='0'
                     data-aos-duration='1500'
-                    // data-aos-easing='ease-in-out'
-                    // data-aos-mirror='true'
-                    // data-aos-once='true'
-                    // data-aos-anchor-placement='top-center'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
                     data-aos='slide-left'
-                    // data-aos-delay='600'
-                    // data-aos-offset='0'
                     data-aos-duration='1500'
-                    // data-aos-easing='ease-in-out'
-                    // data-aos-mirror='true'
-                    // data-aos-once='true'
-                    // data-aos-anchor-placement='top-center'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)

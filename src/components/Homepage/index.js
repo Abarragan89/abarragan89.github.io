@@ -6,7 +6,7 @@ function Homepage({hasEntered, setHasEntered}) {
 
     function enterPage() {
         setHasEntered(!hasEntered);
-        setTimeout(playSwish, "2100");
+        setTimeout(playSwish, "2200");
     }
     return (<>
                 {hasEntered ? 
