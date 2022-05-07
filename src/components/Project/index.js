@@ -90,22 +90,35 @@ function Project() {
     return (
         <section className='project-display'>
             {isModal && <Modal project={currentProject} onClose={closeModal} />}
-            {photoData.map((project, i) =>
-            ([
-                <figure
-                    data-aos='flip-up'
-                    data-aos-delay='2000'
+            {photoData.map((project, i) => {
+                if(i % 2 === 0) {
+                    return(<figure
+                    data-aos='slide-right'
+                    // data-aos-delay='600'
                     // data-aos-offset='0'
-                    data-aos-duration='2000'
+                    data-aos-duration='1500'
                     // data-aos-easing='ease-in-out'
                     // data-aos-mirror='true'
                     // data-aos-once='true'
                     // data-aos-anchor-placement='top-center'
-                    className='gallery-cards' key={i}>
+                    className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
-                </figure>
-            ]
-            )
+                </figure>)
+                }else {
+                    return(<figure
+                    data-aos='slide-left'
+                    // data-aos-delay='600'
+                    // data-aos-offset='0'
+                    data-aos-duration='1500'
+                    // data-aos-easing='ease-in-out'
+                    // data-aos-mirror='true'
+                    // data-aos-once='true'
+                    // data-aos-anchor-placement='top-center'
+                    className='gallery-cards card-left' key={i}>
+                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                </figure>)
+                }
+                } 
             )}
         </section>
     )

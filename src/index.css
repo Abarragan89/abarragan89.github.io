@@ -49,9 +49,10 @@ body {
     padding: 10vw 10vw;
 }
 #homepage-enter {
+    font-size: 1.2em;
     padding: 1vw 5vw;
     border-radius: 5px;
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     opacity: 90%;
     border: none;
     color: black;
@@ -86,11 +87,10 @@ body {
         margin: 20vw auto 30vw;
         display: block;
     }
-    
 }
 
 #homepage-enter:hover {
-    background-color: rgb(198, 4, 4);
+    background-color: var(--font-color);
 }
 
 #homepage-title {
@@ -276,9 +276,14 @@ body {
     width: 80%;
     opacity: 40%;
 }
-.gallery-cards img:hover {
+.card-right img:hover {
     opacity: 100%;
-    transform: skew(3deg, 3deg);
+    transform:  scale(1.1, 1.1) skew(15deg, 15deg);
+    transition: 2s;
+}
+.card-left img:hover {
+    opacity: 100%;
+    transform: scale(1.2, 1.2) skew(-15deg, -15deg);
     transition: 2s;
 }
 .gallery-cards img:not( :hover ) {
