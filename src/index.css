@@ -5,17 +5,22 @@
     --title-font: 'Merriweather', serif;
 }
 
-html {
-    background-color: rgb(19, 20, 23);
-    
+html, body {
+    background: url("../public/background.png") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 body {
-    overflow-x: hidden;
-    background-image: url("../public/background.png");
-    background-size:cover;                 
-    background-position: center; 
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+main {
+    flex-grow: 1;
+}
+
 /* Header and Navigation */
 /* hamburger menu */
 .hamburger-menu {
@@ -58,7 +63,7 @@ body {
     border: none;
     color: black;
     background-color: var(--main-color);
-    margin: 20vw auto 30vw;
+    margin: 50% auto 30vw;
     display: block;
     animation: showEnterBtn 2.5s ease-in;
     transition: 1.5s;
@@ -73,7 +78,7 @@ body {
         border: none;
         color: black;
         background-color: var(--main-color);
-        margin: 20vw auto 30vw;
+        margin: 50% auto 30vw;
         display: block;
     }
     to {
@@ -85,7 +90,7 @@ body {
         border: none;
         color: black;
         background-color: var(--main-color);
-        margin: 20vw auto 30vw;
+        margin: 50% auto 30vw;
         display: block;
     }
 }
@@ -96,7 +101,7 @@ body {
 
 #homepage-title {
     text-align: center;
-    margin-top: 20vw;
+    margin-top: 50%;
 }
 
 #homepage-title H1 {
@@ -279,13 +284,13 @@ body {
 }
 .card-right img:hover {
     opacity: 100%;
-    transform:  scale(1.2, 1.2) translateY(-15%);
+    transform:  scale(1.2, 1.2) translateY(-3%);
     transition: 2s;
     cursor: pointer;
 }
 .card-left img:hover {
     opacity: 100%;
-    transform: scale(1.2, 1.2) translateY(-15%);
+    transform: scale(1.2, 1.2) translateY(-3%);
     transition: 2s;
     cursor: pointer;
 }
@@ -467,6 +472,10 @@ input:focus, textarea:focus {
 }
 
 /* Styles for Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+}
 footer a {
     font-size: 4vw;
     color: var(--main-color)
