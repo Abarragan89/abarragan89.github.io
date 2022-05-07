@@ -1,3 +1,4 @@
+// import photo from '../../assets/small/profile-pic.JPG'
 function About () {
     return (   
         <section>
@@ -12,7 +13,7 @@ function About () {
                         <p>"True Wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us"</p>
                         <p>- Socrates</p>
                     </div>
-                    <img src='profile-pic.JPG' id='profile-pic'></img>
+                    <img src={require('../../assets/small/profile-pic.JPG')} id='profile-pic'></img>
                 </div>
             </div>
         </section>
