@@ -7,7 +7,7 @@ function Resume() {
         <div className='section'>
         <h3 className='section-heading'>Resume</h3>
         <p className='heading-bar'></p>
-        <Document file={resume}>
+        <Document file={resume} >
               <Page pageNumber={1} />
               <br></br>
               <p className='heading-bar'></p>

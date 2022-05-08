@@ -59,18 +59,21 @@ main {
 
 /* Styles for the homepage */
 #button-background {
-    padding: 10vw 10vw;
+    position: relative;
 }
 #homepage-enter {
     font-size: 1.2em;
     padding: 1vw 5vw;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    right: 45%;
     border-radius: 5px;
     font-family: var(--title-font);
     opacity: 90%;
     border: none;
     color: black;
     background-color: var(--main-color);
-    margin: 25% auto 30vw;
     display: block;
     animation: showEnterBtn 2.5s ease-in;
     transition: 1.5s;
@@ -85,8 +88,11 @@ main {
         border: none;
         color: black;
         background-color: var(--main-color);
-        margin: 25% auto 30vw;
         display: block;
+        position: absolute;
+        z-index: 10;
+        top: 40%;
+        right: 45%;
     }
     to {
         padding: 1vw 5vw;
@@ -97,7 +103,10 @@ main {
         border: none;
         color: black;
         background-color: var(--main-color);
-        margin: 25% auto 30vw;
+        position: absolute;
+        z-index: 10;
+        top: 40%;
+        right: 45%;
         display: block;
     }
 }
@@ -550,6 +559,9 @@ footer a:hover {
     #quote {
         font-size: 1.2em;
     }
+    page {
+        width: 200;
+    }
     
 }
 
@@ -595,6 +607,9 @@ footer a:hover {
     }
     .section-heading {
         font-size: 1.7em;
+    }
+    Page {
+        width: 200;
     }
 }
 
