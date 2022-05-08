@@ -69,7 +69,7 @@ function Homepage({ hasEntered, setHasEntered }) {
         //we just need to push things into the array and this function is called 
         //in the animate and draws adn clears Rect
         function handleParticles() {
-            for (let i = 0; i < particlesArray.length; i++) {
+            for (let i = 0; i < particlesArray.length; i+=2) {
                 particlesArray[i].update();
                 particlesArray[i].draw();
 
