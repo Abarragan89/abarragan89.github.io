@@ -67,7 +67,7 @@ main {
     position: absolute;
     z-index: 10;
     top: 40%;
-    right: 45%;
+    left: 41%;
     border-radius: 5px;
     font-family: var(--title-font);
     opacity: 90%;
@@ -92,7 +92,7 @@ main {
         position: absolute;
         z-index: 10;
         top: 40%;
-        right: 45%;
+        left: 41%;
     }
     to {
         padding: 1vw 5vw;
@@ -106,7 +106,7 @@ main {
         position: absolute;
         z-index: 10;
         top: 40%;
-        right: 45%;
+        left: 41%;
         display: block;
     }
 }
