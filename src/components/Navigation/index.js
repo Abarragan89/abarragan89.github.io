@@ -9,7 +9,7 @@ function Navigation ({
     isResume,
     setIsResume, 
     isHomepage,
-    setIsHomepage,
+    setIsHomepage
     }) {
     return (
         <nav className="navigation">

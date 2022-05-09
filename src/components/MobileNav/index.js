@@ -13,7 +13,7 @@ function MobileNav ({
     isResume,
     setIsResume, 
     isHomepage,
-    setIsHomepage,
+    setIsHomepage
     }) {
     const [open, setOpen] = useState(false)
 
@@ -45,7 +45,8 @@ function MobileNav ({
             isHomepage={isHomepage}
             setIsHomepage={setIsHomepage}
             isMobile={true} 
-            closeMobileMenu={closeMobileMenu}/>}
+            closeMobileMenu={closeMobileMenu}
+            />}
         </nav>
     )
 }

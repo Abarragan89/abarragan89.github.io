@@ -12,7 +12,8 @@ function Header({
     isResume,
     setIsResume,
     isHomepage,
-    setIsHomepage }) {
+    setIsHomepage
+    }) {
     return (
         <div className='header'>
             <nav>
@@ -45,9 +46,6 @@ function Header({
                 // Resume Var
                 isResume={isResume}
                 setIsResume={setIsResume}
-                // Homepage Var
-                isHomepage={isHomepage}
-                setIsHomepage={setIsHomepage}
                 />
             </nav>
         </div> 

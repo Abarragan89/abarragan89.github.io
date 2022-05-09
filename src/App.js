@@ -34,6 +34,9 @@ function App() {
     // Homepage Var
     isHomepage={isHomepage}
     setIsHomepage={setIsHomepage}
+    // has entered 
+    hasEntered={hasEntered}
+    setHasEntered={setHasEntered}
     />}
     <main>
       {isHomepage && <Homepage hasEntered={hasEntered} setHasEntered={setHasEntered}/>}
