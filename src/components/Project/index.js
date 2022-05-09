@@ -77,7 +77,7 @@ function Project() {
         Aos.init({});
     });
     useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 100)
+        setTimeout(() => Aos.refresh(), 150)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
