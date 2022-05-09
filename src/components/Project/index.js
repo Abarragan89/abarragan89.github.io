@@ -1,6 +1,6 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../Modal';
 
 function Project() {
@@ -76,8 +76,8 @@ function Project() {
     useEffect(() => {
         Aos.init({});
     });
-    useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 150)
+    useEffect(() => {
+        setTimeout(() => Aos.refresh(), 100)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
