@@ -46,6 +46,9 @@ function Header({
                 // Resume Var
                 isResume={isResume}
                 setIsResume={setIsResume}
+                //  // Homepage Var
+                isHomepage={isHomepage}
+                setIsHomepage={setIsHomepage}
                 />
             </nav>
         </div> 
