@@ -4,7 +4,7 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import Modal from '../Modal';
 
 function Project() {
-    // Photos are 1000 by 800 px
+    // Photos are 1000 by 800 PX
     const photoData = [
         {
             name: 'Expense Tracker',
@@ -73,9 +73,11 @@ function Project() {
 
         }
     ];
+    // initiate on scroll package
     useEffect(() => {
         Aos.init({});
     });
+    // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
         setTimeout(() => Aos.refresh(), 150)
     })
@@ -94,6 +96,7 @@ function Project() {
         <section className='project-display section'>
             {isModal && <Modal project={currentProject} onClose={closeModal} />}
             {photoData.map((project, i) => {
+                {/* Every other project will be given different on scroll events */}
                 if(i % 2 === 0) {
                     return(<figure
                     data-aos='slide-right'

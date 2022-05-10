@@ -12,7 +12,7 @@ function Homepage({ hasEntered, setHasEntered }) {
     // target the Canvas and set up Animation
     const canvasEl = useRef(null);
 
-    // Conditionally render this useeffect
+    // Conditionally render this useEffect to create Canvas Logic
     useEffect(() => {
         if(!hasEntered){
 
@@ -31,6 +31,7 @@ function Homepage({ hasEntered, setHasEntered }) {
                 x: undefined,
                 y: undefined,
             }
+            // Create particles on mousemove
             canvas.addEventListener('mousemove', function (event) {
                 mouse.x = event.x;
                 mouse.y = event.y;
@@ -38,6 +39,7 @@ function Homepage({ hasEntered, setHasEntered }) {
                     particlesArray.push(new Particle());
                 }
             })
+            // Create particles on mouse click
             canvas.addEventListener('click', function (event) {
                 //takes mouse event location and assigns it to the custom 'mouse' object
                 mouse.x = event.x;
@@ -47,7 +49,7 @@ function Homepage({ hasEntered, setHasEntered }) {
                 }
     
             })
-    
+            // Particle constructor
             class Particle {
                 constructor() {
                     this.x = mouse.x;
@@ -96,9 +98,6 @@ function Homepage({ hasEntered, setHasEntered }) {
             }
             function animate() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height)
-                // ctx.fillStyle = 'rgba(0, 0, 0, 0.02)';
-                // ctx.fillRect(0, 0, canvas.width, canvas.height);
-                hue += 2;
                 handleParticles();
                 requestAnimationFrame(animate);
             }
