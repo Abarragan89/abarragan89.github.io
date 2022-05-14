@@ -13,6 +13,9 @@ function Resume() {
               <p className='heading-bar'></p>
               <br></br>
               <Page pageNumber={2} />
+              <p className='heading-bar'></p>
+              <br></br>
+              <Page pageNumber={3} />
         </Document>
         </div>
     )
