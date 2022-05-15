@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import useSound from 'use-sound';
 import emailSubmit from '../../assets/sounds/emailSubmit.wav';
+import emailjs from 'emailjs-com';
 
 
 function Contact () {
@@ -30,9 +31,17 @@ function Contact () {
             setFormState({...formState, [e.target.name]: e.target.value})
         }
     }
+    // target the form
+    const form = useRef()
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState)
+        emailjs.sendForm('service_i8eq2u9', 'template_qks17rp', form.current, 'aoRfgHLPWPCI6Cu6w')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
         if(!errorMessage) {
             emailNoise();
         }
@@ -43,7 +52,7 @@ function Contact () {
         <section className='section'>
             <h3 className='section-heading'>Contact  Me</h3>
             <p className='heading-bar'></p>
-            <form id='contact-form' onSubmit={handleSubmit}>
+            <form ref={form} id='contact-form' onSubmit={handleSubmit}>
                 <div className="form-div">
                     <label htmlFor='name'>Name:</label><br/>
                     <input type='text' defaultValue={name} name='name' id='name' onBlur={handleChange}/>    
