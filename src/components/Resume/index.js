@@ -1,4 +1,12 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 function Resume() {
+
+    useEffect(() => {
+        Aos.init({});
+    });
     return (
         <>
         <h3 className='section-heading'>Resume</h3>
@@ -12,14 +20,20 @@ function Resume() {
             </div>
 
         {/* Summary Heading */}
-            <div id='resume-summary'>
+            <div id='resume-summary'
+                    data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    data-aos-delay="50">
                 <h4 className='resume-heading'>Summary</h4>
                 <p className='resume-text'>Full-Stack software developer with an academic focus on the MERN stack. Adaptable to new programming languages in order to work with data structures and build efficient applications. Elementary school teacher with a Master's in Education and Administrative Credential. Proficient in developing differentiated lesson plans that adhere to different learning styles and maintain student engagement. Seeking a role as a software engineer.</p>
             </div>
             <p className='heading-bar'></p>
 
         {/* Technical Skills */}
-            <div id='resume-skills'>
+            <div id='resume-skills'
+                    data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    data-aos-delay="50">
                 <h4 className='resume-heading'>Technical Skills</h4>
                 <h5 className='resume-subtitle'>Languages</h5>
                 <p className='resume-text'> JavaScript | React.Js | Node.Js | Express.Js | MongoDB | Mongoose | HTML5 | CSS3 | Handlebars.js | MySQL | NoSQL | GraphQL | </p>
@@ -29,7 +43,10 @@ function Resume() {
             <p className='heading-bar'></p>
 
         {/* Projects */}
-            <div id="projects">
+            <div id="projects"
+                    data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    data-aos-delay="50">
                 <h4 className='resume-heading'>Projects</h4>
                 <h5 className='resume-subtitle'>Expense Tracker</h5>
                 <p>This is a full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as 'monthly' are automatically deducted.</p>
@@ -44,7 +61,10 @@ function Resume() {
             <p className='heading-bar'></p>
 
             {/* Experience */}
-            <div>
+            <div 
+                    data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    data-aos-delay="50">
                 <h4 className='resume-heading'>Experience</h4>
                     <div className='job-listing'>
                         <div className='flex-container'>
@@ -67,7 +87,10 @@ function Resume() {
                     </div>
 
 
-                    <div className='job-listing'>
+                    <div className='job-listing'
+                        data-aos='fade-up'
+                        data-aos-duration='2000' 
+                        data-aos-delay="50">
                         <div className='flex-container'>
                             <div>
                                 <p>General Education Teacher</p>
@@ -88,7 +111,10 @@ function Resume() {
                     </div>
 
 
-                    <div className='job-listing'>
+                    <div className='job-listing'
+                        data-aos='fade-up'
+                        data-aos-duration='2000' 
+                        data-aos-delay="50">
                         <div className='flex-container'>
                             <div>
                                 <p>General Education Teacher</p>
@@ -111,7 +137,11 @@ function Resume() {
             <p className='heading-bar'></p>
 
             {/* Education */}
-            <div id='education'>
+            <div    data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    
+                    data-aos-delay="50"
+                    id='education'>
                 <h4 className='resume-heading'>Education</h4>
                 <div className='flex-container'>
                     <div>
