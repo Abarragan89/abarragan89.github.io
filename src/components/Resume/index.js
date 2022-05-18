@@ -53,10 +53,14 @@ function Resume() {
                 <p>I developed the backend logic to connect user input to server-side database, deduct monthly expense, display categories on charts, automate monthly deductions for expenses tagged as monthly. Created database structures and connected Charts.Js to display user input.</p>
                 <p>Languages: JavaScript | MongoDB | Mongoose | Node.Js | Express.Js | Charts.js | Handlebars.Js | CSS</p>
 
+                <div data-aos='fade-up'
+                    data-aos-duration='2000' 
+                    data-aos-delay="50">
                 <h5 className='resume-subtitle'>Dinner and Drinks</h5>
                 <p>This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions, and/or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.</p>
                 <p>I developed the backend logic to connect user input to Spoonacular and Cocktails DB searches. Created the code to generate cards and used Bulma to optimize styles and make the application responsive. </p>
                 <p>JavaScript | Bulma | HTML | CSS | Spoonacular API | Cocktails DB API</p>
+                </div>
             </div>
             <p className='heading-bar'></p>
 
