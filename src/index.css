@@ -650,6 +650,9 @@ footer a:hover {
     .section {
         margin-top: 15%;
     }
+    #home-footer {
+        left: 26.5%;
+    }
     footer a, #home-footer a{
         font-size: 10vw;
     }
