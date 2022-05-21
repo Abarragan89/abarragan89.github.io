@@ -647,8 +647,8 @@ footer a:hover {
     .section {
         margin-top: 15%;
     }
-    footer a{
-        font-size: 8vw;
+    footer a, #home-footer a{
+        font-size: 10vw;
     }
 }
 

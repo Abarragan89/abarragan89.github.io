@@ -6,7 +6,6 @@ function NavNavLinks({
     isMobile
      }) {
 
-
     function closeHamburger () {
         if(isMobile) {
             closeMobileMenu();
