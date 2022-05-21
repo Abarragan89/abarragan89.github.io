@@ -7,7 +7,7 @@ function Homepage({ hasEntered, setHasEntered }) {
 
     function enterPage() {
         setHasEntered(!hasEntered);
-        setTimeout(playSwish, "2200");
+        setTimeout(playSwish, "1000");
     }
     // target the Canvas and set up Animation
     const canvasEl = useRef(null);

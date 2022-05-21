@@ -75,7 +75,7 @@ main {
     color: black;
     background-color: var(--main-color);
     display: block;
-    animation: showEnterBtn 2.5s ease-in;
+    animation: showEnterBtn 0.8s ease-in;
     transition: 1.5s;
 }
 @keyframes showEnterBtn {
@@ -130,7 +130,7 @@ main {
     width: 70%;
     padding-bottom: 2vw;
     color: var(--font-color);
-    animation: slideName 2s 1s both;
+    animation: slideName .5s .5s both;
 }
 @keyframes slideName {
     from {
@@ -158,7 +158,7 @@ main {
     margin-top: 2vw;
     color: var(--font-color);
     margin-bottom: 20vw;
-    animation: slideTitle 2s 1s both;
+    animation: slideTitle 0.5s 0.5s both;
 }
 @keyframes slideTitle {
     from {
@@ -184,7 +184,7 @@ main {
     border-bottom: 1px solid var(--main-color);
     width: 85%;
     margin: 0 auto;
-    animation: growLine 2s ease-in;
+    animation: growLine 0.8s ease-in;
 }
 @keyframes growLine {
     from {
@@ -212,7 +212,7 @@ main {
     color: var(--font-color);
     text-align: center;
     padding: 5px;
-    animation: slideHeadingDown 2s .5s both;
+    animation: slideHeadingDown 0.8s .5s both;
 }
 @keyframes slideHeadingDown {
     from {
@@ -267,7 +267,7 @@ main {
 }
 #profile-section {
     opacity: 100%;
-    animation: fadeInAboutMe 2s 2.5s both;
+    animation: fadeInAboutMe 0.8s 0.8s both;
 }
 @keyframes fadeInAboutMe {
     from {
@@ -398,7 +398,7 @@ main {
     margin-top: 5vw;
     margin-bottom: 6vw;
     opacity: 100%;
-    animation: fadeInContactForm 2s 2.5s both;
+    animation: fadeInContactForm 0.8s 0.8s both;
 }
 label {
     color: var(--font-color);
@@ -520,7 +520,7 @@ input:focus, textarea:focus {
     margin-bottom: 100px;
 }
 #resume h3, h4, h5, p {
-    animation: resume-fadeIn 2s 2.5s both;
+    animation: resume-fadeIn 0.8s 0.8s both;
 }
 
 @keyframes resume-fadeIn {
@@ -540,7 +540,7 @@ input:focus, textarea:focus {
     width: 30%;
     margin: 0 auto;
     margin-top: 20px;
-    animation: resume-fadeIn 2s 2.5s both;
+    animation: resume-fadeIn 0.8s 0.8s both;
 }
 
 /* Styles for Footer */
@@ -548,7 +548,7 @@ footer {
     display: flex;
     justify-content: space-around;
     opacity: 1;
-    animation: footerFadeIn 2.5s 2.7s both;
+    animation: footerFadeIn 0.8s 0.7s both;
 }
 footer a {
     font-size: 4vw;
