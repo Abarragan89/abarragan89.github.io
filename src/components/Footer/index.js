@@ -3,9 +3,7 @@ import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-sv
 
 
 function Footer({ location }) {
-    const isHome = location.pathname === '/' || location.pathname === '/react-portfolio' || location.pathname === '/react-portfolio/';
-    console.log(isHome);
-    console.log(location.pathname)
+    const isHome = location.pathname === '/';
     return (
         <>
             {isHome ? 
