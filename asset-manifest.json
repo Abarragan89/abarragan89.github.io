@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.cd0a9e98.css",
-    "main.js": "/react-portfolio/static/js/main.01727c40.js",
+    "main.css": "/react-portfolio/static/css/main.f1f98f93.css",
+    "main.js": "/react-portfolio/static/js/main.e73d00e3.js",
     "static/js/845.c7e3dbac.chunk.js": "/react-portfolio/static/js/845.c7e3dbac.chunk.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile-pic.JPG": "/react-portfolio/static/media/profile-pic.69fffd405463f1f9549e.JPG",
@@ -19,13 +19,13 @@
     "static/media/work-scheduler-large.png": "/react-portfolio/static/media/work-scheduler-large.eb1a5b17e99fd09510f7.png",
     "static/media/snake-game-large.png": "/react-portfolio/static/media/snake-game-large.8c1b3d8a017a50526577.png",
     "index.html": "/react-portfolio/index.html",
-    "main.cd0a9e98.css.map": "/react-portfolio/static/css/main.cd0a9e98.css.map",
-    "main.01727c40.js.map": "/react-portfolio/static/js/main.01727c40.js.map",
+    "main.f1f98f93.css.map": "/react-portfolio/static/css/main.f1f98f93.css.map",
+    "main.e73d00e3.js.map": "/react-portfolio/static/js/main.e73d00e3.js.map",
     "845.c7e3dbac.chunk.js.map": "/react-portfolio/static/js/845.c7e3dbac.chunk.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd0a9e98.css",
-    "static/js/main.01727c40.js"
+    "static/css/main.f1f98f93.css",
+    "static/js/main.e73d00e3.js"
   ]
 }
