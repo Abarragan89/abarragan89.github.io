@@ -1,12 +1,14 @@
 import  { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+// sounds
+import useSound from 'use-sound';
+import clickSound from '../../assets/sounds/click.wav';
 
-function NavNavLinks({
-    closeMobileMenu,
-    isMobile
-     }) {
+function NavNavLinks({ closeMobileMenu,isMobile }) {
+    const [playSwish, { stop }] = useSound(clickSound, { volume: '.5' });
 
     function closeHamburger () {
+        playSwish();
         if(isMobile) {
             closeMobileMenu();
         }
