@@ -1,27 +1,19 @@
-import useSound from 'use-sound';
-import homeSwish from '../../assets/sounds/swish.wav';
+// import useSound from 'use-sound';
 import { useEffect, useRef } from 'react';
 
-function Homepage({ hasEntered, setHasEntered }) {
-    const [playSwish, { stop }] = useSound(homeSwish, { volume: '.5' });
+function Homepage() {
+    // const [playSwish, { stop }] = useSound(homeSwish, { volume: '.5' });
 
-    function enterPage() {
-        setHasEntered(!hasEntered);
-        setTimeout(playSwish, "1000");
-    }
     // target the Canvas and set up Animation
     const canvasEl = useRef(null);
 
     // Conditionally render this useEffect to create Canvas Logic
     useEffect(() => {
-        if(!hasEntered){
-
             const canvas = canvasEl.current
             const ctx = canvas.getContext('2d');
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             const particlesArray = [];
-            let hue = 0;
     
             window.addEventListener('resize', function () {
                 canvas.width = window.innerWidth;
@@ -103,19 +95,15 @@ function Homepage({ hasEntered, setHasEntered }) {
             }
             animate();
             }
-        }, [1]);
+        );
     return (<>
-        {hasEntered ?
             <section id='homepage-title'>
                 <h1>Anthony Barragan</h1>
                 <p className='heading-bar'></p>
                 <h2>Full Stacker Developer</h2>
-            </section> :
-            <div id='button-background'>
+            </section> 
             <canvas ref={canvasEl}>
             </canvas>
-            <button type='button' id='homepage-enter' onClick={enterPage}>Enter</button>
-            </div>}
             </>
     )
 

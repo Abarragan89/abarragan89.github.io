@@ -8,7 +8,7 @@ function Resume() {
         Aos.init({});
     });
     return (
-        <>
+        <div className='section'>
         <h3 className='section-heading'>Resume</h3>
         <p className='heading-bar'></p>
         <div id='resume-section'>
@@ -189,7 +189,7 @@ function Resume() {
                 </div>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 
