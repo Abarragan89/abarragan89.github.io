@@ -53,6 +53,9 @@ main {
 .link-el {
     margin-left: 20px;
 }
+.link-el:hover{
+    color: var(--font-color)
+}
 .link-el a {
     text-decoration: none;
     font-size: 1.25em;
