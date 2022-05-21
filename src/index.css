@@ -28,7 +28,7 @@ main {
     width: 100%;
     position: absolute;
     top: 30px;
-    z-index:999;
+    z-index:800;
     display:flex;
     justify-content: center;
 }
@@ -271,14 +271,14 @@ nav a.active {
 
 /* styles for the modal */
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
+	background: rgba(0, 0, 0, .75);
 	bottom: 0;
 	left: 0;
 	overflow: auto;
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 1;
+	z-index: 900;
 }
 
 .modalContainer {
@@ -320,13 +320,14 @@ nav a.active {
     padding: .25vw;
     border-radius: 5px;
     font-family: var(--body-font);
+    font-weight: 700;
     text-decoration: none;
     color: black;
     background-color: var(--main-color);
     transition: .3s;
 }
 .modal-links:hover {
-    color: red;
+    color: rgb(209, 22, 22);
     cursor: pointer;
 }
 .modal-links:active {
@@ -335,6 +336,7 @@ nav a.active {
 .modal-btn-close {
     border-radius: 5px;
     font-family: var(--body-font);
+    font-weight: 700;
     color: white;
     background-color: rgb(198, 4, 4);
     border: none;
@@ -387,6 +389,7 @@ input:focus, textarea:focus {
     border-radius: 5px;
     font-size: 1.2em;
     font-family: var(--body-font);
+    font-weight: 700;
     border: none;
     text-decoration: none;
     color: black;
@@ -396,15 +399,16 @@ input:focus, textarea:focus {
     margin: 0 auto;
 }
 #contact-submit:hover {
-    color: red;
+    color: rgb(209, 22, 22);
     cursor: pointer;
 }
 #contact-submit:active {
     background-color: var(--font-color);
 }
 .error-text {
-    color: red;
+    color: rgb(225, 12, 12);
     text-align: center;
+    font-size: 1.2em;
 }
 
 @keyframes fadeInContactForm {
@@ -550,6 +554,9 @@ footer a:hover {
 
 /* media queries */
 @media screen and (max-width: 990px) {
+    #homepage-title h1 {
+        font-size: 8vw;
+    }
     .navigation {
         display:none;
     }
@@ -591,16 +598,12 @@ footer a:hover {
     #quote {
         font-size: 1.2em;
     }
-    page {
-        width: 200;
-    }
     .link-el {
         margin-left: 10px;
     }
     .section {
         margin-top: 10%;
     }
-    
 }
 
 @media screen and (max-width: 480px) {

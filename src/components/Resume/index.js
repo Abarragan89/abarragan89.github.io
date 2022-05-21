@@ -2,26 +2,25 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 // import sounds
-import clickSound from '../../assets/sounds/click.wav';
 import useSound from 'use-sound';
+import click from '../../assets/sounds/click.wav';
 
 function Resume() {
     useEffect(() => {
         Aos.init({});
     });
-    const [playSwish, { stop }] = useSound(clickSound, { volume: '.5' });
+    const [clickSound, { stop }] = useSound(click, { volume: '.5' });
     return (
         <div className='section'>
         <h3 className='section-heading'>Resume</h3>
         <p className='heading-bar'></p>
         <div id='resume-section'>
         {/* Personal Information Heading */}
-        <a href='https://docs.google.com/document/d/1sxY1p5RfaSvXo2zPWb_KqfOKj2wp_P9YYg_EE7oBrDE/edit?usp=sharing' target='_blank' className='modal-links print-resume-btn' onClick={() => playSwish()}>Print-Friendly Resume</a>
-            <div id='resume-personal-info'>
+        <a href='https://docs.google.com/document/d/1sxY1p5RfaSvXo2zPWb_KqfOKj2wp_P9YYg_EE7oBrDE/edit?usp=sharing' target='_blank' className='modal-links print-resume-btn' onClick={() => clickSound()}>Print-Friendly Resume</a>
+        <div id='resume-personal-info'>
                 <h4>Anthony Barragan</h4>
                 <p>Simi Valley, California</p>
             </div>
-
         {/* Summary Heading */}
             <div id='resume-summary'
                     data-aos='fade-up'

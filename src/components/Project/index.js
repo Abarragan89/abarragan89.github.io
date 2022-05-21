@@ -79,7 +79,7 @@ function Project() {
     });
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 200)
+        setTimeout(() => Aos.refresh(), 250)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
