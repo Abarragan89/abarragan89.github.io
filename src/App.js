@@ -5,6 +5,7 @@ import Portfolio from './components/Porfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Homepage from './components/Homepage';
+import PrintResume from './components/PrintResume';
 
 
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/portfolio' element={<Portfolio />}/>
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
+          <Route path='/resume-pdf' element={<PrintResume />} />
         </Routes>
         <Footer location={location}/>
     </>

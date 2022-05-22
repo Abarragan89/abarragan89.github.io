@@ -5,18 +5,22 @@ import { useEffect } from 'react';
 import useSound from 'use-sound';
 import click from '../../assets/sounds/click.wav';
 
+// import Link
+import { Link } from 'react-router-dom';
+
 function Resume() {
     useEffect(() => {
         Aos.init({});
     });
     const [clickSound, { stop }] = useSound(click, { volume: '.5' });
+
     return (
         <div className='section'>
         <h3 className='section-heading'>Resume</h3>
         <p className='heading-bar'></p>
         <div id='resume-section'>
         {/* Personal Information Heading */}
-        <a href='https://docs.google.com/document/d/1sxY1p5RfaSvXo2zPWb_KqfOKj2wp_P9YYg_EE7oBrDE/edit?usp=sharing' target='_blank' className='modal-links print-resume-btn' onClick={() => clickSound()}>Print-Friendly Resume</a>
+        <Link to='/resume-pdf' className='modal-links print-resume-btn' onClick={() => clickSound()}>Print-Friendly Resume</Link>
         <div id='resume-personal-info'>
                 <h4>Anthony Barragan</h4>
                 <p>Simi Valley, California</p>
