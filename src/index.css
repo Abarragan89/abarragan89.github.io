@@ -480,7 +480,10 @@ input:focus, textarea:focus {
     list-style-position: inside;
 
 }
-#resume h3, h4, h5, p {
+#resume-section h3,
+#resume-section h4, 
+#resume-section h5, 
+#resume-section p {
     animation: resume-fadeIn 0.8s 0.8s both;
 }
 

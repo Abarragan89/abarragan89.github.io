@@ -7,6 +7,14 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'Draw The Line',
+            photoRoute: 'draw-the-line-large',
+            description: 'Draw the Line is a social media platform where users can post lengthy articles and users can comment to debate issues. This website has no administrators or monitors. The community of users will monitor itself. If you find something offensive, unconstructive, or just mean, downvote it. Once a comments or posts downvotes make up 60% of its overall likes and dislikes, poof! It’s gone. This is to eliminate the possibility of a noisy few distorting how the majority actually feels on a topic. We give the power back to the people and have faith that the majority will more accurately express a narrative that represents the general public. Draw the Line™ is an experiment in digital democracy.',
+            url: 'https://draw-the-line-repo.herokuapp.com/ ',
+            github: 'https://github.com/Abarragan89/draw-the-line',
+            alt: 'landing page for Draw the Line website'
+        },
+        {
             name: 'Expense Tracker',
             photoRoute: 'expense-tracker-large',
             description: 'This is an full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. This uses Sequelized to access a SQL database. Express.js is used to create server routes.',
