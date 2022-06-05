@@ -10,8 +10,8 @@ function Project() {
             name: 'Draw The Line',
             photoRoute: 'draw-the-line-large',
             description: 'Draw the Line is a social media platform where users can post lengthy articles and users can comment to debate issues. This website has no administrators or monitors. The community of users will monitor itself. If you find something offensive, unconstructive, or just mean, downvote it. Once a comments or posts downvotes make up 60% of its overall likes and dislikes, poof! It’s gone. This is to eliminate the possibility of a noisy few distorting how the majority actually feels on a topic. We give the power back to the people and have faith that the majority will more accurately express a narrative that represents the general public. Draw the Line™ is an experiment in digital democracy.',
-            url: 'https://draw-the-line-repo.herokuapp.com/ ',
-            github: 'https://github.com/Abarragan89/draw-the-line',
+            url: 'https://draw-the-line-2.herokuapp.com/ ',
+            github: 'https://github.com/Abarragan89/draw-the-line-2',
             alt: 'landing page for Draw the Line website'
         },
         {
@@ -105,16 +105,23 @@ function Project() {
             {isModal && <Modal project={currentProject} onClose={closeModal} />}
             {photoData.map((project, i) => {
                 {/* Every other project will be given different on scroll events */}
-                if(i % 2 === 0) {
+                if( i === 0) {
                     return(<figure
-                    data-aos='slide-right'
+                    data-aos='slide-up'
+                    data-aos-duration='1500'
+                    className='gallery-cards card-right' id='marquee-project' key={i}>
+                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                </figure>)
+                }else if (i % 2 === 0) {
+                    return(<figure
+                    data-aos='slide-left'
                     data-aos-duration='1500'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
-                    data-aos='slide-left'
+                    data-aos='slide-right'
                     data-aos-duration='1500'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import useSound from 'use-sound';
 import clickSound from '../../assets/sounds/click.wav';
 
-function NavNavLinks({ closeMobileMenu,isMobile }) {
+function NavLinks({ closeMobileMenu,isMobile }) {
     const [playSwish, { stop }] = useSound(clickSound, { volume: '.5' });
 
     function closeHamburger () {
@@ -60,4 +60,4 @@ function NavNavLinks({ closeMobileMenu,isMobile }) {
         </ul>
     );
 }
-export default NavNavLinks;
+export default NavLinks;

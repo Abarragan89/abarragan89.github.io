@@ -3,7 +3,7 @@ function Navigation ({
     }) {
     return (
         <nav className="navigation">
-            <NavLinks/>
+            <NavLinks />
         </nav>
     )
 }

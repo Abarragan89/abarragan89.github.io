@@ -233,6 +233,10 @@ nav a.active {
     }
 }
 /* Styles for the portfolio */
+#marquee-project {
+    flex: 0 0 70%;
+}
+
 .project-display {
     display: flex;
     justify-content: space-around;
