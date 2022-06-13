@@ -100,7 +100,7 @@ function Homepage() {
             <section id='homepage-title'>
                 <h1>Anthony Barragan</h1>
                 <p className='heading-bar'></p>
-                <h2>Full Stacker Developer</h2>
+                <h2>Full Stack Developer</h2>
             </section> 
             <canvas ref={canvasEl}>
             </canvas>
