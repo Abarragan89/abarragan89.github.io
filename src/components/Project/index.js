@@ -7,6 +7,14 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'Who Nose That',
+            photoRoute: 'who-nose-that-large',
+            description: 'Who Nose That is a gameboard generator designed to help teachers create fun games inside the classroom. Teachers can create their own gameboards, edit gameboards, copy premade public gameboards, and generate flashcards based on their gameboards with a a click of a single button. There is a student portal where they can login with their teachers username to view all flashcard sets. There is an exciting bonus round if students get the question correct and a random runner up that can steal the points if the current player gets the question incorrect. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
+            url: 'https://who-nose-that.com',
+            github: 'https://github.com/Abarragan89/trivia_maker',
+            alt: 'landing page for Who Nose That website'
+        },
+        {
             name: 'Draw The Line',
             photoRoute: 'draw-the-line-large',
             description: 'Draw the Line is a social media platform where users can post lengthy articles and users can comment to debate issues. This website has no administrators or monitors. The community of users will monitor itself. If you find something offensive, unconstructive, or just mean, downvote it. Once a comments or posts downvotes make up 60% of its overall likes and dislikes, poof! It’s gone. This is to eliminate the possibility of a noisy few distorting how the majority actually feels on a topic. We give the power back to the people and have faith that the majority will more accurately express a narrative that represents the general public. Draw the Line™ is an experiment in digital democracy. There is a private messaging component that uses Socket.io to instantly display messages to sender and receiver. You can search for friends, make comments, comment on a comment, and edit posts. Comments and subcomments are displayed with the comment with most likes up top. There is a bad word filter installed on the post and comment forms. The application uses nodemailer to send a first time user an email to confirm their account. This app also uses Cloudinary so users can upload a profile picture. This app uses mongoDB as a back-end database.',
