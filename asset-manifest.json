@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.43346a7a.css",
-    "main.js": "/static/js/main.eebf5dba.js",
+    "main.js": "/static/js/main.0c3154bf.js",
     "static/js/845.c7e3dbac.chunk.js": "/static/js/845.c7e3dbac.chunk.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile-pic.JPG": "/static/media/profile-pic.69fffd405463f1f9549e.JPG",
@@ -15,18 +15,19 @@
     "static/media/expense-tracker-large.png": "/static/media/expense-tracker-large.bc5ef18d6bd70a83a66c.png",
     "static/media/math-madness-large.png": "/static/media/math-madness-large.a8971362688d7f4d658e.png",
     "static/media/weather-watcher-large.png": "/static/media/weather-watcher-large.70840557fa5af56c6c80.png",
+    "static/media/who-nose-that-large.png": "/static/media/who-nose-that-large.102ae041a8ccc61be5dd.png",
     "static/media/bootcamp-large.png": "/static/media/bootcamp-large.09b0fcc5bd70253b83b6.png",
     "static/media/work-scheduler-large.png": "/static/media/work-scheduler-large.eb1a5b17e99fd09510f7.png",
     "static/media/snake-game-large.png": "/static/media/snake-game-large.8c1b3d8a017a50526577.png",
     "static/media/click.wav": "/static/media/click.3e307070c0d43972460c.wav",
     "index.html": "/index.html",
     "main.43346a7a.css.map": "/static/css/main.43346a7a.css.map",
-    "main.eebf5dba.js.map": "/static/js/main.eebf5dba.js.map",
+    "main.0c3154bf.js.map": "/static/js/main.0c3154bf.js.map",
     "845.c7e3dbac.chunk.js.map": "/static/js/845.c7e3dbac.chunk.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43346a7a.css",
-    "static/js/main.eebf5dba.js"
+    "static/js/main.0c3154bf.js"
   ]
 }
