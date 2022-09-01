@@ -79,15 +79,15 @@ function Project() {
             alt: 'landing page for Treasure Map Game website'
 
         },
-        {
-            name: 'Snake Game',
-            photoRoute: 'snake-game-large',
-            description: 'This is a replica of the classic \'snake game\'. The basic logic for this project came from \'JavaScript For Kids\' by Nick Morgan and was my introduction into Javascript',
-            url: 'https://abarragan89.github.io/snake-game/',
-            github: 'https://github.com/Abarragan89/snake-game',
-            alt: 'landing page for Snake Game website'
+        // {
+        //     name: 'Snake Game',
+        //     photoRoute: 'snake-game-large',
+        //     description: 'This is a replica of the classic \'snake game\'. The basic logic for this project came from \'JavaScript For Kids\' by Nick Morgan and was my introduction into Javascript',
+        //     url: 'https://abarragan89.github.io/snake-game/',
+        //     github: 'https://github.com/Abarragan89/snake-game',
+        //     alt: 'landing page for Snake Game website'
 
-        }
+        // }
     ];
     // initiate on scroll package
     useEffect(() => {
