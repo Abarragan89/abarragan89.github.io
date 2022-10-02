@@ -7,6 +7,14 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'Math Fact Missions',
+            photoRoute: 'mathFactMissions',
+            description: 'This is an application where users can test their math fact knowledge. This is geared towardst a classroom environment but is great for anyone trying to improve their mental math skills. Users can enter a name and pick a mission. They can battle where they race to answer as many questions as they can to unlock a new level, or they can train and play a game to improve their fluency. All data is stored in the browswer using indexedDB.',
+            url: 'https://math-madness-2.herokuapp.com/',
+            github: 'https://github.com/Abarragan89/math_madness_2',
+            alt: 'landing page for Math Fact Missions website'
+        },
+        {
             name: 'Who Nose That',
             photoRoute: 'who-nose-that-large',
             description: 'Who Nose That is a gameboard generator designed to help teachers create fun games inside the classroom. Teachers can create their own gameboards, edit gameboards, copy premade public gameboards, and generate flashcards based on their gameboards with a a click of a single button. There is a student portal where they can login with their teachers username to view all flashcard sets. There is an exciting bonus round if students get the question correct and a random runner up that can steal the points if the current player gets the question incorrect. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
@@ -38,14 +46,14 @@ function Project() {
             github: 'https://github.com/Abarragan89/dinner-drinks',
             alt: 'landing page for Dinner and Drinks website'
         },
-        {
-            name: 'Math Madness',
-            photoRoute: 'math-madness-large',
-            description: 'This is a program that tests students multiplication skills. The user has 30 seconds to answer as many questions as they can. The faster they answer, the more points are added to the score. High score is saved so competitors can battle for first place!',
-            url: 'https://abarragan89.github.io/math_madness/',
-            github: 'https://github.com/Abarragan89/math_madness',
-            alt: 'landing page for Math Madness website'
-        },
+        // {
+        //     name: 'Math Madness',
+        //     photoRoute: 'math-madness-large',
+        //     description: 'This is a program that tests students multiplication skills. The user has 30 seconds to answer as many questions as they can. The faster they answer, the more points are added to the score. High score is saved so competitors can battle for first place!',
+        //     url: 'https://abarragan89.github.io/math_madness/',
+        //     github: 'https://github.com/Abarragan89/math_madness',
+        //     alt: 'landing page for Math Madness website'
+        // },
         {
             name: 'Run Buddy',
             photoRoute: 'run-buddy-large',
@@ -116,21 +124,21 @@ function Project() {
                 if( i === 0) {
                     return(<figure
                     data-aos='slide-up'
-                    data-aos-duration='1500'
+                    data-aos-duration='500'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else if (i % 2 === 0) {
                     return(<figure
                     data-aos='slide-left'
-                    data-aos-duration='1500'
+                    data-aos-duration='500'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
                     data-aos='slide-right'
-                    data-aos-duration='1500'
+                    data-aos-duration='500'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)

@@ -256,14 +256,14 @@ nav a.active {
 }
 .card-right img:hover {
     opacity: 100%;
-    transform:  scale(1.2, 1.2) translateY(-3%);
-    transition: 0.8s;
+    transform:  scale(1.08, 1.08) translateY(-3%);
+    transition: 0.3s;
     cursor: pointer;
 }
 .card-left img:hover {
     opacity: 100%;
-    transform: scale(1.2, 1.2) translateY(-3%);
-    transition: 0.8s;
+    transform:  scale(1.08, 1.08) translateY(-3%);
+    transition: 0.3s;
     cursor: pointer;
 }
 .gallery-cards img:not( :hover ) {
