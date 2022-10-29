@@ -10,8 +10,8 @@ function Project() {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
             description: 'This is an application where users can test their math fact knowledge. This is geared toward a classroom environment but is great for anyone trying to improve their mental math skills. Users can enter a name and pick a mission. They can battle where they race to answer as many questions as they can to unlock a new level, or they can train and play a game to improve their fluency. All data is stored in the browswer using indexedDB.',
-            url: 'https://math-madness-2.herokuapp.com/',
-            github: 'https://github.com/Abarragan89/math_madness_2',
+            url: 'https://math-fact-missions.herokuapp.com/',
+            github: 'https://github.com/Abarragan89/math-fact-missions',
             alt: 'landing page for Math Fact Missions website'
         },
         {
