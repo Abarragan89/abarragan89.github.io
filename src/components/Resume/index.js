@@ -12,7 +12,7 @@ function Resume() {
     useEffect(() => {
         Aos.init({});
     });
-    const [clickSound, { stop }] = useSound(click, { volume: '.5' });
+    const [clickSound] = useSound(click, { volume: '.5' });
 
     return (
         <div className='section'>
@@ -31,7 +31,7 @@ function Resume() {
                     data-aos-duration='2000'
                     data-aos-delay="50">
                     <h4 className='resume-heading'>Summary</h4>
-                    <p className='resume-text'>Full-Stack software developer with an academic focus on the MERN stack. Adaptable to new programming languages in order to work with data structures and build efficient applications. Elementary school teacher with a Master's in Education and Administrative Credential. Proficient in developing differentiated lesson plans that adhere to different learning styles and maintain student engagement. Seeking a role as a software engineer.</p>
+                    <p className='resume-text'>Full-stack web developer with an academic focus on the MERN stack. Quick to adapt to new programming languages in order to work with data structures and build efficient applications. Innovative problem-solver with ability to self-manage during independent projects. Currently working as an elementary school teacher with a Master's in Education and Administrative Credential. Enthusiastic about creating and maintaining responsive web applications that have a positive effect in the world. Continuously expanding developer toolset and now seeking a role as a software engineer. </p>
                 </div>
                 <p className='heading-bar'></p>
 
@@ -54,19 +54,38 @@ function Resume() {
                     data-aos-duration='2000'
                     data-aos-delay="50">
                     <h4 className='resume-heading'>Projects</h4>
-                    <h5 className='resume-subtitle'>Expense Tracker</h5>
-                    <p>This is a full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as 'monthly' are automatically deducted.</p>
-                    <p>I developed the backend logic to connect user input to server-side database, deduct monthly expense, display categories on charts, automate monthly deductions for expenses tagged as monthly. Created database structures and connected Charts.Js to display user input.</p>
-                    <p>Languages: JavaScript | MongoDB | Mongoose | Node.Js | Express.Js | Charts.js | Handlebars.Js | CSS</p>
+                    <h5 className='resume-subtitle'>Math Fact Missions</h5>
+                    <p>This is a full-stack application where users can test their math fact knowledge. This is geared toward a classroom environment but is great for anyone trying to improve their mental math skills. User can enter a name and choose their missions. They can battle where they race to answer as many questions as they can to unlock the next level, or they can train and play a game to improve their fluency. Game data is saved locally using IndexedDB. Game data is also saved on MongoDB using Mongoose so players can see how they rank against others in different games. Players can also add friends to make custom scoreboards. </p>
+                    <p>I developed this app to replace the paper-based, two-minute drill teachers give to student to demonstrate mastery of math facts. With this app, students can progress at their own pace and makes rote memorization fun! Saves on paper and students can compete with one another.</p>
+                    <p>Languages: Next.js | TypeScript | MongoDB | Mongoose | Node.Js | Express.Js | IndexedDB | HTML Canvas | SASS</p>
 
                     <div data-aos='fade-up'
                         data-aos-duration='2000'
                         data-aos-delay="50">
-                        <h5 className='resume-subtitle'>Dinner and Drinks</h5>
-                        <p>This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions, and/or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.</p>
-                        <p>I developed the backend logic to connect user input to Spoonacular and Cocktails DB searches. Created the code to generate cards and used Bulma to optimize styles and make the application responsive. </p>
-                        <p>JavaScript | Bulma | HTML | CSS | Spoonacular API | Cocktails DB API</p>
+                        <h5 className='resume-subtitle'>Who Nose That</h5>
+                        <p>This is a full-stack game generator geared to helping teachers in the classroom. Users can make an account and create gameboards by adding their questions and answers. Gameboards are Jeopardy-like and promote group/pair work in the classroom. Teachers also have the option of making a gameboard a 'study-set'. This turns the questions and answers into flashcards that students can access through the student portal by inputting their teacher\'s username. Here, they can play another flashcard game to study before the classroom game. Teachers can also makes their gameboards public, copy public games to their library, and edit games.</p>
+                        <p>I developed this app to help teachers make review games fun and easy to create. I like to add a little bit of chance to educational games so the it's not the same students winning, so I added the bonus round.</p>
+                        <p>Languages: React.js | JavaScript | GraphQL | MongoDB | Mongoose | Node.Js | Express.Js | HTML Canvas | JWT</p>
                     </div>
+
+                    <div data-aos='fade-up'
+                        data-aos-duration='2000'
+                        data-aos-delay="50">
+                        <h5 className='resume-subtitle'>Draw The Line</h5>
+                        <p>Draw the Line is a social media platform where users can post ideas, can comment, and comment on a comment to debate issues. This website has no administrators or monitors. The community of users will monitor itself. If you find something offensive, unconstructive, or just mean, downvote it. Once a comment’s or post’s downvotes make up 60% of its overall likes and dislikes, poof! It’s gone. There is also a direct messaging component that uses Socket.io to render messages immediately to sender.</p>
+                        <p>I developed this app in the midst of Elon Musk buying Twitter. So much debate over who should be able to censor led me to create a social media platform where the users decide what should be censored. A truly democratic approach to social media.</p>
+                        <p>Languages: React.js | JavaScript | GraphQL | MongoDB | Mongoose | Node.Js | Express.Js | Socket.io | JWT</p>
+                    </div>
+
+                    <div data-aos='fade-up'
+                        data-aos-duration='2000'
+                        data-aos-delay="50">
+                        <h5 className='resume-subtitle'>Expense Tracker</h5>
+                        <p>This is a full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as 'monthly' are automatically deducted.</p>
+                        <p>I developed the backend logic to connect user input to server-side database, deduct monthly expense, display categories on charts, automate monthly deductions for expenses tagged as monthly. Created database structures and connected Charts.Js to display user input</p>
+                        <p>Languages: JavaScript | MongoDB | Mongoose | Node.Js | Express.Js | Charts.js | Handlebars.Js | CSS</p>
+                    </div>
+
                 </div>
                 <p className='heading-bar'></p>
 
@@ -76,6 +95,27 @@ function Resume() {
                     data-aos-duration='2000'
                     data-aos-delay="50">
                     <h4 className='resume-heading'>Experience</h4>
+
+                    <div className='job-listing'>
+                        <div className='flex-container'>
+                            <div>
+                                <p>Instructional Teaching Assistant</p>
+                                <p>2U Trilogoy Education</p>
+                            </div>
+                            <div>
+                                <p>2022 - Present</p>
+                                <p>Remote</p>
+                            </div>
+                        </div>
+                        <p>I teach students the skills necessary to become a full-stack web developer. We focus on the MERN stack. We also cover HTML, CSS, MySQL and NoSQL databases, Algorithms, MVC, GitHub/Git, testing with Jest, ORMs, Object-Oriented Programming, Functional Programming, and CSS frameworks such as Bootstrap. I work with students in a one-on-one or small group setting. </p>
+                        <p className='key-accomplishments'>Key Role</p>
+                        <ul>
+                            <li>Coordinate with instructor to plan lessons and facilitate online classes</li>
+                            <li>Support students via Slack to help with coding bugs and issues</li>
+                            <li>Work with students during office hours to provide guidance when completing assignments and projects</li>
+                        </ul>
+                    </div>
+
                     <div className='job-listing'>
                         <div className='flex-container'>
                             <div>
