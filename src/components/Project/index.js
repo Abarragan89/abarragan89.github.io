@@ -9,7 +9,7 @@ function Project() {
         {
             name: 'Lunaris',
             photoRoute: 'lunaris-large',
-            description: 'This is an full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. User\'s can view past monthly histories and get a snapshot of their entire year. Salaries, charges, purchases, and deposits can all be edited, updated, and paused. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
+            description: 'This is an full-stack expense tracker designed for mobile devices. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. User\'s can view past monthly histories and get a snapshot of their entire year. Salaries, charges, purchases, and deposits can all be edited, updated, and paused. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
             url: 'https://lunaris-finance.herokuapp.com/',
             github: 'https://github.com/Abarragan89/lunar',
             alt: 'landing page for Lunaris Finance'
