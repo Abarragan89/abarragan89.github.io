@@ -7,6 +7,14 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'Lunaris',
+            photoRoute: 'lunaris-large',
+            description: 'This is an full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. User\'s can view past monthly histories and get a snapshot of their entire year. Salaries, charges, purchases, and deposits can all be edited, updated, and paused. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
+            url: 'https://lunaris-finance.herokuapp.com/',
+            github: 'https://github.com/Abarragan89/lunar',
+            alt: 'landing page for Lunaris Finance'
+        },
+        {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
             description: 'This is an application where users can test their math fact knowledge. This is geared toward a classroom environment but is great for anyone trying to improve their mental math skills. Users can enter a name and pick a mission. They can battle where they race to answer as many questions as they can to unlock a new level, or they can train and play a game to improve their fluency. All data is stored in the browswer using indexedDB.',
@@ -29,14 +37,6 @@ function Project() {
             url: 'https://draw-the-line-2.herokuapp.com/ ',
             github: 'https://github.com/Abarragan89/draw-the-line-2',
             alt: 'landing page for Draw the Line website'
-        },
-        {
-            name: 'Expense Tracker',
-            photoRoute: 'expense-tracker-large',
-            description: 'This is an full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. This uses Sequelized to access a SQL database. Express.js is used to create server routes.',
-            url: 'https://floating-dusk-25843.herokuapp.com/',
-            github: 'https://github.com/TigranBalayan10/expense-tracker',
-            alt: 'landing page for Expense Tracker website'
         },
         {
             name: 'Dinner and Drinks',

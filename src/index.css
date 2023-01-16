@@ -301,6 +301,7 @@ nav a.active {
 .modal-title {
     color: var(--main-color);
     font-size: var(--body-font);
+    font-size: 2rem;
 }
 .modal-description {
     color: var(--font-color);
