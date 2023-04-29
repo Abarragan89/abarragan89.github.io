@@ -125,21 +125,21 @@ function Project() {
                 if( i === 0) {
                     return(<figure
                     data-aos='slide-up'
-                    data-aos-duration='250'
+                    data-aos-duration='400'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else if (i % 2 === 0) {
                     return(<figure
                     data-aos='slide-left'
-                    data-aos-duration='250'
+                    data-aos-duration='400'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
                     data-aos='slide-right'
-                    data-aos-duration='250'
+                    data-aos-duration='400'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
