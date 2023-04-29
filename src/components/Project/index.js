@@ -9,7 +9,7 @@ function Project() {
         {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
-            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers can create their rosters and print out logins for their students that include a unique class code and a teacher generated password. Students can progress through their four missions (multiplication, division, addition, and subtraction). There are interactive flashcards to help them learn, four fun review games using HTML Canvas, and a Quiz to unlock each level. Students earn points for all their activity and they can buy game upgrades for faster ships and upgrade the skins on their avatars. The Avatars are made using Three.js and are displayed when users view the rankings. There are global rankings to see top 10 among all users or classroom ranks that show everyone in their class. Student progress is tracked on the teacher dashboard. This application also implements Stripe for users to continue using the app once their initial 5-day trial has ended. *GitHub repo is set to private.',
+            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers create student accounts and print their logins. Students progress through their missions to demonstrate mastery. There are interactive flashcards to learn, fun review games, and a quiz to unlock new levels. Students earn points and they can buy game upgrades or skins for their avatar. The Avatars are made using Three.js and are displayed in the rankings. Teachers can track and edit student details on their dashboard. New users are given a 5-day free trial, then they can subscribe via Stripe to continue using this service.',
             url: 'https://www.math-fact-missions.com/',
             github: 'https://github.com/Abarragan89/math-missions',
             alt: 'landing page for Math Fact Missions website'
@@ -109,6 +109,7 @@ function Project() {
     const [currentProject, setCurrentProject] = useState('')
 
     function toggleModal(project) {
+        window.scrollTo(0,0)
         setCurrentProject(project)
         setIsModal(!isModal)
     }
@@ -124,21 +125,21 @@ function Project() {
                 if( i === 0) {
                     return(<figure
                     data-aos='slide-up'
-                    data-aos-duration='500'
+                    data-aos-duration='250'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else if (i % 2 === 0) {
                     return(<figure
                     data-aos='slide-left'
-                    data-aos-duration='500'
+                    data-aos-duration='250'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
                     data-aos='slide-right'
-                    data-aos-duration='500'
+                    data-aos-duration='250'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)

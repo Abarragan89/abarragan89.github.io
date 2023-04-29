@@ -41,10 +41,14 @@ function Resume() {
                     data-aos-duration='2000'
                     data-aos-delay="50">
                     <h4 className='resume-heading'>Technical Skills</h4>
-                    <h5 className='resume-subtitle'>Languages</h5>
-                    <p className='resume-text'> JavaScript | React.Js | Node.Js | Express.Js | MongoDB | Mongoose | HTML5 | CSS3 | Handlebars.js | MySQL | NoSQL | GraphQL | </p>
+                    <h5 className='resume-subtitle'>Client-Side</h5>
+                    <p className='resume-text'> JavaScript ES6+ | React.Js | Next.Js | Three.Js | HTML Canvas | HTML5 | CSS3 | SASS | Handlebars.js | Jinja2 | JQuery | Bootstrap </p>
+
+                    <h5 className='resume-subtitle'>Server-Side</h5>
+                    <p className='resume-text'> Node.Js | Express.Js | MongoDB | Mongoose | MySQL | Sequelize | NoSQL | GraphQL | Apollo | Python | SQLAlchemy | Socket.io | PHP | Stripe | JWT | Nodemailer</p>
+
                     <h5 className='resume-subtitle'>Applications/Paradigms</h5>
-                    <p className='resume-text'>MVC paradigm | RESTful APIs | PWAs | Object-oriented programming | Git/GitHub | Procreate</p>
+                    <p className='resume-text'>MVC paradigm | RESTful APIs | PWAs | Object-oriented programming | Functional Programming | Git/GitHub | Procreate | WordPress</p>
                 </div>
                 <p className='heading-bar'></p>
 
@@ -55,9 +59,16 @@ function Resume() {
                     data-aos-delay="50">
                     <h4 className='resume-heading'>Projects</h4>
                     <h5 className='resume-subtitle'>Math Fact Missions</h5>
-                    <p>This is a full-stack application where users can test their math fact knowledge. This is geared toward a classroom environment but is great for anyone trying to improve their mental math skills. User can enter a name and choose their missions. They can battle where they race to answer as many questions as they can to unlock the next level, or they can train and play a game to improve their fluency. Game data is saved locally using IndexedDB. Game data is also saved on MongoDB using Mongoose so players can see how they rank against others in different games. Players can also add friends to make custom scoreboards. </p>
-                    <p>I developed this app to replace the paper-based, two-minute drill teachers give to student to demonstrate mastery of math facts. With this app, students can progress at their own pace and makes rote memorization fun! Saves on paper and students can compete with one another.</p>
-                    <p>Languages: Next.js | TypeScript | MongoDB | Mongoose | Node.Js | Express.Js | IndexedDB | HTML Canvas | SASS</p>
+                    <p>This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers can create their rosters and print out logins for their students that include a unique class code and a teacher generated password. Students can progress through their four missions (multiplication, division, addition, and subtraction). There are interactive flashcards to help them learn, four fun review games using HTML Canvas, and a Quiz to unlock each level. Students earn points for all their activity and they can buy game upgrades for faster ships and upgrade the skins on their avatars. The Avatars are made using Three.js and are displayed when users view the rankings. There are global rankings to see top 10 among all users or classroom ranks that show everyone in their class. Student progress is tracked on the teacher dashboard. This application also implements Stripe for users to continue using the app once their initial 5-day trial has ended. *GitHub repo is set to private.</p>
+                    <p>Languages: Next.js | TypeScript | MongoDB | Mongoose | Node.Js | Express.Js | JWT | Stripe | Next.Js | Nodemailer | HTML Canvas | SASS</p>
+
+                    <div data-aos='fade-up'
+                        data-aos-duration='2000'
+                        data-aos-delay="50">
+                        <h5 className='resume-subtitle'>Lunaris</h5>
+                        <p>This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your monthly budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find treads in your spending habits and limit your spending.</p>
+                        <p>Languages: Javascript | Python | Flask | SQLAlchemy | Jinja2 | SASS | Pycharts.Js | Bcrypt</p>
+                    </div>
 
                     <div data-aos='fade-up'
                         data-aos-duration='2000'
@@ -65,7 +76,7 @@ function Resume() {
                         <h5 className='resume-subtitle'>Who Nose That</h5>
                         <p>This is a full-stack game generator geared to helping teachers in the classroom. Users can make an account and create gameboards by adding their questions and answers. Gameboards are Jeopardy-like and promote group/pair work in the classroom. Teachers also have the option of making a gameboard a 'study-set'. This turns the questions and answers into flashcards that students can access through the student portal by inputting their teacher\'s username. Here, they can play another flashcard game to study before the classroom game. Teachers can also makes their gameboards public, copy public games to their library, and edit games.</p>
                         <p>I developed this app to help teachers make review games fun and easy to create. I like to add a little bit of chance to educational games so the it's not the same students winning, so I added the bonus round.</p>
-                        <p>Languages: React.js | JavaScript | GraphQL | MongoDB | Mongoose | Node.Js | Express.Js | HTML Canvas | JWT</p>
+                        <p>Languages: React.Js | JavaScript | GraphQL | MongoDB | Mongoose | Node.Js | Express.Js | HTML Canvas | JWT</p>
                     </div>
 
                     <div data-aos='fade-up'
@@ -75,15 +86,6 @@ function Resume() {
                         <p>Draw the Line is a social media platform where users can post ideas, can comment, and comment on a comment to debate issues. This website has no administrators or monitors. The community of users will monitor itself. If you find something offensive, unconstructive, or just mean, downvote it. Once a comment’s or post’s downvotes make up 60% of its overall likes and dislikes, poof! It’s gone. There is also a direct messaging component that uses Socket.io to render messages immediately to sender.</p>
                         <p>I developed this app in the midst of Elon Musk buying Twitter. So much debate over who should be able to censor led me to create a social media platform where the users decide what should be censored. A truly democratic approach to social media.</p>
                         <p>Languages: React.js | JavaScript | GraphQL | MongoDB | Mongoose | Node.Js | Express.Js | Socket.io | JWT</p>
-                    </div>
-
-                    <div data-aos='fade-up'
-                        data-aos-duration='2000'
-                        data-aos-delay="50">
-                        <h5 className='resume-subtitle'>Expense Tracker</h5>
-                        <p>This is a full-stack expense tracker. Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as 'monthly' are automatically deducted.</p>
-                        <p>I developed the backend logic to connect user input to server-side database, deduct monthly expense, display categories on charts, automate monthly deductions for expenses tagged as monthly. Created database structures and connected Charts.Js to display user input</p>
-                        <p>Languages: JavaScript | MongoDB | Mongoose | Node.Js | Express.Js | Charts.js | Handlebars.Js | CSS</p>
                     </div>
 
                 </div>
