@@ -7,20 +7,20 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'Math Fact Missions',
+            photoRoute: 'mathFactMissions',
+            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers can create their rosters and print out logins for their students that include a unique class code and a teacher generated password. Students can progress through their four missions (multiplication, division, addition, and subtraction). There are interactive flashcards to help them learn, four fun review games using HTML Canvas, and a Quiz to unlock each level. Students earn points for all their activity and they can buy game upgrades for faster ships and upgrade the skins on their avatars. The Avatars are made using Three.js and are displayed when users view the rankings. There are global rankings to see top 10 among all users or classroom ranks that show everyone in their class. Student progress is tracked on the teacher dashboard. This application also implements Stripe for users to continue using the app once their initial 5-day trial has ended. *GitHub repo is set to private.',
+            url: 'https://www.math-fact-missions.com/',
+            github: 'https://github.com/Abarragan89/math-missions',
+            alt: 'landing page for Math Fact Missions website'
+        },
+        {
             name: 'Lunaris',
             photoRoute: 'lunaris-large',
-            description: 'This is an full-stack expense tracker designed for mobile devices(PWA). Enter your monthly income to keep track of your monthly usage. Add category tags and then add expenses to those tags. Your data will be displayed using Charts.js. Every Month, your expense resets and expenses marked as \'monthly\' are automatically deducted. User\'s can view past monthly histories and get a snapshot of their entire year. Salaries, charges, purchases, and deposits can all be edited, updated, and paused. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
+            description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your monthly budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find treads in your spending habits and limit your spending. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
             url: 'https://lunaris-finance.herokuapp.com/',
             github: 'https://github.com/Abarragan89/lunar',
             alt: 'landing page for Lunaris Finance'
-        },
-        {
-            name: 'Math Fact Missions',
-            photoRoute: 'mathFactMissions',
-            description: 'This is an application where users can test their math fact knowledge. This is geared toward a classroom environment but is great for anyone trying to improve their mental math skills. Users can enter a name and pick a mission. They can battle where they race to answer as many questions as they can to unlock a new level, or they can train and play a game to improve their fluency. All data is stored in the browswer using indexedDB.',
-            url: 'https://math-fact-missions.herokuapp.com/',
-            github: 'https://github.com/Abarragan89/math-fact-missions',
-            alt: 'landing page for Math Fact Missions website'
         },
         {
             name: 'Who Nose That',
