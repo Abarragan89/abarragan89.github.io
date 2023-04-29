@@ -12,12 +12,12 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-x: hidden;
 }
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 main {
   flex-grow: 1;
@@ -249,9 +249,11 @@ nav a.active {
   margin-right: 20px;
 }
 .gallery-cards img {
-  width: 80%;
-  opacity: 40%;
+  width: 65%;
+  opacity: 60%;
+  border-radius: 10px;
 }
+
 .card-right img:hover {
   opacity: 100%;
   transform: scale(1.08, 1.08) translateY(-3%);
@@ -290,12 +292,15 @@ nav a.active {
   width: 600px;
   margin: 50px auto;
   padding: 15px;
-  border: 1px solid white;
-  background-color: rgb(8, 8, 49);
+  border-radius: 20px;
+  /* border: 1px solid var(--main-color); */
+  background-color: rgb(7, 1, 1);
+  box-shadow: var(--main-color) 0px 0px 15px 0px;
   animation: resume-fadeIn 0.8s;
 }
 .modal-picture {
   width: 50%;
+  border-radius: 10px;
 }
 
 .modal-title {
@@ -304,15 +309,15 @@ nav a.active {
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: var(--body-font);
 }
 .modal-description {
   color: var(--font-color);
-  font-size: var(--body-font);
-  width: 95%;
+  font-family: var(--body-font);
   text-align: center;
   margin: 0 auto;
   margin-top: 8px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-size: 1.1em;
 }
 
@@ -335,7 +340,7 @@ nav a.active {
   transition: 0.3s;
 }
 .modal-links:hover {
-  color: rgb(209, 22, 22);
+  background-color: rgb(221, 191, 23);
   cursor: pointer;
 }
 .modal-links:active {
@@ -648,7 +653,7 @@ footer a:hover {
 
 @media screen and (max-width: 530px) {
     .modalContainer {
-        width: 350px;
+        width: 330px;
       }
   .navigation {
     display: none;

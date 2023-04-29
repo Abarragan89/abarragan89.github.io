@@ -17,7 +17,7 @@ function Project() {
         {
             name: 'Lunaris',
             photoRoute: 'lunaris-large',
-            description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your monthly budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find treads in your spending habits and limit your spending. This written in Python and uses Flask and SQLAlchemy to access a SQL database.',
+            description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find trends in your spending habits and limit your spending. This is written in Python and uses Flask and SQLAlchemy to access a SQL database.',
             url: 'https://lunaris-finance.herokuapp.com/',
             github: 'https://github.com/Abarragan89/lunar',
             alt: 'landing page for Lunaris Finance'
