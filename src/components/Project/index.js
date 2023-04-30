@@ -103,7 +103,7 @@ function Project() {
     });
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 250)
+        setTimeout(() => Aos.refresh(), 550)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
@@ -124,7 +124,7 @@ function Project() {
                 {/* Every other project will be given different on scroll events */}
                 if( i === 0) {
                     return(<figure
-                    data-aos='slide-up'
+                    data-aos='slide-down'
                     data-aos-duration='400'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />

@@ -1,6 +1,5 @@
 import NavLinks from '../NavLinks'
-function Navigation ({
-    }) {
+function Navigation () {
     return (
         <nav className="navigation">
             <NavLinks />
