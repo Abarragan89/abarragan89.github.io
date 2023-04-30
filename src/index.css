@@ -236,6 +236,7 @@ nav a.active {
 }
 
 .project-display {
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -636,9 +637,9 @@ footer a:hover {
   .link-el {
     margin-left: 10px;
   }
-  .section {
-    margin-top: 10%;
-  }
+  /* .section {
+    margin-top: 5%;
+  } */
   #resume-pdf {
     margin-top: 25%;
   }
@@ -699,7 +700,7 @@ footer a:hover {
     font-size: 1.7em;
   }
   .section {
-    margin-top: 15%;
+    margin-top: 8%;
   }
   #home-footer {
     left: 26.5%;

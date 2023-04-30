@@ -124,8 +124,9 @@ function Project() {
                 {/* Every other project will be given different on scroll events */}
                 if( i === 0) {
                     return(<figure
-                    data-aos='slide-down'
-                    data-aos-duration='400'
+                    data-aos='zoom-in'
+                    data-aos-delay='600'
+                    data-aos-duration='600'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
