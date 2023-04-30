@@ -97,10 +97,18 @@ function Project() {
 
         // }
     ];
-    // initiate on scroll package
+    // loadedElements is used to first have all elements have a delay, then turn it off so they don't lag
+    // This is to let the green line animate first before showing anything
+    // If delayed each animation then scrolling is bad experience
+    const [loadedElements, setLoadedElements] = useState(false)
     useEffect(() => {
-        Aos.init({});
-    });
+        if (!loadedElements) {
+            Aos.init({delay: 600})
+            setLoadedElements(true)
+        } else {
+            Aos.init({ delay: 0})
+        };
+    } ,[loadedElements]);
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
         setTimeout(() => Aos.refresh(), 550)
@@ -125,7 +133,7 @@ function Project() {
                 if( i === 0) {
                     return(<figure
                     data-aos='zoom-in'
-                    data-aos-delay='600'
+                    // data-aos-delay='600'
                     data-aos-duration='600'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
@@ -133,14 +141,14 @@ function Project() {
                 }else if (i % 2 === 0) {
                     return(<figure
                     data-aos='slide-left'
-                    data-aos-duration='400'
+                    data-aos-duration='600'
                     className='gallery-cards card-right' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
                 }else {
                     return(<figure
                     data-aos='slide-right'
-                    data-aos-duration='400'
+                    data-aos-duration='600'
                     className='gallery-cards card-left' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                 </figure>)
