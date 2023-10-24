@@ -40,7 +40,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             transition={{delay: 0.20}}
             className={`link-el`} 
             onClick={closeHamburger}
-            ><NavLink to='/portfolio' className={'link-el'}>Portfolio</NavLink></motion.li >
+            ><NavLink to='/portfolio' className={'link-el'}>Projects</NavLink></motion.li >
 
             <motion.li  
             initial={animateFrom}

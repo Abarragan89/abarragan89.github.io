@@ -133,7 +133,6 @@ function Project() {
                 if( i === 0) {
                     return(<figure
                     data-aos='zoom-in'
-                    // data-aos-delay='600'
                     data-aos-duration='600'
                     className='gallery-cards card-right' id='marquee-project' key={i}>
                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
