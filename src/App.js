@@ -8,7 +8,7 @@ import Homepage from './components/Homepage';
 import PrintResume from './components/PrintResume';
 
 
-import { Routes, Route, useLocation } from 'react-router-dom';
+import {HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
   const location = useLocation();
@@ -17,15 +17,14 @@ function App() {
     <>
       <Header />
         <Routes>
-          {/* <Route path={'/react-portfolio'} element={<Homepage />} /> */}
           <Route path={'/'} element={<Homepage />} />
-          <Route path='/#/about' element={<About />}/>
-          <Route path='/#/portfolio' element={<Portfolio />}/>
-          <Route path='/#/contact' element={<Contact />} />
-          <Route path='/#/resume' element={<Resume />} />
-          <Route path='/#/resume-pdf' element={<PrintResume />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/resume-pdf' element={<PrintResume />} />
         </Routes>
-        <Footer location={location}/>
+      <Footer location={location} />
     </>
   );
 }
