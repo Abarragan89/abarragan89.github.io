@@ -50,7 +50,7 @@ main {
   display: inline;
 }
 .link-el {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .link-el:first-child {
   margin-left: 0;
@@ -78,7 +78,7 @@ nav a.active {
   border-radius: 50%;
   display: inline-block;
   position:relative;
-  left: 10px;
+  left: 20px;
   top: -3px;
   
 }
@@ -171,7 +171,7 @@ nav a.active {
 /* About me section */
 .section-heading {
   letter-spacing: 0.2em;
-  font-size: 4.5vw;
+  font-size: 2rem;
   position: relative;
   top: 0;
   font-family: var(--title-font);
@@ -261,26 +261,21 @@ nav a.active {
   margin-bottom: 10vw;
   position: relative;
   flex: 2 40%;
-  margin-right: 20px;
 }
 .gallery-cards img {
-  width: 65%;
-  opacity: 60%;
-  border-radius: 10px;
+  width: 98%;
+  border-radius: 8px;
+  border: 1px solid rgb(75, 75, 75);
 }
 
-.card-right img:hover {
+.card-right img:hover, .card-left img:hover {
   opacity: 100%;
-  transform: scale(1.08, 1.08) translateY(-3%);
-  transition: 0.25s;
+  transform: scale(1.03, 1.03) translateY(5px);
+  transition: 0.15s;
   cursor: pointer;
+  
 }
-.card-left img:hover {
-  opacity: 100%;
-  transform: scale(1.08, 1.08) translateY(-3%);
-  transition: 0.25s;
-  cursor: pointer;
-}
+
 .gallery-cards img:not(:hover) {
   transition: 0.25s;
 }
@@ -302,20 +297,19 @@ nav a.active {
 }
 
 .modalContainer {
-  background: var(--darker);
   border-radius: 5px;
   width: 600px;
   margin: 50px auto;
   padding: 15px;
   border-radius: 20px;
-  /* border: 1px solid var(--main-color); */
-  background-color: rgb(7, 1, 1);
-  box-shadow: var(--main-color) 0px 0px 15px 0px;
+  background-color: rgb(11, 10, 10);
+  box-shadow: var(--font-color) 0px 0px 15px 0px;
   animation: resume-fadeIn 0.8s;
 }
 .modal-picture {
+  border: 1px solid gray;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .modal-title {
@@ -424,16 +418,20 @@ textarea:focus {
   text-decoration: none;
   color: black;
   background-color: var(--main-color);
-  transition: 0.3s;
+  transition: 0.15s;
   display: block;
   margin: 0 auto;
+  border: 1px solid transparent;
 }
 #contact-submit:hover {
-  color: rgb(209, 22, 22);
+  background-color: black;
+  color: var(--main-color);
+  border: 1px solid var(--font-color);
+
   cursor: pointer;
 }
 #contact-submit:active {
-  background-color: var(--font-color);
+  color: var(--font-color);
 }
 .error-text {
   color: rgb(225, 12, 12);
@@ -553,16 +551,16 @@ textarea:focus {
   width: 20%;
 }
 
-/* Styles for Footer */
+/* Styles for home Footer */
 #home-footer {
   opacity: 1;
   position: absolute;
   bottom: 0;
-  left: 35%;
+  left: 30%;
   animation: footerFadeIn 0.8s 0.7s both;
 }
 #home-footer a {
-  font-size: 4vw;
+  font-size: 3rem;
   color: var(--main-color);
 }
 #home-footer a:not(:last-child) {
@@ -579,7 +577,7 @@ footer {
   animation: footerFadeIn 0.8s 0.7s both;
 }
 footer a {
-  font-size: 4vw;
+  font-size: 3rem;
   color: var(--main-color);
 }
 
@@ -730,7 +728,7 @@ footer a:hover {
   }
   footer a,
   #home-footer a {
-    font-size: 10vw;
+    font-size: 2.5rem;
   }
   #resume-pdf {
     margin-top: 40%;
