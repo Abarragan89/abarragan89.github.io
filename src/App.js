@@ -19,11 +19,11 @@ function App() {
         <Routes>
           {/* <Route path={'/react-portfolio'} element={<Homepage />} /> */}
           <Route path={'/'} element={<Homepage />} />
-          <Route path='/about' element={<About />}/>
-          <Route path='/portfolio' element={<Portfolio />}/>
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/resume-pdf' element={<PrintResume />} />
+          <Route path='/#/about' element={<About />}/>
+          <Route path='/#/portfolio' element={<Portfolio />}/>
+          <Route path='/#/contact' element={<Contact />} />
+          <Route path='/#/resume' element={<Resume />} />
+          <Route path='/#/resume-pdf' element={<PrintResume />} />
         </Routes>
         <Footer location={location}/>
     </>
