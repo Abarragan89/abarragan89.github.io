@@ -25,7 +25,9 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             onClick={closeHamburger}
             className={'link-el'}
             ><NavLink to='/' className={'link-el'}>Home</NavLink></motion.li >
-
+           
+            <span className='link-dot'></span>
+           
             <motion.li  
             initial={animateFrom}
             animate={animateTo}
@@ -33,6 +35,8 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             className={`link-el`}
             onClick={closeHamburger}
             ><NavLink to='/about' className={'link-el'}>About</NavLink></motion.li >
+
+            <span className='link-dot'></span>
 
             <motion.li  
             initial={animateFrom}
@@ -42,6 +46,8 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             onClick={closeHamburger}
             ><NavLink to='/portfolio' className={'link-el'}>Projects</NavLink></motion.li >
 
+            <span className='link-dot'></span>
+
             <motion.li  
             initial={animateFrom}
             animate={animateTo}
@@ -49,6 +55,8 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             className={`link-el`} 
             onClick={closeHamburger}
             ><NavLink to='/contact' className={'link-el'}>Contact</NavLink></motion.li >
+
+            <span className='link-dot'></span>
 
             <motion.li  
             initial={animateFrom}

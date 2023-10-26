@@ -28,7 +28,6 @@ main {
   height: 80px;
   width: 100%;
   position: absolute;
-  top: 30px;
   z-index: 400;
   display: flex;
   justify-content: center;
@@ -53,6 +52,9 @@ main {
 .link-el {
   margin-left: 20px;
 }
+.link-el:first-child {
+  margin-left: 0;
+}
 .link-el:hover {
   color: var(--font-color);
 }
@@ -69,9 +71,21 @@ nav a.active {
   color: var(--main-color);
 }
 
+.link-dot {
+  height: 7px;
+  width: 7px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  position:relative;
+  left: 10px;
+  top: -3px;
+  
+}
+
 /* styles for all sections */
 .section {
-  margin-top: 9%;
+  margin-top: 100px;
 }
 
 /* Styles for the homepage */
@@ -594,37 +608,7 @@ footer a:hover {
   #homepage-title h1 {
     font-size: 8vw;
   }
-  .navigation {
-    display: none;
-  }
-  .mobile-nav {
-    padding: 0.5em;
-    display: flex;
-    align-items: center;
-  }
-  .mobile-nav .hamburger {
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    color: var(--main-color);
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    background-color: #181818;
-    border-top: 2px solid;
-  }
-  nav ul li {
-    padding-left: 5%;
-    padding-bottom: 20px;
-  }
-  .link-el {
-    font-size: 1.4em;
-  }
+
   .section-heading {
     font-size: 2em;
   }
@@ -634,28 +618,70 @@ footer a:hover {
   #quote {
     font-size: 1.2em;
   }
-  .link-el {
-    margin-left: 10px;
-  }
-  /* .section {
-    margin-top: 5%;
-  } */
+
   #resume-pdf {
     margin-top: 25%;
   }
 }
 
-@media screen and (max-width: 630px) { 
-    #marquee-project {
-        flex: 2 1 40%;
-      }
+@media screen and (max-width: 770px) {
+  .link-dot {
+    display: none;
+  }
+  .header {
+    top: 30px;
+  }
+  .section {
+    margin-top: 50px;
+  }
+  .navigation {
+    display: none;
+  }
+  .mobile-nav {
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100%;
+    background-color: #181818;
+    border-top: 2px solid;
+  }
+  nav ul li {
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+  .link-el {
+    font-size: 1.2em;
+    margin-left: 0px;
+  }
+  .link-el:first-child {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
 }
 
+@media screen and (max-width: 630px) {
+  #marquee-project {
+    flex: 2 1 40%;
+  }
+}
 
 @media screen and (max-width: 530px) {
-    .modalContainer {
-        width: 330px;
-      }
+  .modalContainer {
+    width: 330px;
+  }
   .navigation {
     display: none;
   }
@@ -685,9 +711,8 @@ footer a:hover {
     padding-bottom: 20px;
   }
   .link-el {
-    font-size: 1em;
+    font-size: 1.1em;
     padding-bottom: 20px;
-    margin-left: 5px;
   }
 
   #about-me-write {
@@ -699,9 +724,7 @@ footer a:hover {
   .section-heading {
     font-size: 1.7em;
   }
-  .section {
-    margin-top: 8%;
-  }
+
   #home-footer {
     left: 26.5%;
   }
