@@ -8,7 +8,7 @@ import Homepage from './components/Homepage';
 import PrintResume from './components/PrintResume';
 
 
-import {HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
   const location = useLocation();

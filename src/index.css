@@ -442,30 +442,50 @@ label {
   margin-bottom: 5px;
 }
 .form-div {
-  width: 60%;
+  width: 70%;
+  max-width: 650px;
   margin: 0 auto 2vw;
   text-align: left;
   justify-items: center;
 }
-input,
-textarea {
+
+input::placeholder {
+  color: gray;
+}
+
+input, textarea {
   width: 100%;
   font-family: var(--body-font);
-  border-radius: 5px;
-  padding: 5px;
-  background-color: var(--font-color);
+  font-size: 1.1rem;
   font-weight: 500;
+  border: none;
+  background: var(--font-color);
+  border: 2px solid transparent;
+  padding: 10px;
+  padding-left: 20px;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 5px #8e8e8f, inset -5px -5px 5px rgb(255, 255, 255);
 }
-input {
-  height: 1.2em;
+
+textarea {
+  height: 100px;
+  margin-bottom: 20px;
 }
+
+
 input:focus,
 textarea:focus {
-  background-color: rgb(243, 233, 233);
-  border: 2px solid var(--main-color);
+  outline: none;  
 }
+
+label {
+  opacity: 0;
+}
+
+
 #contact-submit {
-  padding: 2vw, 7vw;
+  padding: 3px 25px;
   border-radius: 5px;
   font-size: 1.2em;
   font-family: var(--body-font);
