@@ -15,7 +15,7 @@ function Project() {
             alt: 'landing page for Math Fact Missions website'
         },
         {
-            name: 'Lunaris',
+            name: 'Lunaris Finance',
             photoRoute: 'lunaris-large',
             description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find trends in your spending habits and limit your spending. This is written in Python and uses Flask and SQLAlchemy to access a SQL database.',
             url: 'https://lunaris-finance.herokuapp.com/',
@@ -23,7 +23,7 @@ function Project() {
             alt: 'landing page for Lunaris Finance'
         },
         {
-            name: 'Who Nose That',
+            name: 'Who Nose That?!',
             photoRoute: 'who-nose-that-large',
             description: 'Who Nose That is a gameboard generator designed to help teachers create fun games inside the classroom. Teachers can create their own gameboards, edit gameboards, copy premade public gameboards, and generate flashcards based on their gameboards with a a click of a single button. There is a student portal where they can login with their teachers username to view all flashcard sets. There is an exciting bonus round if students get the question correct and a random runner up that can steal the points if the current player gets the question incorrect. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
             url: 'https://who-nose-that.com',
@@ -103,12 +103,12 @@ function Project() {
     const [loadedElements, setLoadedElements] = useState(false)
     useEffect(() => {
         if (!loadedElements) {
-            Aos.init({delay: 600})
+            Aos.init({ delay: 600 })
             setLoadedElements(true)
         } else {
-            Aos.init({ delay: 0})
+            Aos.init({ delay: 0 })
         };
-    } ,[loadedElements]);
+    }, [loadedElements]);
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
         setTimeout(() => Aos.refresh(), 550)
@@ -117,7 +117,7 @@ function Project() {
     const [currentProject, setCurrentProject] = useState('')
 
     function toggleModal(project) {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
         setCurrentProject(project)
         setIsModal(!isModal)
     }
@@ -126,35 +126,61 @@ function Project() {
         setIsModal(!isModal);
     }
     return (
-        <section className='project-display section'>
-            {isModal && <Modal project={currentProject} onClose={closeModal} />}
-            {photoData.map((project, i) => {
-                {/* Every other project will be given different on scroll events */}
-                if( i === 0) {
-                    return(<figure
-                    data-aos='zoom-in'
-                    data-aos-duration='600'
-                    className='gallery-cards card-right' id='marquee-project' key={i}>
-                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
-                </figure>)
-                }else if (i % 2 === 0) {
-                    return(<figure
-                    data-aos='slide-left'
-                    data-aos-duration='600'
-                    className='gallery-cards card-right' key={i}>
-                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
-                </figure>)
-                }else {
-                    return(<figure
-                    data-aos='slide-right'
-                    data-aos-duration='600'
-                    className='gallery-cards card-left' key={i}>
-                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
-                </figure>)
+        <>
+            {/* I don't want the first one in the flex box so It will take the entire row */}
+            <figure
+                data-aos='zoom-in'
+                data-aos-duration='600'
+                className='gallery-cards card-right' id='marquee-project' key={0}>
+                <div class="overlay">
+                    <p>{photoData[0].name}</p>
+                    <p>click for details</p>
+                </div>
+                <img src={require(`../../assets/large/${photoData[0].photoRoute}.png`)} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
+                <br />
+            </figure>
+
+            <section className='project-display section'>
+                {isModal && <Modal project={currentProject} onClose={closeModal} />}
+                {photoData.map((project, i) => {
+                    {/* Every other project will be given different on scroll events */ }
+                    if (i === 0) {
+                        return <></>
+                    } else if (i % 2 === 0) {
+                        return (
+                            <>
+                                <figure
+                                    data-aos='slide-left'
+                                    data-aos-duration='600'
+                                    className='gallery-cards card-right' key={i}>
+                                    <div class="overlay">
+                                        <p>{project.name}</p>
+                                        <p>click for details</p>
+                                    </div>
+                                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                                </figure>
+                            </>
+                        )
+                    } else {
+                        return (
+                            <>
+                                <figure
+                                    data-aos='slide-right'
+                                    data-aos-duration='600'
+                                    className='gallery-cards card-left' key={i}>
+                                    <div class="overlay">
+                                        <p>{project.name}</p>
+                                        <p>click for details</p>
+                                    </div>
+                                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                                </figure>
+                            </>
+                        )
+                    }
                 }
-                } 
-            )}
-        </section>
+                )}
+            </section>
+        </>
     )
 }
 export default Project;

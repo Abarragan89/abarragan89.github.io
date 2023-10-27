@@ -61,17 +61,17 @@ function Homepage() {
         }
         animate();
 
-        function initialHTMLCanvasAnimation() {
-            for (let i = 0; i < window.innerWidth; i += 6) {
+        function initialHTMLCanvasAnimationNameIntro() {
+            for (let i = 0; i < window.innerWidth; i += 8) {
                 setTimeout(() => {
                     particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 60));
-
-                }, i * 1.05)
+                }, Math.floor(i / 1.5))
             }
         }
+
         setTimeout(() => {
-            initialHTMLCanvasAnimation()
-        }, 1000)
+            initialHTMLCanvasAnimationNameIntro()
+        }, 800)
     }
     );
 
