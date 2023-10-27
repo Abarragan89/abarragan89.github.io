@@ -289,6 +289,7 @@ nav a.active {
   font-weight: 900;
   opacity: 0;
   color: rgb(221, 191, 23);
+  color: var(--main-color);
   letter-spacing: 2px;
   font-size: 1.8rem;
   transform: scale(1.02);
@@ -340,7 +341,7 @@ nav a.active {
 
 /* styles for the modal */
 .modalBackdrop {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.4);
   bottom: 0;
   left: 0;
   position: absolute;
@@ -476,6 +477,7 @@ textarea:focus {
   transition: 0.15s;
   display: block;
   margin: 0 auto;
+  margin-bottom: 200px;
   border: 1px solid transparent;
 }
 #contact-submit:hover {
@@ -629,7 +631,8 @@ footer {
   display: flex;
   justify-content: space-around;
   opacity: 1;
-  animation: footerFadeIn 0.8s 1s both;
+  animation: footerFadeIn 1s 1s both;
+
 }
 footer a {
   font-size: 3rem;
