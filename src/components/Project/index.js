@@ -142,7 +142,7 @@ function Project() {
                 className='gallery-cards card-right' id='marquee-project' key={0}>
                 <div class="overlay">
                     <p>{photoData[0].name}</p>
-                    <p>click for details</p>
+                    <p>(click for details)</p>
                 </div>
                 <img src={require(`../../assets/large/${photoData[0].photoRoute}.png`)} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
                 <br />
@@ -163,7 +163,7 @@ function Project() {
                                     className='gallery-cards card-right' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>
-                                        <p>click for details</p>
+                                        <p>(click for details)</p>
                                     </div>
                                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                                 </figure>
@@ -178,7 +178,7 @@ function Project() {
                                     className='gallery-cards card-left' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>
-                                        <p>click for details</p>
+                                        <p>(click for details)</p>
                                     </div>
                                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
                                 </figure>
