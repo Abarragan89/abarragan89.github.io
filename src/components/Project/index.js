@@ -25,7 +25,7 @@ function Project() {
         {
             name: 'Who Nose That?!',
             photoRoute: 'who-nose-that-large',
-            description: 'Who Nose That is a gameboard generator designed to help teachers create fun games inside the classroom. Teachers can create their own gameboards, edit gameboards, copy premade public gameboards, and generate flashcards based on their gameboards with a a click of a single button. There is a student portal where they can login with their teachers username to view all flashcard sets. There is an exciting bonus round if students get the question correct and a random runner up that can steal the points if the current player gets the question incorrect. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
+            description: 'Create your won Jeopardy-style game boards with Who Nose That! Edit gameboards, use public gameboards, and generate flashcards based on their questions with a a click of a single button. Student can study these flashcards through student login. There is an exciting bonus round during gameplay if students get the question correct. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
             url: 'https://who-nose-that.com',
             github: 'https://github.com/Abarragan89/trivia_maker',
             alt: 'landing page for Who Nose That website'
@@ -132,7 +132,7 @@ function Project() {
         document.documentElement.style.overflow = 'auto';
         document.body.style.overflow = 'auto';
     }
-    
+
     return (
         <>
             {/* I don't want the first one in the flex box so It will take the entire row */}
