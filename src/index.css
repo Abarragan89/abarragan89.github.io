@@ -234,7 +234,7 @@ nav a.active {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  width: 650px;
+  width: 600px;
 }
 
 .project-display {
@@ -249,8 +249,8 @@ nav a.active {
   margin-bottom: 10vw;
   /* this is the container for the overlay that is absolute pos */
   position: relative;
-  margin: 30px;
-  flex-basis: 500px;
+  margin: 60px;
+  flex-basis: 450px;
 }
 .overlay {
   position: absolute;
@@ -674,8 +674,18 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  /* so project images take two per row */
+  .gallery-cards {
+    margin: 30px;
+    margin-bottom: 60px;
+    flex-basis: 400px;
+  }
+}
+
 /* media queries */
 @media screen and (max-width: 990px) {
+
   .modalContainer {
     width: 480px;
   }
