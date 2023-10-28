@@ -117,14 +117,22 @@ function Project() {
     const [currentProject, setCurrentProject] = useState('')
 
     function toggleModal(project) {
-        window.scrollTo(0, 0)
+
         setCurrentProject(project)
         setIsModal(!isModal)
+        // disable scrolling
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+
     }
 
     function closeModal() {
         setIsModal(!isModal);
+        // disable scrolling
+        document.documentElement.style.overflow = 'auto';
+        document.body.style.overflow = 'auto';
     }
+    
     return (
         <>
             {/* I don't want the first one in the flex box so It will take the entire row */}

@@ -328,14 +328,15 @@ nav a.active {
 /* styles for the modal */
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.4);
-  bottom: 0;
   left: 0;
-  position: absolute;
-  right: 0;
   top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
   z-index: 900;
   min-height: 265vh;
   min-width: 100vw;
+  overflow: hidden;
 }
 
 .modalContainer {
