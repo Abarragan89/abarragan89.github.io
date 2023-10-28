@@ -103,7 +103,7 @@ function Project() {
     const [loadedElements, setLoadedElements] = useState(false)
     useEffect(() => {
         if (!loadedElements) {
-            Aos.init({ delay: 600 })
+            Aos.init({ delay: 500 })
             setLoadedElements(true)
         } else {
             Aos.init({ delay: 0 })
@@ -111,7 +111,7 @@ function Project() {
     }, [loadedElements]);
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 550)
+        setTimeout(() => Aos.refresh(), 500)
     })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
@@ -138,7 +138,7 @@ function Project() {
             {/* I don't want the first one in the flex box so It will take the entire row */}
             <figure
                 data-aos='zoom-in'
-                data-aos-duration='600'
+                data-aos-duration='500'
                 className='gallery-cards card-right' id='marquee-project' key={0}>
                 <div class="overlay">
                     <p>{photoData[0].name}</p>
@@ -159,7 +159,7 @@ function Project() {
                             <>
                                 <figure
                                     data-aos='slide-left'
-                                    data-aos-duration='600'
+                                    data-aos-duration='500'
                                     className='gallery-cards card-right' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>
@@ -174,7 +174,7 @@ function Project() {
                             <>
                                 <figure
                                     data-aos='slide-right'
-                                    data-aos-duration='600'
+                                    data-aos-duration='500'
                                     className='gallery-cards card-left' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>

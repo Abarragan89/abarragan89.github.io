@@ -95,7 +95,10 @@ nav a.active {
   position: absolute;
   z-index: 10;
   top: 200px;
-  right: 3%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 #homepage-title H1 {
@@ -108,7 +111,7 @@ nav a.active {
   animation: slideName 0.5s 1s both;
   width: 70%;
   margin-bottom: 10px;
-  font-size: 10vw;
+  font-size: 4rem;
 }
 
 @keyframes slideName {
@@ -121,13 +124,14 @@ nav a.active {
 }
 
 #homepage-title h2 {
-  font-size: 6vw;
+  font-size: 2rem;
   position: relative;
   font-family: var(--body-font);
   color: var(--font-color);
   margin-top: 10px;
-  animation: slideTitle 0.5s 1.5s both;
+  animation: slideTitle 0.5s 2.2s both;
 }
+
 @keyframes slideTitle {
   from {
     right: -2000px;
@@ -148,8 +152,10 @@ nav a.active {
 @keyframes growLine {
   to {
     border-bottom: 1px solid var(--main-color);
-    width: 85%;
+    width: 70%;
+    max-width: 400px;
     margin: 0 auto;
+
   }
 }
 
@@ -762,6 +768,7 @@ footer a:hover {
   #marquee-project {
     width: 400px;
   }
+
   .gallery-cards {
     flex: 0 0 400px;
     margin-bottom: 30px;

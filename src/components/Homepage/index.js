@@ -28,7 +28,7 @@ function Homepage() {
                     particlesArray.push(new Particle(ctx, event.x, event.y));
                 }
             })
-        }, 3000)
+        }, 5000)
 
         //we just need to push things into the array and this function is called 
         //in the animate and draws adn clears Rect
@@ -62,9 +62,18 @@ function Homepage() {
         animate();
 
         function initialHTMLCanvasAnimationNameIntro() {
-            for (let i = 0; i < window.innerWidth; i += 8) {
+            for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 60));
+                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 100));
+                }, Math.floor(i / 1.5))
+            }
+        }
+
+        function initialHTMLCanvasAnimationDescriptionIntro() {
+            for (let i = 0; i < window.innerWidth; i += 15) {
+                console.log(i)
+                setTimeout(() => {
+                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) + 20));
                 }, Math.floor(i / 1.5))
             }
         }
@@ -72,6 +81,10 @@ function Homepage() {
         setTimeout(() => {
             initialHTMLCanvasAnimationNameIntro()
         }, 800)
+
+        setTimeout(() => {
+            initialHTMLCanvasAnimationDescriptionIntro();
+        }, 2000)
     }
     );
 
@@ -79,7 +92,7 @@ function Homepage() {
     return (
         <>
             <section id='homepage-title'>
-                <h1>Anthony Barragan</h1>
+                <h1>Anthony <br /> Barragan</h1>
                 <p className='heading-bar'></p>
                 <h2>Full Stack Developer</h2>
             </section>
