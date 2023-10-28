@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b38c55e.css",
+    "main.css": "/static/css/main.79e4c62b.css",
     "main.js": "/static/js/main.4d3b5365.js",
     "static/js/845.095967cf.chunk.js": "/static/js/845.095967cf.chunk.js",
     "static/media/profile-pic.JPG": "/static/media/profile-pic.69fffd405463f1f9549e.JPG",
@@ -22,12 +22,12 @@
     "static/media/snake-game-large.png": "/static/media/snake-game-large.8c1b3d8a017a50526577.png",
     "static/media/click.wav": "/static/media/click.3e307070c0d43972460c.wav",
     "index.html": "/index.html",
-    "main.2b38c55e.css.map": "/static/css/main.2b38c55e.css.map",
+    "main.79e4c62b.css.map": "/static/css/main.79e4c62b.css.map",
     "main.4d3b5365.js.map": "/static/js/main.4d3b5365.js.map",
     "845.095967cf.chunk.js.map": "/static/js/845.095967cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b38c55e.css",
+    "static/css/main.79e4c62b.css",
     "static/js/main.4d3b5365.js"
   ]
 }
