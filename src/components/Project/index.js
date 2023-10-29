@@ -13,7 +13,7 @@ function Project() {
             url: 'https://www.math-fact-missions.com/',
             github: 'https://github.com/Abarragan89/math-missions',
             alt: 'landing page for Math Fact Missions website',
-            technologies: 'Next.Js | MongoDB | Three.Js | Canvas API'
+            technologies: 'Next.Js | MongoDB | Three.Js | Canvas API | Stripe API | Google API'
         },
         {
             name: 'Lunaris Finance',
