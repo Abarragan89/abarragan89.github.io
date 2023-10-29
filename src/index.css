@@ -266,8 +266,7 @@ nav a.active {
   border-radius: 8px;
   width: 100%;
   height: 0%;
-  transition: 0.3s;
-  transform: scale(1.02);
+  transition: 0.25s;
   transition-timing-function: ease-out;
   background: rgba(0, 0, 0, 0.9);
   color: #fff;
@@ -280,15 +279,12 @@ nav a.active {
   margin-bottom: 0;
   font-weight: 900;
   opacity: 0;
-  color: rgb(221, 191, 23);
   color: var(--main-color);
   letter-spacing: 2px;
   font-size: 1.8rem;
-  transform: scale(1.02);
   font-family: var(--body-font);
   padding: 5px 0;
   transition: 0.2s;
-  transition-delay: .15s;
 }
 
 .overlay p:nth-child(2) {
@@ -297,14 +293,29 @@ nav a.active {
   color: var(--font-color)
 }
 
+.overlay p:nth-child(3) {
+  font-size: .9rem;
+  font-weight: 100;
+  color: rgb(221, 191, 23);
+  margin-top: 20px;
+}
+
 .gallery-cards:hover .overlay {
   height: 99%;
 }
+
+/* over lay title */
 .gallery-cards:hover .overlay p:first-child {
   opacity: 100;
   margin-top: 30%;
 }
+/* overlay "click for details"  */
 .gallery-cards:hover .overlay p:nth-child(2) {
+  opacity: 100;
+}
+
+/* overlay technologies */
+.gallery-cards:hover .overlay p:nth-child(3) {
   opacity: 100;
 }
 
@@ -317,9 +328,8 @@ nav a.active {
 .card-right img:hover,
 .card-left img:hover {
   opacity: 100%;
-  transform: scale(1.02, 1.02);
-  transition: 0.15s;
-  transition-delay: .18s;
+  transition: 0.1s;
+  transition-delay: .15s;
   box-shadow: white 0px 0px 15px 0px;
   cursor: pointer;
 }

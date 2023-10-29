@@ -12,7 +12,8 @@ function Project() {
             description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers create student accounts and print their logins. Students progress through their missions to demonstrate mastery. There are interactive flashcards to learn, fun review games, and a quiz to unlock new levels. Students earn points and they can buy game upgrades or skins for their avatar. The Avatars are made using Three.js and are displayed in the rankings. Teachers can track and edit student details on their dashboard. New users are given a 5-day free trial, then they can subscribe via Stripe to continue using this service.',
             url: 'https://www.math-fact-missions.com/',
             github: 'https://github.com/Abarragan89/math-missions',
-            alt: 'landing page for Math Fact Missions website'
+            alt: 'landing page for Math Fact Missions website',
+            technologies: 'Next.Js | MongoDB | Three.Js | Canvas API'
         },
         {
             name: 'Lunaris Finance',
@@ -20,7 +21,9 @@ function Project() {
             description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find trends in your spending habits and limit your spending. This is written in Python and uses Flask and SQLAlchemy to access a SQL database.',
             url: 'https://lunaris-finance.herokuapp.com/',
             github: 'https://github.com/Abarragan89/lunar',
-            alt: 'landing page for Lunaris Finance'
+            alt: 'landing page for Lunaris Finance',
+            technologies: 'Python | Flask | SQLAlchemy | Charts.py'
+
         },
         {
             name: 'Who Nose That?!',
@@ -28,7 +31,9 @@ function Project() {
             description: 'Create your won Jeopardy-style game boards with Who Nose That! Edit gameboards, use public gameboards, and generate flashcards based on their questions with a a click of a single button. Student can study these flashcards through student login. There is an exciting bonus round during gameplay if students get the question correct. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
             url: 'https://who-nose-that.com',
             github: 'https://github.com/Abarragan89/trivia_maker',
-            alt: 'landing page for Who Nose That website'
+            alt: 'landing page for Who Nose That website',
+            technologies: 'React.Js | MongoDB | Express.Js | GraphQL'
+
         },
         {
             name: 'Draw The Line',
@@ -36,7 +41,9 @@ function Project() {
             description: 'Draw the Line is a self-moderated social platform where users can post articles, comment, and engage in debates. The community governs itself by downvoting offensive or unconstructive content. When a post or comment accumulates a 60% downvote rate, it vanishes to ensure majority sentiment prevails. This platform fosters digital democracy and includes real-time private messaging via Socket.io, user-friendly features like friend search, and content sorting based on likes. It features a profanity filter, Nodemailer for email confirmations, Cloudinary for profile picture uploads, and MongoDB as its backend database.',
             url: 'https://draw-the-line-2.herokuapp.com/ ',
             github: 'https://github.com/Abarragan89/draw-the-line-2',
-            alt: 'landing page for Draw the Line website'
+            alt: 'landing page for Draw the Line website',
+            technologies: 'React.Js | MongoDB | Socket.io | GraphQL'
+
         },
         {
             name: 'Dinner and Drinks',
@@ -44,7 +51,9 @@ function Project() {
             description: 'This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions, or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.',
             url: 'https://abarragan89.github.io/dinner-drinks/',
             github: 'https://github.com/Abarragan89/dinner-drinks',
-            alt: 'landing page for Dinner and Drinks website'
+            alt: 'landing page for Dinner and Drinks website',
+            technologies: 'JavaScript| SpoonacularAPI | CocktailDB | Storage API '
+
         },
         // {
         //     name: 'Math Madness',
@@ -60,7 +69,9 @@ function Project() {
             description: 'This a mock landing page for a fictional company called \'Run Buddy\'. This site is fully responsive and uses pure HTML and CSS.',
             url: 'https://abarragan89.github.io/run-buddy/',
             github: 'https://github.com/Abarragan89/run-buddy',
-            alt: 'landing page for Run Buddy website'
+            alt: 'landing page for Run Buddy website',
+            technologies: 'HTML5 | CSS3'
+
         },
         {
             name: 'Weather Watcher',
@@ -68,7 +79,9 @@ function Project() {
             description: 'This a program that gets data from Open Weather API and displays weather info for that city. It will display the current weather information was well as a five day forecast. It will save your recent searches in local storage.',
             url: 'https://abarragan89.github.io/weather-watcher/',
             github: 'https://github.com/Abarragan89/weather-watcher',
-            alt: 'landing page for Weather Watcher website'
+            alt: 'landing page for Weather Watcher website',
+            technologies: 'JavaScript | OpenWeatherAPI | HTML5 | CSS3'
+
         },
         {
             name: 'Work Scheduler',
@@ -76,7 +89,8 @@ function Project() {
             description: 'This is a program that uses the current time to track tasks. The task bars are colored coded depending on whether they are in the past, present, or future. Task can be saved by clicking on the save button.',
             url: 'https://abarragan89.github.io/daily-work-scheduler/',
             github: 'https://github.com/Abarragan89/daily-work-scheduler',
-            alt: 'landing page for Work Day Scheduler website'
+            alt: 'landing page for Work Day Scheduler website',
+            technologies: 'JavaScript | Storage API | HTML5 | CSS3'
         },
         {
             name: 'Treasure Map',
@@ -84,7 +98,8 @@ function Project() {
             description: 'This is a game where you have to click on a page and find the buried treasure. Use the \'hot\' and \'cold\' clues to help you!',
             url: 'https://abarragan89.github.io/treasure-map/',
             github: 'https://github.com/Abarragan89/treasure-map',
-            alt: 'landing page for Treasure Map Game website'
+            alt: 'landing page for Treasure Map Game website',
+            technologies: 'JavaScript | HTML Canvas API | CSS3'
 
         },
         // {
@@ -142,6 +157,7 @@ function Project() {
                 className='gallery-cards card-right' id='marquee-project' key={0}>
                 <div class="overlay">
                     <p>{photoData[0].name}</p>
+                    <p>{photoData[0].technologies}</p>
                     <p>(click for details)</p>
                 </div>
                 <img src={require(`../../assets/large/${photoData[0].photoRoute}.png`)} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
@@ -163,6 +179,7 @@ function Project() {
                                     className='gallery-cards card-right' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>
+                                        <p>{project.technologies}</p>
                                         <p>(click for details)</p>
                                     </div>
                                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
@@ -178,6 +195,7 @@ function Project() {
                                     className='gallery-cards card-left' key={i}>
                                     <div class="overlay">
                                         <p>{project.name}</p>
+                                        <p>{project.technologies}</p>
                                         <p>(click for details)</p>
                                     </div>
                                     <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
