@@ -9,7 +9,7 @@ function Project() {
         {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
-            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers create student accounts and print their logins. Students progress through their missions to demonstrate mastery. There are interactive flashcards to learn, fun review games, and a quiz to unlock new levels. Students earn points and they can buy game upgrades or skins for their avatar. The Avatars are made using Three.js and are displayed in the rankings. Teachers can track and edit student details on their dashboard. New users are given a 5-day free trial, then they can subscribe via Stripe to continue using this service.',
+            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers create student accounts and print their logins. Students progress through their missions to demonstrate mastery. There are interactive flashcards to learn, fun review games, and a quiz to unlock new levels. Students earn points and they can buy game upgrades or skins for their avatar. The Avatars are made using Three.js and are displayed in the rankings. Teachers can track and edit student details on their dashboard. New users are given a 14-day free trial, then they can subscribe via Stripe to continue using this service.',
             url: 'https://www.math-fact-missions.com/',
             github: 'https://github.com/Abarragan89/math-missions',
             alt: 'landing page for Math Fact Missions website',

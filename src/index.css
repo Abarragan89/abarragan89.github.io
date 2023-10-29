@@ -268,22 +268,21 @@ nav a.active {
   height: 0%;
   transition: 0.3s;
   transition-timing-function: ease-out;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
   color: #fff;
   pointer-events: none;
 }
 
 .overlay p {
   text-align: center;
-  margin-top: 0%;
   margin-bottom: 0;
-  font-weight: 900;
   opacity: 0;
   color: var(--main-color);
   letter-spacing: 2px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: var(--body-font);
-  padding: 5px 0;
+  font-weight: 900;
+  line-height: 25px;
   transition: 0.2s;
 }
 
@@ -291,7 +290,7 @@ nav a.active {
   font-size: .95rem;
   font-weight: 100;
   color: rgb(221, 191, 23);
-  margin-top: 10px;
+  margin: 10px 5px;
 }
 
 .overlay p:nth-child(3) {
