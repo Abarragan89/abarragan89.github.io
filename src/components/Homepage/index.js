@@ -28,6 +28,11 @@ function Homepage() {
                     particlesArray.push(new Particle(ctx, event.x, event.y));
                 }
             })
+            // canvas.addEventListener('click', function (event) {
+            //     for (let i = 0; i < 10; i++) {
+            //         particlesArray.push(new Particle(ctx, event.x, event.y));
+            //     }
+            // })
         }, 5000)
 
         //we just need to push things into the array and this function is called 
@@ -71,7 +76,6 @@ function Homepage() {
 
         function initialHTMLCanvasAnimationDescriptionIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
-                console.log(i)
                 setTimeout(() => {
                     particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) - 40));
                 }, Math.floor(i / 1.5))
@@ -90,7 +94,7 @@ function Homepage() {
 
 
     return (
-        <>
+        <main id="home-page-main">
             <section id='homepage-title'>
                 <h1>Anthony <br /> Barragan</h1>
                 <p className='heading-bar'></p>
@@ -98,7 +102,7 @@ function Homepage() {
             </section>
             <canvas ref={canvasEl}>
             </canvas>
-        </>
+        </main>
     )
 
 }
