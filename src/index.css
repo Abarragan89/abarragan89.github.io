@@ -15,9 +15,10 @@ body {
   overflow-x: hidden;
 }
 
-#home-page-main {
+/* I need to  make the homepage main absolute so titles zooming in from either side*/
+/* #home-page-main {
   position: absolute;
-}
+} */
 
 body {
   display: flex;

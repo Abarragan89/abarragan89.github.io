@@ -69,7 +69,7 @@ function Homepage() {
         function initialHTMLCanvasAnimationNameIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 130));
+                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 100));
                 }, Math.floor(i / 1.5))
             }
         }
@@ -77,7 +77,7 @@ function Homepage() {
         function initialHTMLCanvasAnimationDescriptionIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) - 40));
+                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) + 20));
                 }, Math.floor(i / 1.5))
             }
         }
