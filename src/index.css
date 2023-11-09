@@ -488,6 +488,8 @@ input, textarea {
   height: 25px;
   border-radius: 10px;
   box-shadow: inset 5px 5px 5px #8e8e8f, inset -5px -5px 5px rgb(255, 255, 255);
+  -webkit-box-shadow: inset 5px 5px 5px #8e8e8f, inset -5px -5px 5px rgb(255, 255, 255);
+  -moz-box-shadow: inset 5px 5px 5px #8e8e8f, inset -5px -5px 5px rgb(255, 255, 255);
 }
 
 textarea {
