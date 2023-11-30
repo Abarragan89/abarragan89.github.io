@@ -36,13 +36,13 @@ function Project() {
 
         },
         {
-            name: 'Draw The Line',
-            photoRoute: 'draw-the-line-large',
-            description: 'Draw the Line is a self-moderated social platform where users can post articles, comment, and engage in debates. The community governs itself by downvoting offensive or unconstructive content. When a post or comment accumulates a 60% downvote rate, it vanishes to ensure majority sentiment prevails. This platform fosters digital democracy and includes real-time private messaging via Socket.io, user-friendly features like friend search, and content sorting based on likes. It features a profanity filter, Nodemailer for email confirmations, Cloudinary for profile picture uploads, and MongoDB as its backend database.',
-            url: 'https://draw-the-line-2.herokuapp.com/ ',
-            github: 'https://github.com/Abarragan89/draw-the-line-2',
-            alt: 'landing page for Draw the Line website',
-            technologies: 'React.Js | MongoDB | Socket.io | GraphQL'
+            name: 'The Sunday Social',
+            photoRoute: 'the-sunday-social',
+            description: 'This is a social media app I created for people who don\'t use social media. The Sunday Social is for those who want to be on social media one day out of the week... Sunday. It\'s a layback-beach vibe place where you can make a profile, find friends through searchable traits (i.e. relationship status, username, hobbies, school, work, etc.), make posts, comment on posts, like posts, and message friends. The messaging component utilizes Socket.io to create a real time messaging experience, no refresh or reload needed. Make an account and join the wave today!',
+            url: 'https://the-sunday-social-b780c9b989cc.herokuapp.com/',
+            github: 'https://github.com/Abarragan89/the-sunday-social',
+            alt: 'landing page for The Sunday Social website',
+            technologies: 'React.Js | MySQL | Socket.io | GraphQL | Nodemailer'
 
         },
         {
@@ -63,45 +63,45 @@ function Project() {
         //     github: 'https://github.com/Abarragan89/math_madness',
         //     alt: 'landing page for Math Madness website'
         // },
-        {
-            name: 'Run Buddy',
-            photoRoute: 'run-buddy-large',
-            description: 'This a mock landing page for a fictional company called \'Run Buddy\'. This site is fully responsive and uses pure HTML and CSS.',
-            url: 'https://abarragan89.github.io/run-buddy/',
-            github: 'https://github.com/Abarragan89/run-buddy',
-            alt: 'landing page for Run Buddy website',
-            technologies: 'HTML5 | CSS3'
+        // {
+        //     name: 'Run Buddy',
+        //     photoRoute: 'run-buddy-large',
+        //     description: 'This a mock landing page for a fictional company called \'Run Buddy\'. This site is fully responsive and uses pure HTML and CSS.',
+        //     url: 'https://abarragan89.github.io/run-buddy/',
+        //     github: 'https://github.com/Abarragan89/run-buddy',
+        //     alt: 'landing page for Run Buddy website',
+        //     technologies: 'HTML5 | CSS3'
 
-        },
-        {
-            name: 'Weather Watcher',
-            photoRoute: 'weather-watcher-large',
-            description: 'This a program that gets data from Open Weather API and displays weather info for that city. It will display the current weather information was well as a five day forecast. It will save your recent searches in local storage.',
-            url: 'https://abarragan89.github.io/weather-watcher/',
-            github: 'https://github.com/Abarragan89/weather-watcher',
-            alt: 'landing page for Weather Watcher website',
-            technologies: 'JavaScript | OpenWeatherAPI | HTML5 | CSS3'
+        // },
+        // {
+        //     name: 'Weather Watcher',
+        //     photoRoute: 'weather-watcher-large',
+        //     description: 'This a program that gets data from Open Weather API and displays weather info for that city. It will display the current weather information was well as a five day forecast. It will save your recent searches in local storage.',
+        //     url: 'https://abarragan89.github.io/weather-watcher/',
+        //     github: 'https://github.com/Abarragan89/weather-watcher',
+        //     alt: 'landing page for Weather Watcher website',
+        //     technologies: 'JavaScript | OpenWeatherAPI | HTML5 | CSS3'
 
-        },
-        {
-            name: 'Work Scheduler',
-            photoRoute: 'work-scheduler-large',
-            description: 'This is a program that uses the current time to track tasks. The task bars are colored coded depending on whether they are in the past, present, or future. Task can be saved by clicking on the save button.',
-            url: 'https://abarragan89.github.io/daily-work-scheduler/',
-            github: 'https://github.com/Abarragan89/daily-work-scheduler',
-            alt: 'landing page for Work Day Scheduler website',
-            technologies: 'JavaScript | Storage API | HTML5 | CSS3'
-        },
-        {
-            name: 'Treasure Map',
-            photoRoute: 'treasure-map-large',
-            description: 'This is a game where you have to click on a page and find the buried treasure. Use the \'hot\' and \'cold\' clues to help you!',
-            url: 'https://abarragan89.github.io/treasure-map/',
-            github: 'https://github.com/Abarragan89/treasure-map',
-            alt: 'landing page for Treasure Map Game website',
-            technologies: 'JavaScript | HTML Canvas API | CSS3'
+        // },
+        // {
+        //     name: 'Work Scheduler',
+        //     photoRoute: 'work-scheduler-large',
+        //     description: 'This is a program that uses the current time to track tasks. The task bars are colored coded depending on whether they are in the past, present, or future. Task can be saved by clicking on the save button.',
+        //     url: 'https://abarragan89.github.io/daily-work-scheduler/',
+        //     github: 'https://github.com/Abarragan89/daily-work-scheduler',
+        //     alt: 'landing page for Work Day Scheduler website',
+        //     technologies: 'JavaScript | Storage API | HTML5 | CSS3'
+        // },
+        // {
+        //     name: 'Treasure Map',
+        //     photoRoute: 'treasure-map-large',
+        //     description: 'This is a game where you have to click on a page and find the buried treasure. Use the \'hot\' and \'cold\' clues to help you!',
+        //     url: 'https://abarragan89.github.io/treasure-map/',
+        //     github: 'https://github.com/Abarragan89/treasure-map',
+        //     alt: 'landing page for Treasure Map Game website',
+        //     technologies: 'JavaScript | HTML Canvas API | CSS3'
 
-        },
+        // },
         // {
         //     name: 'Snake Game',
         //     photoRoute: 'snake-game-large',
@@ -112,6 +112,8 @@ function Project() {
 
         // }
     ];
+
+    
     // loadedElements is used to first have all elements have a delay, then turn it off so they don't lag
     // This is to let the green line animate first before showing anything
     // If delayed each animation then scrolling is bad experience
