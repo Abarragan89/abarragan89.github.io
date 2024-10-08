@@ -1,0 +1,160 @@
+/* CSS Reset to normalize styles across browsers */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default text decoration on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set a uniform base font style */
+html {
+  font-size: 100%; /* Sets 1rem = 16px */
+  line-height: 1.6; /* Improves readability */
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape on mobile */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Ensure consistent body styling */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improve text rendering */
+}
+
+/* Set a universal box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default button styles */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
+/* Remove default table spacing and borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Ensure images and media do not overflow their containers */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove input, button outlines in Webkit browsers */
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Reset HTML5 form elements */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25em;
+}
+
+/* Set a base for blockquotes */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* Reset heading margins */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+/* Ensure form elements have consistent appearance */
+button,
+input,
+textarea,
+select {
+  border: none;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Ensure anchor tags don't inherit button styles */
+a {
+  cursor: pointer;
+}
+
+/* Prevent vertical scrollbar space from causing layout shift */
+html {
+  overflow-y: scroll;
+}
+
+/* Add basic typography rules */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Set default focus styles for accessibility */
+:focus {
+  outline: 2px solid blue; /* Customize as needed */
+  outline-offset: 2px;
+}
