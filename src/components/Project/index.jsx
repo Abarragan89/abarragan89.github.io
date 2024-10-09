@@ -16,6 +16,16 @@ function Project() {
             technologies: 'Next.Js | MongoDB | Three.Js | Canvas API | Stripe API | Google API'
         },
         {
+            name: 'Cannon Ball Sea',
+            photoRoute: 'cannon-ball',
+            description: 'My first published game on the App Store. 45 levels of fun! Try to hit the TNT handle and watch it explode. Obstacles stand in your way and things do get challenging. Use points earned to level up you cannon and cannon balls to complete all 45 levels and collect all stars! Created using React Native.',
+            url: 'https://apps.apple.com/us/app/cannon-ball-sea/id6736433554',
+            github: 'https://github.com/Abarragan89/cannon-ball',
+            alt: 'link for cannon ball in app store',
+            technologies: 'React Native | Expo | React Native Game Engine | SQLite'
+
+        },
+        {
             name: 'Lunaris Finance',
             photoRoute: 'lunaris-large',
             description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find trends in your spending habits and limit your spending. This is written in Python and uses Flask and SQLAlchemy to access a SQL database.',
@@ -113,7 +123,7 @@ function Project() {
         // }
     ];
 
-    
+
     // loadedElements is used to first have all elements have a delay, then turn it off so they don't lag
     // This is to let the green line animate first before showing anything
     // If delayed each animation then scrolling is bad experience
@@ -162,7 +172,7 @@ function Project() {
                     <p>{photoData[0].technologies}</p>
                     <p>(click for details)</p>
                 </div>
-                <img src={require(`../../assets/large/${photoData[0].photoRoute}.png`)} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
+                <img src={`images/large/${photoData[0].photoRoute}.png`} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
                 <br />
             </figure>
 
@@ -184,7 +194,7 @@ function Project() {
                                         <p>{project.technologies}</p>
                                         <p>(click for details)</p>
                                     </div>
-                                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                                    <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
                                 </figure>
                             </>
                         )
@@ -200,7 +210,7 @@ function Project() {
                                         <p>{project.technologies}</p>
                                         <p>(click for details)</p>
                                     </div>
-                                    <img src={require(`../../assets/large/${project.photoRoute}.png`)} alt={project.alt} onClick={() => toggleModal(project)} />
+                                    <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
                                 </figure>
                             </>
                         )

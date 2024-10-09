@@ -1,6 +1,6 @@
-import Project from "../Project";
+import Project from "../../components/Project";
 
-function Portfolio () {
+function Projects () {
     return (
         <div className='section'>
         <h3 className="section-heading">Projects</h3>
@@ -9,5 +9,5 @@ function Portfolio () {
         </div>
     )
 }
-export default Portfolio;
+export default Projects;
 

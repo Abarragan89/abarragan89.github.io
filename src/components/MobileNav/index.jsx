@@ -2,7 +2,6 @@ import NavLinks from '../NavLinks';
 import {CgMenuRound, CgCloseO} from 'react-icons/cg';
 import { useState } from 'react';
 
-
 function MobileNav () {
     const [open, setOpen] = useState(false)
     const hamburgerIcon = <CgMenuRound className='hamburger' size='35px' color='rgb(0, 255, 76)' onClick={()=> setOpen(!open)}/>
@@ -13,14 +12,14 @@ function MobileNav () {
     }
 
     return (
-        <nav className='mobile-nav'>
+        <div className='mobile-nav'>
             {open ? closeIcon : hamburgerIcon}
             {open && 
             <NavLinks
             isMobile={true} 
             closeMobileMenu={closeMobileMenu}
             />}
-        </nav>
+        </div>
     )
 }
 

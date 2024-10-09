@@ -3,7 +3,7 @@ function Modal({ project, onClose }) {
         <div className='modalBackdrop'>
             <div className="modalContainer">
                 <h3 className='modal-title'>{project.name}</h3>
-                <img className='modal-picture' src={require(`../../assets/large/${project.photoRoute}.png`)} alt='snapshot of chosen project' />
+                <img className='modal-picture' src={`images/large/${project.photoRoute}.png`} alt='snapshot of chosen project' />
                 <p className='modal-description'>{project.description}</p>
                 <div id="modal-btn-group">
                     <a href={project.url} className='modal-links' target='_blank' rel='noopener noreferrer'>Website</a>

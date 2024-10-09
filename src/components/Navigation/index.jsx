@@ -1,9 +1,9 @@
 import NavLinks from '../NavLinks'
 function Navigation () {
     return (
-        <nav className="navigation">
+        <div className="navigation">
             <NavLinks />
-        </nav>
+        </div>
     )
 }
 
