@@ -167,7 +167,7 @@ function Project() {
                 data-aos='zoom-in'
                 data-aos-duration='500'
                 className='gallery-cards card-right' id='marquee-project' key={0}>
-                <div class="overlay">
+                <div className="overlay">
                     <p>{photoData[0].name}</p>
                     <p>{photoData[0].technologies}</p>
                     <p>(click for details)</p>
@@ -181,38 +181,36 @@ function Project() {
                 {photoData.map((project, i) => {
                     {/* Every other project will be given different on scroll events */ }
                     if (i === 0) {
-                        return <></>
+                        return;
                     } else if (i % 2 === 0) {
                         return (
-                            <>
-                                <figure
-                                    data-aos='slide-left'
-                                    data-aos-duration='500'
-                                    className='gallery-cards card-right' key={i}>
-                                    <div class="overlay">
-                                        <p>{project.name}</p>
-                                        <p>{project.technologies}</p>
-                                        <p>(click for details)</p>
-                                    </div>
-                                    <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
-                                </figure>
-                            </>
+                            <figure
+                                data-aos='slide-left'
+                                data-aos-duration='500'
+                                className='gallery-cards card-right'
+                                key={i}
+                            >
+                                <div className="overlay">
+                                    <p>{project.name}</p>
+                                    <p>{project.technologies}</p>
+                                    <p>(click for details)</p>
+                                </div>
+                                <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
+                            </figure>
                         )
                     } else {
                         return (
-                            <>
-                                <figure
-                                    data-aos='slide-right'
-                                    data-aos-duration='500'
-                                    className='gallery-cards card-left' key={i}>
-                                    <div class="overlay">
-                                        <p>{project.name}</p>
-                                        <p>{project.technologies}</p>
-                                        <p>(click for details)</p>
-                                    </div>
-                                    <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
-                                </figure>
-                            </>
+                            <figure
+                                data-aos='slide-right'
+                                data-aos-duration='500'
+                                className='gallery-cards card-left' key={i}>
+                                <div className="overlay">
+                                    <p>{project.name}</p>
+                                    <p>{project.technologies}</p>
+                                    <p>(click for details)</p>
+                                </div>
+                                <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
+                            </figure>
                         )
                     }
                 }

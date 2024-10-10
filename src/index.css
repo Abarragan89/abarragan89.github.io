@@ -200,6 +200,7 @@ main {
 }
 nav a.active {
   color: var(--font-color);
+  border-bottom: 1px solid var(--font-color);
   cursor: pointer;
 }
 
@@ -880,7 +881,6 @@ footer a:hover {
     padding-bottom: 20px;
   }
   .link-el {
-    font-size: 1.2em;
     margin-left: 0px;
   }
   .link-el:first-child {
@@ -923,10 +923,6 @@ footer a:hover {
   }
   nav ul li {
     padding-left: 5%;
-    padding-bottom: 20px;
-  }
-  .link-el {
-    font-size: 1.1em;
     padding-bottom: 20px;
   }
 
