@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 20px;
+  animation: footerFadeIn 1s 3s both;
+}
+footer p {
+  color: var(--main-color);
+}
+footer a {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+footer a {
+  margin-right: 40px;
+}
+footer a:hover {
+  color: var(--font-color);
+}
+
+@keyframes footerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

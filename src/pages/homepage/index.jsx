@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 import Particle from '../../../utils/Particle';
+import { GoTriangleDown } from "react-icons/go";
+import './index.css';
+
 function Homepage() {
 
     // target the Canvas and set up Animation
@@ -93,6 +96,9 @@ function Homepage() {
             </section>
             <canvas ref={canvasEl}>
             </canvas>
+            <div className='homepageDownArrow'>
+            <GoTriangleDown />
+            </div>
         </main>
     )
 

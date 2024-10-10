@@ -1,0 +1,129 @@
+@media screen and (max-width: 1200px) {
+  /* so project images take two per row */
+  .gallery-cards {
+    margin: 30px;
+    margin-bottom: 60px;
+    flex-basis: 400px;
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 990px) {
+  .modalContainer {
+    width: 480px;
+  }
+
+  #about-me-write {
+    font-size: 1.3em;
+  }
+  #quote {
+    font-size: 1.2em;
+  }
+
+  .gallery-cards {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* don't display dots in navlinks in mobile */
+  .link-dot {
+    display: none;
+  }
+  /* adjust navigation */
+  .header {
+    top: 20px;
+  }
+  .section {
+    margin-top: 50px;
+  }
+  .navigation {
+    display: none;
+  }
+  .mobile-nav {
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 100%;
+    background-color: #181818;
+  }
+  nav ul li {
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+  .link-el {
+    margin-left: 0px;
+  }
+  .link-el:first-child {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  /* adjust size of project figures */
+  #marquee-project {
+    width: 400px;
+  }
+
+  .gallery-cards {
+    flex: 0 0 400px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .modalContainer {
+    width: 330px;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #181818;
+    border-top: 2px solid;
+  }
+  nav ul li {
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+
+  #about-me-write {
+    font-size: 1em;
+  }
+  #quote {
+    font-size: 0.9em;
+  }
+
+  /* adjust size of project figures */
+  #marquee-project {
+    width: 350px;
+  }
+  .gallery-cards {
+    flex: 0 0 350px;
+    margin-bottom: 30px;
+  }
+}

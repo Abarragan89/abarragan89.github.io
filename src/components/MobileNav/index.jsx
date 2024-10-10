@@ -1,8 +1,7 @@
 import NavLinks from '../NavLinks';
-import {CgMenuRound, CgCloseO} from 'react-icons/cg';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
-
+import './index.css';
 
 import { useState } from 'react';
 

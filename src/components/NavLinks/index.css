@@ -1,0 +1,36 @@
+.link-el {
+  font-size: 1em;
+  font-family: var(--body-font);
+  color: var(--main-color);
+  display: inline;
+}
+.link-el {
+  margin-left: 40px;
+}
+.link-el:first-child {
+  margin-left: 0;
+}
+.link-el:hover {
+  color: var(--font-color);
+}
+.link-el a {
+  text-decoration: none;
+  font-size: 1.25em;
+}
+nav a.active {
+  color: var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  cursor: pointer;
+}
+
+.link-dot {
+  height: 5px;
+  width: 5px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: -3px;
+  animation: fadeInAboutMe 0.8s 0.5s both;
+}

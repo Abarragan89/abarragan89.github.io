@@ -1,6 +1,6 @@
 import Navigation from '../Navigation';
 import MobileNav from '../MobileNav';
-
+import './index.css';
 function Header() {
     return (
         <div className='header'>

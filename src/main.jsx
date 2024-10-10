@@ -6,7 +6,8 @@ import About from './pages/about';
 import Layout from './components/Layout';
 import Projects from './pages/projects';
 import PrintResume from './pages/PrintResume';
-import './index.css'
+import './reset.css';
+import './mediaQueries.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

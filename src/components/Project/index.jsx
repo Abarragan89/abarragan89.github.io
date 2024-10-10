@@ -2,6 +2,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import Modal from '../Modal';
+import './index.css';
 
 function Project() {
     // Photos are 1000 by 800 PX

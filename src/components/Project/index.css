@@ -1,0 +1,106 @@
+/* Styles for the portfolio */
+#marquee-project {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.project-display {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.gallery-cards {
+  margin-bottom: 10vw;
+  /* this is the container for the overlay that is absolute pos */
+  position: relative;
+  margin: 60px;
+  flex-basis: 450px;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  z-index: 99;
+  border-radius: 8px;
+  width: 100%;
+  height: 0%;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  background: rgba(0, 0, 0, 0.92);
+  color: #fff;
+  pointer-events: none;
+}
+
+.overlay p {
+  text-align: center;
+  margin-bottom: 0;
+  opacity: 0;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  font-family: var(--body-font);
+  font-weight: 900;
+  line-height: 25px;
+  transition: 0.2s;
+}
+
+.overlay p:nth-child(2) {
+  font-size: 0.95rem;
+  font-weight: 100;
+  color: rgb(221, 191, 23);
+  margin: 10px 5px;
+}
+
+.overlay p:nth-child(3) {
+  color: var(--font-color);
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-top: 60px;
+}
+
+.gallery-cards:hover .overlay {
+  height: 99%;
+}
+
+/* over lay title */
+.gallery-cards:hover .overlay p:first-child {
+  opacity: 100;
+  margin-top: 30%;
+}
+/* overlay "click for details"  */
+.gallery-cards:hover .overlay p:nth-child(2) {
+  opacity: 100;
+}
+
+/* overlay technologies */
+.gallery-cards:hover .overlay p:nth-child(3) {
+  opacity: 100;
+}
+
+.gallery-cards img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(119, 117, 117);
+}
+
+.card-right img:hover,
+.card-left img:hover {
+  opacity: 100%;
+  transition: 0.1s;
+  transition-delay: 0.15s;
+  box-shadow: white 0px 0px 15px 0px;
+  cursor: pointer;
+}
+
+.gallery-cards img:not(:hover) {
+  transition: 0.15s;
+}
+
+.reveal {
+  border: 3px solid var(--main-color);
+}

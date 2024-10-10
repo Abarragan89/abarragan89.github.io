@@ -1,0 +1,37 @@
+#profile-pic {
+  display: block;
+  width: 10vw;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 10vw;
+}
+
+#about-me-write {
+  font-size: 2vw;
+  letter-spacing: 0.01em;
+  font-family: var(--body-font);
+  width: 90%;
+  text-align: center;
+  margin: 5vw auto;
+  color: var(--font-color);
+}
+#quote {
+  font-size: 1.7vw;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--font-color);
+  font-style: italic;
+}
+#profile-section {
+  opacity: 100%;
+  animation: fadeInAboutMe 0.8s 0.8s both;
+}
+@keyframes fadeInAboutMe {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

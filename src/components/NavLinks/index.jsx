@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 // sounds
 import useSound from 'use-sound';
 import clickSound from '../../assets/sounds/click.wav';
+import './index.css';
 
 function NavLinks({ closeMobileMenu, isMobile }) {
     const [playSwish] = useSound(clickSound, { volume: '.5' });

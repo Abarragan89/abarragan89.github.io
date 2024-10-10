@@ -1,0 +1,14 @@
+#resume-pdf {
+  margin-top: 90px;
+  margin-bottom: 5%;
+}
+#resume-pdf embed {
+  display: block;
+  margin: 20px auto 0;
+  width: 80%;
+  height: 600px;
+}
+#resume-pdf a {
+  text-align: center;
+  width: 20%;
+}

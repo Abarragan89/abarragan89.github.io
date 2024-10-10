@@ -1,0 +1,99 @@
+/* styles for the modal */
+.modalBackdrop {
+  background: rgba(0, 0, 0, 0.75);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 900;
+  min-height: 265vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+.modalContainer {
+  border-radius: 5px;
+  width: 600px;
+  margin: 50px auto;
+  position: relative;
+  top: -1000px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgb(11, 10, 10);
+  box-shadow: var(--font-color) 0px 0px 15px 0px;
+  animation: modalSlideUp 0.45s both;
+}
+.modal-picture {
+  border: 1px solid gray;
+  width: 50%;
+  border-radius: 8px;
+}
+
+.modal-title {
+  color: rgb(221, 191, 23);
+  font-size: var(--body-font);
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: var(--body-font);
+}
+.modal-description {
+  color: var(--font-color);
+  font-family: var(--body-font);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 8px;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+
+#modal-btn-group {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.modal-links {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.modal-links:hover {
+  background-color: rgb(221, 191, 23);
+  cursor: pointer;
+}
+.modal-links:active {
+  background-color: var(--font-color);
+}
+.modal-btn-close {
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(198, 4, 4);
+  border: none;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+.modal-btn-close:active {
+  background-color: var(--font-color);
+}
+.modal-btn-close:hover {
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes modalSlideUp {
+  to {
+    top: 0;
+  }
+}
