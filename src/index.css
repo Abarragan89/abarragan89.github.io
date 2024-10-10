@@ -38,7 +38,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
   -moz-osx-font-smoothing: grayscale; /* Improve text rendering */
-  background: url("./background.png") no-repeat center center fixed;
+  background: url("/background.png") no-repeat center center fixed;
   -webkit-background-size: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -906,7 +906,7 @@ footer a:hover {
   .navigation {
     display: none;
   }
-  
+
   .mobile-nav .hamburger {
     position: absolute;
     right: 5%;
