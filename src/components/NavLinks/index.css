@@ -1,5 +1,4 @@
 .link-el {
-  font-size: 1em;
   font-family: var(--body-font);
   color: var(--main-color);
   display: inline;
@@ -15,7 +14,7 @@
 }
 .link-el a {
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.15rem;
 }
 nav a.active {
   color: var(--font-color);
@@ -24,8 +23,8 @@ nav a.active {
 }
 
 .link-dot {
-  height: 5px;
-  width: 5px;
+  height: 2px;
+  width: 7px;
   background-color: var(--main-color);
   border-radius: 50%;
   display: inline-block;

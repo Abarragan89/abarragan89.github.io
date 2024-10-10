@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Particle from '../../../utils/Particle';
 import { GoTriangleDown } from "react-icons/go";
+import About from '../../components/About';
 import './index.css';
 
 function Homepage() {
@@ -9,7 +10,6 @@ function Homepage() {
     const canvasEl = useRef(null);
     const particlesArray = [];
 
-    // Conditionally render this useEffect to create Canvas Logic
     useEffect(() => {
         const canvas = canvasEl.current
         const ctx = canvas.getContext('2d');
@@ -20,6 +20,7 @@ function Homepage() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         })
+
         // Create particles on mousemove
         // delay this listener so the initial animation can run
         // setTimeout(() => {
@@ -31,6 +32,7 @@ function Homepage() {
         // }, 5000)
         //we just need to push things into the array and this function is called 
         //in the animate and draws adn clears Rect
+
         function handleParticles() {
             for (let i = 0; i < particlesArray.length; i += 2) {
                 particlesArray[i].update();
@@ -63,7 +65,7 @@ function Homepage() {
         function initialHTMLCanvasAnimationNameIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 50));
+                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 150));
                 }, Math.floor(i / 1.5))
             }
         }
@@ -71,34 +73,97 @@ function Homepage() {
         function initialHTMLCanvasAnimationDescriptionIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) + 50));
+                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) - 50));
                 }, Math.floor(i / 1.5))
             }
         }
 
-        setTimeout(() => {
-            initialHTMLCanvasAnimationNameIntro()
-        }, 800)
 
-        setTimeout(() => {
+
+        // Timeout functions
+        const nameIntroTimeout = setTimeout(() => {
+            initialHTMLCanvasAnimationNameIntro();
+        }, 800);
+
+        const descriptionIntroTimeout = setTimeout(() => {
             initialHTMLCanvasAnimationDescriptionIntro();
-        }, 2000)
-    }
-    );
+        }, 2000);
 
+        // Cleanup function to clear timeouts
+        return () => {
+            clearTimeout(nameIntroTimeout);
+            clearTimeout(descriptionIntroTimeout);
+        }
+    }, []);
+
+
+    const [scrollY, setScrollY] = useState(0);
+
+    const [style, setStyle] = useState({
+        textAlign: 'center',
+        position: "fixed",
+        top: '200px',
+        left: '0',
+        right: '0',
+    });
+    const [downArrowStyle, setDownArrowStyle] = useState({});
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setScrollY(scrollPosition);
+            console.log('scroll position ', scrollPosition)
+
+            const newTop = Math.max(-25, 200 - scrollPosition); // Move upwards
+            const newLeft = Math.max(-window.innerWidth + 175, 0 - scrollPosition * 3); // Move left
+            const newScale = Math.max(0.35, 1 - (scrollPosition / 200))
+
+            // set Styles for header when scrolling
+            setStyle({
+                textAlign: 'center',
+                position: 'fixed',
+                top: `${newTop}px`,
+                left: `${newLeft}px`,
+                right: '0px',
+                transform: `scale(${newScale})`,
+                transition: '0.2', // Smooth transition
+            });
+
+            // Make Dowon arrow disappear
+            if (scrollPosition > 10) {
+                setDownArrowStyle({
+                    display: 'none'
+                })
+            } else {
+                setDownArrowStyle({
+                    display: 'block'
+                })
+            }
+        };
+
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup the event listener on unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [scrollY]);
 
     return (
-        <main id="home-page-main">
-            <section id='homepage-title'>
-                <h1>Anthony <br /> Barragan</h1>
+        <main>
+            <div id='homepage-title' style={style}>
+                <h1>Anthony Barragan</h1>
                 <p className='heading-bar'></p>
                 <h2>Full Stack Developer</h2>
-            </section>
-            <canvas ref={canvasEl}>
-            </canvas>
-            <div className='homepageDownArrow'>
-            <GoTriangleDown />
+                <div className='homepageDownArrow' style={downArrowStyle}>
+                    <GoTriangleDown />
+                </div>
             </div>
+
+            <canvas ref={canvasEl}></canvas>
+
+            <About />
         </main>
     )
 

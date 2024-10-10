@@ -32,7 +32,7 @@
   }
   /* adjust navigation */
   .header {
-    top: 20px;
+    top: 10px;
   }
   .section {
     margin-top: 50px;
@@ -41,7 +41,6 @@
     display: none;
   }
   .mobile-nav {
-    padding: 0.5em;
     display: flex;
     align-items: center;
   }

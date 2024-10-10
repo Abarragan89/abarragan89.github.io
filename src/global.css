@@ -2,7 +2,6 @@
   --main-color: rgb(0, 255, 76);
   --font-color: rgb(204, 210, 222);
   --body-font: "Lato", "sans-serif";
-  --title-font: "Merriweather", serif;
 }
 
 /* CSS Reset to normalize styles across browsers */
@@ -24,6 +23,7 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* Prevent vertical scrollbar space from causing layout shift */
@@ -61,13 +61,7 @@ select {
   padding: 0;
   margin: 0;
   appearance: none;
-}
-
-/* Remove default table spacing and borders */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
+  border-radius: 0;
 }
 
 /* Remove input, button outlines in Webkit browsers */
@@ -93,47 +87,6 @@ legend {
   font-size: 1.25em;
 }
 
-/* Set a base for blockquotes */
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-/* Reset heading margins */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: inherit;
-}
-
-/* Ensure form elements have consistent appearance */
-button,
-input,
-textarea,
-select {
-  border: none;
-  background: none;
-  border-radius: 0;
-  padding: 0;
-}
-
-/* Ensure anchor tags don't inherit button styles */
-a {
-  cursor: pointer;
-}
-
 /* Add basic typography rules */
 p,
 h1,
@@ -145,6 +98,8 @@ h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 /* styles for all sections */
@@ -165,6 +120,7 @@ h6 {
   padding: 5px;
   animation: slideHeadingDown 0.8s 0.5s both;
 }
+
 @keyframes slideHeadingDown {
   from {
     letter-spacing: 0.2em;
@@ -187,6 +143,23 @@ h6 {
     color: var(--font-color);
     text-align: center;
     padding: 5px;
+  }
+}
+
+/* grow line in homepage and section */
+.heading-bar {
+  border-bottom: 1px solid var(--main-color);
+  width: 0%;
+  margin: 0 auto;
+  animation: growLine 0.8s 0.3s both;
+}
+
+@keyframes growLine {
+  to {
+    border-bottom: 1px solid var(--main-color);
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 

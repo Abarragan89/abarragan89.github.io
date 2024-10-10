@@ -5,7 +5,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   margin: 0 20px;
-  animation: footerFadeIn 1s 3s both;
+  animation: footerFadeIn 1s 4s both;
 }
 footer p {
   color: var(--main-color);
@@ -26,6 +26,6 @@ footer a:hover {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: .7;
   }
 }
