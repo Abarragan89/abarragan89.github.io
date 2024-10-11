@@ -1,13 +1,13 @@
 .header {
   position: fixed;
-  height: 80px;
   width: 100%;
-  /* position: absolute; */
-  z-index: 400;
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
+  align-items: center;
   padding-right: 20px;
+  height: 60px;
+  background-color: var(--black);
+  z-index: 1;
 }
 
 

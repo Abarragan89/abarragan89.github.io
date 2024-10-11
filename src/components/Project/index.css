@@ -40,7 +40,7 @@
   text-align: center;
   margin-bottom: 0;
   opacity: 0;
-  color: var(--main-color);
+  color: var(--green-accent);
   letter-spacing: 2px;
   font-size: 1.6rem;
   font-family: var(--body-font);
@@ -52,7 +52,7 @@
 .overlay p:nth-child(2) {
   font-size: 0.95rem;
   font-weight: 100;
-  color: rgb(221, 191, 23);
+  color: var(--yellow-accent);
   margin: 10px 5px;
 }
 

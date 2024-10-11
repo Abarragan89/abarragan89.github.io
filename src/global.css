@@ -1,6 +1,10 @@
 :root {
-  --main-color: rgb(0, 255, 76);
+  /* --green-accent: rgb(0, 255, 76); */
+  --green-accent: rgb(14, 193, 68);
   --font-color: rgb(204, 210, 222);
+  --yellow-accent: rgb(221, 191, 23);
+  --black: rgb(25 23 23);
+  --card-bg: rgba(1, 5, 11, 0.413);
   --body-font: "Lato", "sans-serif";
 }
 
@@ -41,7 +45,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -148,7 +151,7 @@ h6 {
 
 /* grow line in homepage and section */
 .heading-bar {
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--green-accent);
   width: 0%;
   margin: 0 auto;
   animation: growLine 0.8s 0.3s both;
@@ -156,14 +159,14 @@ h6 {
 
 @keyframes growLine {
   to {
-    border-bottom: 1px solid var(--main-color);
-    width: 70%;
+    border-bottom: 1px solid var(--green-accent);
+    width: 20%;
     max-width: 400px;
     margin: 0 auto;
   }
 }
 
-/* Styles for indented text-boxes */
+/* Styles for indented text-boxes They looked cool so i keep the styles here*/
 
 /* input,
 textarea {

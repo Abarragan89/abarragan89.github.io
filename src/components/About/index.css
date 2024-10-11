@@ -1,3 +1,7 @@
+#profile-section {
+  margin-top: 50px;
+}
+
 #profile-pic {
   display: block;
   width: 10vw;
@@ -23,10 +27,7 @@
   color: var(--font-color);
   font-style: italic;
 }
-#profile-section {
-  opacity: 100%;
-  animation: fadeInAboutMe 0.8s 0.8s both;
-}
+
 @keyframes fadeInAboutMe {
   from {
     opacity: 0%;

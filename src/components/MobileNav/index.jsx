@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 function MobileNav () {
     const [open, setOpen] = useState(false)
-    const hamburgerIcon = <RxHamburgerMenu className='hamburger' size='30px' color='rgb(0, 255, 76)' onClick={()=> setOpen(!open)}/>
-    const closeIcon = <IoCloseOutline className='hamburger' size='35px' color='rgb(0, 255, 76)' onClick={()=> setOpen(!open)}/>
+    const hamburgerIcon = <RxHamburgerMenu className='hamburger' size='30px' color='rgb(14, 193, 68)' onClick={()=> setOpen(!open)}/>
+    const closeIcon = <IoCloseOutline className='hamburger' size='35px' color='rgb(14, 193, 68)' onClick={()=> setOpen(!open)}/>
 
 
     function closeMobileMenu () {

@@ -5,6 +5,7 @@ import Homepage from './pages/homepage';
 import Layout from './components/Layout';
 import Projects from './pages/projects';
 import PrintResume from './pages/Resume';
+import ScrollToTop from './components/ScrollToTop';
 import './global.css';
 import './mediaQueries.css'
 
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/portfolio" element={<Projects />} />

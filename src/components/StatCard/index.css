@@ -1,0 +1,61 @@
+/* Container for the ratings table */
+.ratings-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Title above the table */
+.table-title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--yellow-accent);
+  font-family: var(--body-font);
+}
+
+/* Card styling */
+.ratings-card {
+  width: 350px;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--font-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+}
+
+/* Each row in the table */
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--font-color);
+}
+
+/* Label for each row */
+.rating-label {
+  font-size: 1.1rem;
+  margin-right: 20px;
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
+
+/* Container for the stars */
+.rating-stars {
+  display: flex;
+}
+
+/* Star styling */
+.starOn {
+  color: var(--yellow-accent);
+  margin-right: 4px;
+  font-size: 1.4rem;
+}
+.starOff {
+  color: var(--yellow-accent);
+  opacity: 0.3;
+  margin-right: 4px;
+  font-size: 1.4rem;
+}

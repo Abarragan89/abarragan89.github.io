@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Particle from '../../../utils/Particle';
 import { GoTriangleDown } from "react-icons/go";
 import About from '../../components/About';
+import StatSection from '../../components/StatSection';
 import './index.css';
 
 function Homepage() {
@@ -14,7 +15,7 @@ function Homepage() {
         const canvas = canvasEl.current
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight - 50;
+        canvas.height = window.innerHeight + 100;
 
         window.addEventListener('resize', function () {
             canvas.width = window.innerWidth;
@@ -151,7 +152,7 @@ function Homepage() {
     }, [scrollY]);
 
     return (
-        <main>
+        <main id="homepage-main">
             <div id='homepage-title' style={style}>
                 <h1>Anthony Barragan</h1>
                 <p className='heading-bar'></p>
@@ -163,6 +164,35 @@ function Homepage() {
 
             <canvas ref={canvasEl}></canvas>
 
+            <div className='sub-heading'>
+                <h2>Developer Ratings</h2>
+                <div className='ratings-key-main-div'>
+                    <div className='star-rating-key-div'>
+                        <p>★</p>
+                        <h5>Familiar</h5>
+                    </div>
+                    <div className='star-rating-key-div'>
+                        <div className='star-key-div'>
+                            <p>★</p>
+                            <p>★</p>
+                        </div>
+                        <h5>Utilized</h5>
+                    </div>
+                    <div className='star-rating-key-div'>
+                        <div className='star-key-div'>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                        </div>
+                        <h5>Proficient</h5>
+                    </div>
+                </div>
+            </div>
+
+            <StatSection />
+            <div className='sub-heading'>
+                <h2>About Me</h2>
+            </div>
             <About />
         </main>
     )
