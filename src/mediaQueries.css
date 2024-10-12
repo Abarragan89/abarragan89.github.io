@@ -119,7 +119,9 @@
     padding-left: 5%;
     padding-bottom: 20px;
   }
-
+  #about-me-write {
+    text-align: justify;
+  }
   #quote {
     font-size: 0.9em;
   }

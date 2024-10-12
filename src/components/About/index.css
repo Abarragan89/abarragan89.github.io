@@ -29,7 +29,7 @@
   font-family: var(--body-font);
   padding: 0 30px;
   color: var(--font-color);
-  min-width: 575px;
+  min-width: 375px;
   margin: 0 auto;
 }
 
