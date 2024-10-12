@@ -1,16 +1,15 @@
 import './index.css'
 
-export default function StatCard({ cardData }) {
+export default function StatCard({ cardData, indexNumber }) {
     return (
         <div 
         className="ratings-card-container"
-        data-aos='flip-left'
+        data-aos={indexNumber % 2 === 0 ? 'flip-left' : 'flip-right'}
         data-aos-offset='200'
         data-aos-duration='1500'
         >
             {/* Table Title */}
             <h2 className="table-title">{cardData.category}</h2>
-            {/* <h2 className="table-title">{title}</h2> */}
 
             {/* Ratings Table */}
             <div className="ratings-card">

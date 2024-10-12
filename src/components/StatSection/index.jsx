@@ -150,8 +150,7 @@ export default function StatSection() {
                     <div key={index} className={`${index === 0 ? 'first-stat-card' : 'stat-card'}`}>
                         <StatCard
                             cardData={cardData}
-                            // data-aos={index % 2 === 0 ? 'flip-left' : 'flip-right'}
-                            // data-aos-offset='200'
+                            indexNumber={index}
                         />
                     </div>
                 )
