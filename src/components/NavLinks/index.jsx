@@ -32,16 +32,6 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.1 }}
-                className={`link-el`}
-                onClick={closeHamburger}
-            ><NavLink to='/about' className={'link-el'}>About</NavLink></motion.li >
-
-            <span className='link-dot'></span>
-
-            <motion.li
-                initial={animateFrom}
-                animate={animateTo}
                 transition={{ delay: 0.20 }}
                 className={`link-el`}
                 onClick={closeHamburger}

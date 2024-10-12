@@ -1,6 +1,4 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useState } from 'react';
 import Modal from '../Modal';
 import './index.css';
 
@@ -124,23 +122,6 @@ function Project() {
         // }
     ];
 
-
-    // loadedElements is used to first have all elements have a delay, then turn it off so they don't lag
-    // This is to let the green line animate first before showing anything
-    // If delayed each animation then scrolling is bad experience
-    const [loadedElements, setLoadedElements] = useState(false)
-    useEffect(() => {
-        if (!loadedElements) {
-            Aos.init({ delay: 500 })
-            setLoadedElements(true)
-        } else {
-            Aos.init({ delay: 0 })
-        };
-    }, [loadedElements]);
-    // refresh on scroll package to ensure attributes are added after they have been loaded
-    useLayoutEffect(() => {
-        setTimeout(() => Aos.refresh(), 500)
-    })
     const [isModal, setIsModal] = useState(false)
     const [currentProject, setCurrentProject] = useState('')
 
@@ -186,7 +167,7 @@ function Project() {
                     } else if (i % 2 === 0) {
                         return (
                             <figure
-                                data-aos='slide-left'
+                                data-aos='fade-left'
                                 data-aos-duration='500'
                                 className='gallery-cards card-right'
                                 key={i}
@@ -202,7 +183,7 @@ function Project() {
                     } else {
                         return (
                             <figure
-                                data-aos='slide-right'
+                                data-aos='fade-right'
                                 data-aos-duration='500'
                                 className='gallery-cards card-left' key={i}>
                                 <div className="overlay">

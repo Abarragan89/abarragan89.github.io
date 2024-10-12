@@ -1,6 +1,14 @@
 .stat-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.stat-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.first-stat-card {
+  grid-column: 1/3;
 }

@@ -129,6 +129,10 @@ export default function StatSection() {
                     rating: 2
                 },
                 {
+                    name: 'WordPress',
+                    rating: 1
+                },
+                {
                     name: 'Ability to Learn!',
                     rating: 3
                 },
@@ -143,9 +147,11 @@ export default function StatSection() {
         <section className='stat-section'>
             {skillData && skillData.map((cardData, index) => {
                 return (
-                    <div key={index}>
+                    <div key={index} className={`${index === 0 ? 'first-stat-card' : 'stat-card'}`}>
                         <StatCard
                             cardData={cardData}
+                            // data-aos={index % 2 === 0 ? 'flip-left' : 'flip-right'}
+                            // data-aos-offset='200'
                         />
                     </div>
                 )

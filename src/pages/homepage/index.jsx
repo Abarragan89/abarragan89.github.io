@@ -15,7 +15,7 @@ function Homepage() {
         const canvas = canvasEl.current
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight + 100;
+        canvas.height = window.innerHeight;
 
         window.addEventListener('resize', function () {
             canvas.width = window.innerWidth;
@@ -107,7 +107,7 @@ function Homepage() {
         left: '0',
         right: '0',
     });
-    const [downArrowStyle, setDownArrowStyle] = useState({});
+    const [downArrowStyle, setDownArrowStyle] = useState({ display: 'block' });
 
     useEffect(() => {
         const handleScroll = () => {
@@ -132,17 +132,11 @@ function Homepage() {
 
             // Make Dowon arrow disappear
             if (scrollPosition > 10) {
-                setDownArrowStyle({
-                    display: 'none'
-                })
+                setDownArrowStyle({ display: 'none' })
             } else {
-                setDownArrowStyle({
-                    display: 'block'
-                })
+                setDownArrowStyle({ display: 'block' })
             }
         };
-
-
         window.addEventListener("scroll", handleScroll);
 
         // Cleanup the event listener on unmount
@@ -164,7 +158,12 @@ function Homepage() {
 
             <canvas ref={canvasEl}></canvas>
 
-            <div className='sub-heading'>
+            <div
+                className={'homepage-subheadings'}
+                data-aos='fade-up'
+                data-aos-offset='200'
+                data-aos-duration='1500'
+            >
                 <h2>Developer Ratings</h2>
                 <div className='ratings-key-main-div'>
                     <div className='star-rating-key-div'>
@@ -190,7 +189,11 @@ function Homepage() {
             </div>
 
             <StatSection />
-            <div className='sub-heading'>
+            <div
+                className='homepage-subheadings'
+                data-aos='fade-up'
+                data-aos-duration='1500'
+            >
                 <h2>About Me</h2>
             </div>
             <About />

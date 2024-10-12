@@ -95,19 +95,20 @@
   }
 }
 
-.sub-heading {
+.homepage-subheadings {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   position: sticky;
-  top: 60px;
+  top: -1000px;
   background-color: var(--black);
   padding: 10px 50px;
   z-index: 10;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  animation: dropDown 5s both;
 }
 
-.sub-heading h2 {
+.homepage-subheadings h2 {
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 1.5rem;
@@ -139,4 +140,13 @@
 .star-rating-key-div h5 {
   font-size: 0.9rem;
   color: var(--font-color);
+}
+
+@keyframes dropDown {
+  from {
+    top: -1000px
+  }
+  to {
+    top: 60px;
+  }
 }

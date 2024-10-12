@@ -1,28 +1,42 @@
 #profile-section {
-  margin-top: 50px;
+  margin: 50px;
+}
+
+#profile-section figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#profile-section img {
+  flex: 1;
+}
+#profile-section figcaption {
+  flex: 4;
 }
 
 #profile-pic {
   display: block;
-  width: 10vw;
-  border-radius: 50px;
-  margin: 0 auto;
-  margin-bottom: 10vw;
+  border-radius: 30px;
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
 #about-me-write {
-  font-size: 1.1rem;
-  letter-spacing: 0.01em;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
   font-family: var(--body-font);
-  width: 90%;
-  text-align: center;
-  margin: 5vw auto;
+  padding: 0 30px;
   color: var(--font-color);
+  min-width: 575px;
+  margin: 0 auto;
 }
+
 #quote {
   font-size: 1.7vw;
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
   color: var(--font-color);
   font-style: italic;

@@ -1,9 +1,13 @@
 import './index.css'
 
 export default function StatCard({ cardData }) {
-    console.log('card ', cardData)
     return (
-        <div className="ratings-card-container">
+        <div 
+        className="ratings-card-container"
+        data-aos='flip-left'
+        data-aos-offset='200'
+        data-aos-duration='1500'
+        >
             {/* Table Title */}
             <h2 className="table-title">{cardData.category}</h2>
             {/* <h2 className="table-title">{title}</h2> */}
