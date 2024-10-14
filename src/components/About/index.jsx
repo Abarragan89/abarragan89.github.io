@@ -38,7 +38,6 @@ function About() {
                             </ul>
                         </CardImgSection>
                         <CardImgSection
-                            reverse={true}
                             imgSrc='/images/small/LMUlogo.png'
                             title='Master&#39;s in Education'
                         >
@@ -59,6 +58,7 @@ function About() {
                     </Card>
                     <Card title='Work Experience'>
                         <CardImgSection
+                            reverse={true}
                             imgSrc='/images/small/EdXlogo.png'
                             title='MERN Stack Teaching Assistant'
                         >
@@ -80,6 +80,7 @@ function About() {
                         <CardImgSection
                             imgSrc='/images/small/VCAlogo.png'
                             title='General Education Teacher'
+                            reverse={true}
                         >
                             <ul className='list-in-card'>
                                 <li>Village Charter Academy</li>
