@@ -141,8 +141,6 @@ export default function StatSection() {
 
     ]);
 
-    console.log(skillData)
-
     return (
         <section className='stat-section'>
             {skillData && skillData.map((cardData, index) => {
@@ -150,7 +148,6 @@ export default function StatSection() {
                     <div key={index} className={`${index === 0 ? 'first-stat-card' : 'stat-card'}`}>
                         <StatCard
                             cardData={cardData}
-                            indexNumber={index}
                         />
                     </div>
                 )

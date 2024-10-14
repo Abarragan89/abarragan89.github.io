@@ -6,7 +6,6 @@ import StatSection from '../../components/StatSection';
 import './index.css';
 
 function Homepage() {
-
     // target the Canvas and set up Animation
     const canvasEl = useRef(null);
     const particlesArray = [];
@@ -21,18 +20,6 @@ function Homepage() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         })
-
-        // Create particles on mousemove
-        // delay this listener so the initial animation can run
-        // setTimeout(() => {
-        //     canvas.addEventListener('mousemove', function (event) {
-        //         for (let i = 0; i < 1; i++) {
-        //             particlesArray.push(new Particle(ctx, event.x, event.y));
-        //         }
-        //     })
-        // }, 5000)
-        //we just need to push things into the array and this function is called 
-        //in the animate and draws adn clears Rect
 
         function handleParticles() {
             for (let i = 0; i < particlesArray.length; i += 2) {
@@ -97,8 +84,9 @@ function Homepage() {
         }
     }, []);
 
-
+    // How far the user has scrolled
     const [scrollY, setScrollY] = useState(0);
+    const aboutMeSubitleEl = useRef(null)
 
     const [style, setStyle] = useState({
         textAlign: 'center',
@@ -108,13 +96,11 @@ function Homepage() {
         right: '0',
     });
     const [downArrowStyle, setDownArrowStyle] = useState({ display: 'block' });
-
+    const [developerSubtitleStyles, setDeveloperSubtitleStyles] = useState({})
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             setScrollY(scrollPosition);
-            console.log('scroll position ', scrollPosition)
-
             const newTop = Math.max(-25, 200 - scrollPosition); // Move upwards
             const newLeft = Math.max(-window.innerWidth + 175, 0 - scrollPosition * 3); // Move left
             const newScale = Math.max(0.35, 1 - (scrollPosition / 200))
@@ -136,9 +122,20 @@ function Homepage() {
             } else {
                 setDownArrowStyle({ display: 'block' })
             }
-        };
-        window.addEventListener("scroll", handleScroll);
 
+            // check if about me subtitle is coming and replace over developer ratings
+            const aboutMePos = aboutMeSubitleEl.current.getBoundingClientRect();
+            // make developer rating title disappear when about me is taking over
+            console.log(aboutMePos)
+            if (aboutMePos.y <= 100) {
+                setDeveloperSubtitleStyles({ display: 'none'})
+                console.log('in here')
+            } else {
+                setDeveloperSubtitleStyles({ display: 'flex'})
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
         // Cleanup the event listener on unmount
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -163,6 +160,7 @@ function Homepage() {
                 data-aos='fade-up'
                 data-aos-offset='200'
                 data-aos-duration='1500'
+                style={developerSubtitleStyles}
             >
                 <h2>Developer Ratings</h2>
                 <div className='ratings-key-main-div'>
@@ -194,7 +192,7 @@ function Homepage() {
                 data-aos='fade-up'
                 data-aos-duration='1500'
             >
-                <h2>About Me</h2>
+                <h2 ref={aboutMeSubitleEl}>About Me</h2>
             </div>
             <About />
         </main>

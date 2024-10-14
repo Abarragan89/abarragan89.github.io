@@ -9,6 +9,13 @@
 
 /* media queries */
 @media screen and (max-width: 990px) {
+  #profile-section figure {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me-write {
+    text-align: justify;
+  }
   .modalContainer {
     width: 480px;
   }
@@ -26,6 +33,10 @@
   /* homepage stat cards need to stack */
   .stat-card {
     grid-column: 1/3;
+  }
+
+  .about-me-card-section {
+    display: block;
   }
 
   .sub-heading {
@@ -119,9 +130,7 @@
     padding-left: 5%;
     padding-bottom: 20px;
   }
-  #about-me-write {
-    text-align: justify;
-  }
+
   #quote {
     font-size: 0.9em;
   }

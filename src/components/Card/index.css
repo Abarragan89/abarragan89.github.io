@@ -1,0 +1,27 @@
+/* Container for the ratings table */
+.ratings-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
+
+/* Title above the table */
+.table-title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--yellow-accent);
+}
+
+/* Card styling */
+.ratings-card {
+  min-width: 370px;
+  max-width: 370px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--font-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+}
