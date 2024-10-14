@@ -4,6 +4,8 @@ import { GoTriangleDown } from "react-icons/go";
 import About from '../../components/About';
 import StatSection from '../../components/StatSection';
 import './index.css';
+import Project from '../../components/Project';
+import PrintResume from '../Resume';
 
 function Homepage() {
     // target the Canvas and set up Animation
@@ -97,6 +99,7 @@ function Homepage() {
     });
     const [downArrowStyle, setDownArrowStyle] = useState({ display: 'block' });
     const [developerSubtitleStyles, setDeveloperSubtitleStyles] = useState({})
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
@@ -124,14 +127,13 @@ function Homepage() {
             }
 
             // check if about me subtitle is coming and replace over developer ratings
-            const aboutMePos = aboutMeSubitleEl.current.getBoundingClientRect();
+            const aboutMeSubEl = aboutMeSubitleEl.current.getBoundingClientRect();
+
             // make developer rating title disappear when about me is taking over
-            console.log(aboutMePos)
-            if (aboutMePos.y <= 100) {
-                setDeveloperSubtitleStyles({ display: 'none'})
-                console.log('in here')
+            if (aboutMeSubEl.y <= 100) {
+                setDeveloperSubtitleStyles({ opacity: '0' })
             } else {
-                setDeveloperSubtitleStyles({ display: 'flex'})
+                setDeveloperSubtitleStyles({ opacity: '1' })
             }
         };
 
@@ -155,11 +157,13 @@ function Homepage() {
 
             <canvas ref={canvasEl}></canvas>
 
+            <div id='ratings'></div>
+
             <div
-                className={'homepage-subheadings'}
-                data-aos='fade-up'
+                className='homepage-subheadings'
+                data-aos='flip-up'
                 data-aos-offset='200'
-                data-aos-duration='1500'
+                data-aos-duration='1200'
                 style={developerSubtitleStyles}
             >
                 <h2>Developer Ratings</h2>
@@ -187,14 +191,48 @@ function Homepage() {
             </div>
 
             <StatSection />
+
+            {/*  I just have this div so it scrolls down at the correct place */}
+            <div id='about'></div>
             <div
                 className='homepage-subheadings'
-                data-aos='fade-up'
-                data-aos-duration='1500'
+                data-aos='flip-up'
+                data-aos-offset='200'
+                data-aos-duration='1200'
+                ref={aboutMeSubitleEl}
             >
-                <h2 ref={aboutMeSubitleEl}>About Me</h2>
+                <h2>About Me</h2>
             </div>
             <About />
+
+
+            <div id='projects'></div>
+
+            <div
+                className='homepage-subheadings'
+                data-aos='flip-up'
+                data-aos-offset='200'
+                data-aos-duration='1200'
+            >
+                <h2>Projects</h2>
+            </div>
+
+            <Project />
+
+
+            <div id='resume'></div>
+
+            <div
+                className='homepage-subheadings'
+                data-aos='flip-up'
+                data-aos-offset='200'
+                data-aos-duration='1200'
+            >
+                <h2>Resume</h2>
+            </div>
+
+            <PrintResume />
+
         </main>
     )
 

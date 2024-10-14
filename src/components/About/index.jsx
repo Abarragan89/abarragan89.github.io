@@ -74,7 +74,7 @@ function About() {
                         >
                             <ul className='list-in-card'>
                                 <li>America On Tech</li>
-                                <li>Exp. 3 years</li>
+                                <li>Exp. 1 year</li>
                             </ul>
                         </CardImgSection>
                         <CardImgSection

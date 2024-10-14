@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         } else {
             Aos.init({ delay: 0 })
         };
-        // setTimeout(() => Aos.refresh(), 500)
+        setTimeout(() => Aos.refresh(), 500)
     }, [])
 
     return (

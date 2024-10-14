@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter, BrowserRouter } from 'react-router-dom';
 import Homepage from './pages/homepage';
 import Layout from './components/Layout';
 import Projects from './pages/projects';
@@ -11,7 +11,9 @@ import './mediaQueries.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    {/* <HashRouter> */}
+
+    <BrowserRouter>
       <Layout>
         <ScrollToTop />
         <Routes>
@@ -20,6 +22,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/resume" element={<PrintResume />} />
         </Routes>
       </Layout>
-    </HashRouter>
-  </StrictMode>,
+    
+    </BrowserRouter>
+    {/* </HashRouter> */}
+  </StrictMode>
 )
