@@ -17,8 +17,10 @@
 
 /* Card styling */
 .ratings-card {
-  min-width: 370px;
-  max-width: 370px;
+  /* width: 100%;
+  max-width: 370px; */
+  width: 80%;
+  max-width: 400px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--font-color);

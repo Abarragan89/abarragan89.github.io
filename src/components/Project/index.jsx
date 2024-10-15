@@ -145,7 +145,7 @@ function Project() {
     return (
         <>
             {/* I don't want the first one in the flex box so It will take the entire row */}
-            <figure
+            {/* <figure
                 data-aos='zoom-in'
                 data-aos-duration='500'
                 className='gallery-cards card-right' id='marquee-project' key={0}>
@@ -156,19 +156,17 @@ function Project() {
                 </div>
                 <img src={`images/large/${photoData[0].photoRoute}.png`} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
                 <br />
-            </figure>
+            </figure> */}
 
             <section className='project-display section'>
                 {isModal && <Modal project={currentProject} onClose={closeModal} />}
                 {photoData.map((project, i) => {
                     {/* Every other project will be given different on scroll events */ }
-                    if (i === 0) {
-                        return;
-                    } else if (i % 2 === 0) {
+                    if (i % 2 === 0) {
                         return (
                             <figure
-                                data-aos='fade-left'
-                                data-aos-duration='500'
+                                data-aos='flip-left'
+                                data-aos-duration='1500'
                                 className='gallery-cards card-right'
                                 key={i}
                             >
@@ -183,8 +181,8 @@ function Project() {
                     } else {
                         return (
                             <figure
-                                data-aos='fade-right'
-                                data-aos-duration='500'
+                                data-aos='flip-right'
+                                data-aos-duration='1500'
                                 className='gallery-cards card-left' key={i}>
                                 <div className="overlay">
                                     <p>{project.name}</p>

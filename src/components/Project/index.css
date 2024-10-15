@@ -1,25 +1,26 @@
 /* Styles for the portfolio */
-#marquee-project {
+/* #marquee-project {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
   max-width: 600px;
-}
+} */
 
 .project-display {
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 100px;
+  overflow-x: hidden;
+
 }
 .gallery-cards {
   margin-bottom: 10vw;
-  /* this is the container for the overlay that is absolute pos */
-  position: relative;
-  margin: 60px;
+  width: 80%;
+  max-width: 400px;
+  margin: 50px;
 }
 .overlay {
   position: absolute;
@@ -83,7 +84,7 @@
 }
 
 .gallery-cards img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
   border: 1px solid rgb(119, 117, 117);
 }
