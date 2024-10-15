@@ -33,6 +33,7 @@ a {
 /* Prevent vertical scrollbar space from causing layout shift */
 html {
   overflow-x: hidden;
+  scroll-padding-top: 100px;
 }
 
 /* Ensure consistent body styling */
@@ -104,11 +105,6 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.4;
-}
-
-/* styles for all sections */
-.section {
-  margin-top: 80px;
 }
 
 .section-heading {

@@ -1,11 +1,4 @@
 /* Styles for the portfolio */
-/* #marquee-project {
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 600px;
-} */
-
 .project-display {
   margin-top: 5%;
   display: flex;
@@ -13,8 +6,6 @@
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 100px;
-  overflow-x: hidden;
-
 }
 .gallery-cards {
   margin-bottom: 10vw;
@@ -50,6 +41,18 @@
   transition: 0.2s;
 }
 
+.project-name {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  position: absolute;
+  top: -35px;
+  letter-spacing: 2px;
+  left: 0;
+  right: 0;
+  color: var(--yellow-accent);
+  font-family: var(--body-font);
+}
+
 .overlay p:nth-child(2) {
   font-size: 0.95rem;
   font-weight: 100;
@@ -65,22 +68,19 @@
 }
 
 .gallery-cards:hover .overlay {
+  display: "none";
   height: 99%;
 }
 
 /* over lay title */
 .gallery-cards:hover .overlay p:first-child {
-  opacity: 100;
   margin-top: 30%;
 }
-/* overlay "click for details"  */
-.gallery-cards:hover .overlay p:nth-child(2) {
+.gallery-cards:hover .overlay p {
   opacity: 100;
 }
-
-/* overlay technologies */
-.gallery-cards:hover .overlay p:nth-child(3) {
-  opacity: 100;
+.gallery-cards:hover .project-name {
+  animation: slideDown .5s both;
 }
 
 .gallery-cards img {
@@ -104,4 +104,13 @@
 
 .reveal {
   border: 3px solid var(--main-color);
+}
+
+@keyframes slideDown {
+  from {
+    top: -40px;
+  }
+  to {
+    top: 60px;
+  }
 }

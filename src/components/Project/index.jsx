@@ -143,60 +143,26 @@ function Project() {
     }
 
     return (
-        <>
-            {/* I don't want the first one in the flex box so It will take the entire row */}
-            {/* <figure
-                data-aos='zoom-in'
-                data-aos-duration='500'
-                className='gallery-cards card-right' id='marquee-project' key={0}>
-                <div className="overlay">
-                    <p>{photoData[0].name}</p>
-                    <p>{photoData[0].technologies}</p>
-                    <p>(click for details)</p>
-                </div>
-                <img src={`images/large/${photoData[0].photoRoute}.png`} alt={photoData[0].alt} onClick={() => toggleModal(photoData[0])} />
-                <br />
-            </figure> */}
-
             <section className='project-display section'>
                 {isModal && <Modal project={currentProject} onClose={closeModal} />}
-                {photoData.map((project, i) => {
-                    {/* Every other project will be given different on scroll events */ }
-                    if (i % 2 === 0) {
-                        return (
-                            <figure
-                                data-aos='flip-left'
-                                data-aos-duration='1500'
-                                className='gallery-cards card-right'
-                                key={i}
-                            >
-                                <div className="overlay">
-                                    <p>{project.name}</p>
-                                    <p>{project.technologies}</p>
-                                    <p>(click for details)</p>
-                                </div>
-                                <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
-                            </figure>
-                        )
-                    } else {
-                        return (
-                            <figure
-                                data-aos='flip-right'
-                                data-aos-duration='1500'
-                                className='gallery-cards card-left' key={i}>
-                                <div className="overlay">
-                                    <p>{project.name}</p>
-                                    <p>{project.technologies}</p>
-                                    <p>(click for details)</p>
-                                </div>
-                                <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
-                            </figure>
-                        )
-                    }
-                }
+                {photoData.map((project, i) =>
+                    <figure
+                        data-aos={i % 2 === 0 ? 'flip-right' : 'flip-left'}
+                        data-aos-duration='1500'
+                        className='gallery-cards card-right'
+                        key={i}
+                        id={i === 1 ? 'marquee-project' : ''}
+                    >
+                        <h4 className='project-name'>{project.name}</h4>
+                        <div className="overlay">
+                            <p>{project.name}</p>
+                            <p>{project.technologies}</p>
+                            <p>(click for details)</p>
+                        </div>
+                        <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
+                    </figure>
                 )}
             </section>
-        </>
     )
 }
 export default Project;

@@ -4,7 +4,7 @@
   display: inline;
 }
 .link-el {
-  margin-left: 40px;
+  margin: 10px;
 }
 .link-el:first-child {
   margin-left: 0;
@@ -14,7 +14,7 @@
 }
 .link-el a {
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 nav a.active {
   color: var(--font-color);

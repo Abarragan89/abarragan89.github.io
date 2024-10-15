@@ -95,27 +95,6 @@
   }
 }
 
-.homepage-subheadings {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  position: sticky;
-  top: -1000px;
-  background-color: var(--black);
-  padding: 10px 30px;
-  z-index: 1;
-  margin-bottom: 80px;
-  animation: dropDown 5s both;
-}
-
-.homepage-subheadings h2 {
-  font-weight: bold;
-  letter-spacing: 3px;
-  font-size: 1.8rem;
-  padding: 0 10px;
-  color: var(--green-accent);
-  font-family: var(--body-font);
-}
 .ratings-key-main-div {
   display: flex;
   justify-content: space-between;
@@ -145,7 +124,7 @@
 
 @keyframes dropDown {
   from {
-    top: -1000px
+    top: -1000px;
   }
   to {
     top: 60px;

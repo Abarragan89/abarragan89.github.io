@@ -21,15 +21,15 @@ function NavLinks({ closeMobileMenu, isMobile }) {
 
 
     const sections = [
-        { id: 'ratings', label: 'Section 1' },
-        { id: 'marquee-project', label: 'Section 2' },
-        { id: 'homepage-title', label: 'Section 3' },
-        { id: 'resume', label: 'Section 4' },
-        { id: 'profile-pic', label: 'Section 4' },
+        { id: 'ratings' },
+        { id: 'projects'},
+        { id: 'homepage-title' },
+        { id: 'resume'},
+        { id: 'about'},
     ];
 
 
-    const [activeSection, setActiveSection] = useState('homepage-title');
+    const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
         const handleObserver = (entries) => {
@@ -37,17 +37,17 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setActiveSection(entry.target.id);
-                    console.log('active section ', activeSection)
                 }
             });
         };
 
         const observer = new IntersectionObserver(handleObserver, {
-            threshold: 1, // Trigger when 70% of the section is visible
+            threshold: .7, // Trigger when 70% of the section is visible
         });
 
         sections.forEach((section) => {
             const sectionElement = document.getElementById(section.id);
+            console.log('section element ', sectionElement)
             if (sectionElement) observer.observe(sectionElement);
         });
 
@@ -66,7 +66,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
                 <a href="/#homepage-main" className={`${activeSection === 'homepage-title' ? 'active' : ''}`}>Home</a>
             </motion.li >
 
-            <span className='link-dot'></span>
+            {/* <span className='link-dot'></span> */}
 
             <motion.li
                 initial={animateFrom}
@@ -78,7 +78,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
                 <a href="#ratings" className={`${activeSection === 'ratings' ? 'active' : ''}`}>Skills</a>
             </motion.li >
 
-            <span className='link-dot'></span>
+            {/* <span className='link-dot'></span> */}
 
             <motion.li
                 initial={animateFrom}
@@ -87,10 +87,10 @@ function NavLinks({ closeMobileMenu, isMobile }) {
                 className={`link-el`}
                 onClick={closeHamburger}
             >
-                <a href="#about" className={`${activeSection === 'profile-pic' ? 'active' : ''}`}>About</a>
+                <a href="#about" className={`${activeSection === 'about' ? 'active' : ''}`}>About</a>
             </motion.li >
 
-            <span className='link-dot'></span>
+            {/* <span className='link-dot'></span> */}
 
             <motion.li
                 initial={animateFrom}
@@ -99,10 +99,10 @@ function NavLinks({ closeMobileMenu, isMobile }) {
                 className={`link-el`}
                 onClick={closeHamburger}
             >
-                <a href="#projects" className={`${activeSection === 'marquee-project' ? 'active' : ''}`}>Projects</a>
+                <a href="#projects" className={`${activeSection === 'projects' ? 'active' : ''}`}>Projects</a>
             </motion.li >
 
-            <span className='link-dot'></span>
+            {/* <span className='link-dot'></span> */}
 
             <motion.li
                 initial={animateFrom}

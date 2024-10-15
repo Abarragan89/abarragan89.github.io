@@ -6,6 +6,7 @@ import StatSection from '../../components/StatSection';
 import './index.css';
 import Project from '../../components/Project';
 import PrintResume from '../Resume';
+import Heading from '../../components/Heading';
 
 function Homepage() {
     // target the Canvas and set up Animation
@@ -98,15 +99,15 @@ function Homepage() {
         right: '0',
     });
     const [downArrowStyle, setDownArrowStyle] = useState({ display: 'block' });
-    const [developerSubtitleStyles, setDeveloperSubtitleStyles] = useState({})
+    // const [developerSubtitleStyles, setDeveloperSubtitleStyles] = useState({})
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             setScrollY(scrollPosition);
-            const newTop = Math.max(-25, 200 - scrollPosition); // Move upwards
-            const newLeft = Math.max(-window.innerWidth + 175, 0 - scrollPosition * 3); // Move left
-            const newScale = Math.max(0.35, 1 - (scrollPosition / 200))
+            const newTop = Math.max(-20, 200 - scrollPosition); // Move upwards
+            const newLeft = Math.max(-window.innerWidth + 220, 0 - scrollPosition * 3); // Move left
+            const newScale = Math.max(0.43, 1 - (scrollPosition / 200))
 
             // set Styles for header when scrolling
             setStyle({
@@ -127,14 +128,14 @@ function Homepage() {
             }
 
             // check if about me subtitle is coming and replace over developer ratings
-            const aboutMeSubEl = aboutMeSubitleEl.current.getBoundingClientRect();
+            // const aboutMeSubEl = aboutMeSubitleEl.current.getBoundingClientRect();
 
             // make developer rating title disappear when about me is taking over
-            if (aboutMeSubEl.y <= 100) {
-                setDeveloperSubtitleStyles({ opacity: '0' })
-            } else {
-                setDeveloperSubtitleStyles({ opacity: '1' })
-            }
+            // if (aboutMeSubEl.y <= 100) {
+            //     setDeveloperSubtitleStyles({ opacity: '0' })
+            // } else {
+            //     setDeveloperSubtitleStyles({ opacity: '1' })
+            // }
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -157,9 +158,8 @@ function Homepage() {
 
             <canvas ref={canvasEl}></canvas>
 
-            <div id='ratings'></div>
 
-            <div
+            {/* <div
                 className='homepage-subheadings'
                 data-aos='flip-up'
                 data-aos-offset='200'
@@ -188,48 +188,23 @@ function Homepage() {
                         <h5>Proficient</h5>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <Heading text='Developer Ratings' id='ratings' />
+
 
             <StatSection />
 
-            {/*  I just have this div so it scrolls down at the correct place */}
-            <div id='about'></div>
-            <div
-                className='homepage-subheadings'
-                data-aos='flip-up'
-                data-aos-offset='200'
-                data-aos-duration='1200'
-                ref={aboutMeSubitleEl}
-            >
-                <h2>About Me</h2>
-            </div>
+            <Heading text='About Me' id='about' />
+
             <About />
 
+            <Heading text='Projects' id='projects' />
 
-            <div id='projects'></div>
-
-            <div
-                className='homepage-subheadings'
-                data-aos='flip-up'
-                data-aos-offset='200'
-                data-aos-duration='1200'
-            >
-                <h2>Projects</h2>
-            </div>
 
             <Project />
 
-
-            <div id='resume'></div>
-
-            <div
-                className='homepage-subheadings'
-                data-aos='flip-up'
-                data-aos-offset='200'
-                data-aos-duration='1200'
-            >
-                <h2>Resume</h2>
-            </div>
+            <Heading text='Resume' id='resume' />
 
             <PrintResume />
 

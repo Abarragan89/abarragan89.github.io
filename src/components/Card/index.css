@@ -17,9 +17,8 @@
 
 /* Card styling */
 .ratings-card {
-  /* width: 100%;
-  max-width: 370px; */
   width: 80%;
+  min-width: 340px;
   max-width: 400px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
