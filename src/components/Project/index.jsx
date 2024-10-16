@@ -8,7 +8,7 @@ function Project() {
         {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
-            description: 'This is a full-stack, subscription-based application for teachers built on the Next.Js framework. Teachers create student accounts and print their logins. Students progress through their missions to demonstrate mastery. There are interactive flashcards to learn, fun review games, and a quiz to unlock new levels. Students earn points and they can buy game upgrades or skins for their avatar. The Avatars are made using Three.js and are displayed in the rankings. Teachers can track and edit student details on their dashboard. New users are given a 14-day free trial, then they can subscribe via Stripe to continue using this service.',
+            description: 'This is a full-stack, subscription-based Next.js app for teachers. Teachers create student accounts, track progress, and edit details via a dashboard. Students complete missions, play review games, and take quizzes to earn points and unlock upgrades for Three.js avatars, while learning their math facts!',
             url: 'https://www.math-fact-missions.com/',
             github: 'https://github.com/Abarragan89/math-missions',
             alt: 'landing page for Math Fact Missions website',
@@ -27,7 +27,7 @@ function Project() {
         {
             name: 'Lunaris Finance',
             photoRoute: 'lunaris-large',
-            description: 'This is a full-stack expense tracker application designed for mobile devices(PWA). Enter you monthly income to keep track of your budget. Customize your categories, add expenses, enter reoccurring monthly charges, add cash deposits, and we’ll show you your net profit every month. Lunaris saves your history so you’ll be able to see breakdown of previous months and get a snapshot of the entire year. Find trends in your spending habits and limit your spending. This is written in Python and uses Flask and SQLAlchemy to access a SQL database.',
+            description: 'This is a mobile-optimized full-stack expense tracker (PWA). Enter your income, track expenses, customize categories, and view net profit monthly. Lunaris saves history for breakdowns of past months and yearly snapshots, helping you identify spending trends. Built with Python, Flask, and SQLAlchemy for SQL database access.',
             url: 'https://lunaris-finance.herokuapp.com/',
             github: 'https://github.com/Abarragan89/lunar',
             alt: 'landing page for Lunaris Finance',
@@ -37,7 +37,7 @@ function Project() {
         {
             name: 'Who Nose That?!',
             photoRoute: 'who-nose-that-large',
-            description: 'Create your won Jeopardy-style game boards with Who Nose That! Edit gameboards, use public gameboards, and generate flashcards based on their questions with a a click of a single button. Student can study these flashcards through student login. There is an exciting bonus round during gameplay if students get the question correct. This was all designed with student engagement and teacher usability at the forefront. Although geared toward educators anyone can make an account and make their own board. Fun for parties and get-togethers!',
+            description: 'Create your own Jeopardy-style game boards with Who Nose That! Edit or use public game boards and generate flashcards from questions with a click. Students can study flashcards via their login, and there\'s a bonus round for correct answers. Designed for student engagement and teacher usability, anyone can create an account and make their own board—perfect for parties and gatherings!',
             url: 'https://who-nose-that.com',
             github: 'https://github.com/Abarragan89/trivia_maker',
             alt: 'landing page for Who Nose That website',
@@ -47,7 +47,7 @@ function Project() {
         {
             name: 'The Sunday Social',
             photoRoute: 'the-sunday-social',
-            description: 'This is a social media app I created for people who don\'t use social media. The Sunday Social is for those who want to be on social media one day out of the week... Sunday. It\'s a layback-beach vibe place where you can make a profile, find friends through searchable traits (i.e. relationship status, username, hobbies, school, work, etc.), make posts, comment on posts, like posts, and message friends. The messaging component utilizes Socket.io to create a real time messaging experience, no refresh or reload needed. Make an account and join the wave today!',
+            description: 'The Sunday Social is a social media app for those who want to connect once a week—specifically on Sundays. It features a laid-back, beach vibe where users can create profiles, find friends through searchable traits, make posts, comment, like, and message each other. The app uses Socket.io for real-time messaging and group chatting. Join the wave today!',
             url: 'https://the-sunday-social-b780c9b989cc.herokuapp.com/',
             github: 'https://github.com/Abarragan89/the-sunday-social',
             alt: 'landing page for The Sunday Social website',
@@ -57,7 +57,7 @@ function Project() {
         {
             name: 'Dinner and Drinks',
             photoRoute: 'dinner-drinks-large',
-            description: 'This is a program that helps you find food and alcohol recipes based on cuisine, dietary restrictions, or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.',
+            description: 'Let us help you find food and alcohol recipes based on cuisine, dietary restrictions, or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.',
             url: 'https://abarragan89.github.io/dinner-drinks/',
             github: 'https://github.com/Abarragan89/dinner-drinks',
             alt: 'landing page for Dinner and Drinks website',
@@ -143,26 +143,26 @@ function Project() {
     }
 
     return (
-            <section className='project-display section'>
-                {isModal && <Modal project={currentProject} onClose={closeModal} />}
-                {photoData.map((project, i) =>
-                    <figure
-                        data-aos={i % 2 === 0 ? 'flip-right' : 'flip-left'}
-                        data-aos-duration='1500'
-                        className='gallery-cards card-right'
-                        key={i}
-                        id={i === 1 ? 'marquee-project' : ''}
-                    >
-                        <h4 className='project-name'>{project.name}</h4>
-                        <div className="overlay">
-                            <p>{project.name}</p>
-                            <p>{project.technologies}</p>
-                            <p>(click for details)</p>
-                        </div>
-                        <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
-                    </figure>
-                )}
-            </section>
+        <section className='project-display section'>
+            {isModal && <Modal project={currentProject} onClose={closeModal} />}
+            {photoData.map((project, i) =>
+                <figure
+                    data-aos={i % 2 === 0 ? 'flip-right' : 'flip-left'}
+                    data-aos-duration='1500'
+                    className='gallery-cards card-right'
+                    key={i}
+                    id={i === 1 ? 'marquee-project' : ''}
+                >
+                    <h4 className='project-name'>{project.name}</h4>
+                    <div className="overlay">
+                        <p>{project.name}</p>
+                        <p>{project.technologies}</p>
+                        <p>(click for details)</p>
+                    </div>
+                    <img src={`images/large/${project.photoRoute}.png`} alt={project.alt} onClick={() => toggleModal(project)} />
+                </figure>
+            )}
+        </section>
     )
 }
 export default Project;

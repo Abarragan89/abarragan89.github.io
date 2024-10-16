@@ -17,7 +17,7 @@ function Homepage() {
         const canvas = canvasEl.current
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight + 60;
+        canvas.height = window.innerHeight;
 
         window.addEventListener('resize', function () {
             canvas.width = window.innerWidth;
@@ -56,7 +56,7 @@ function Homepage() {
         function initialHTMLCanvasAnimationNameIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, i, (window.innerHeight / 2) - 150));
+                    particlesArray.push(new Particle(ctx, i, 320));
                 }, Math.floor(i / 1.5))
             }
         }
@@ -64,12 +64,10 @@ function Homepage() {
         function initialHTMLCanvasAnimationDescriptionIntro() {
             for (let i = 0; i < window.innerWidth; i += 15) {
                 setTimeout(() => {
-                    particlesArray.push(new Particle(ctx, window.innerWidth - i, (window.innerHeight / 2) - 50));
+                    particlesArray.push(new Particle(ctx, window.innerWidth - i, 400));
                 }, Math.floor(i / 1.5))
             }
         }
-
-
 
         // Timeout functions
         const nameIntroTimeout = setTimeout(() => {
@@ -89,12 +87,11 @@ function Homepage() {
 
     // How far the user has scrolled
     const [scrollY, setScrollY] = useState(0);
-    const aboutMeSubitleEl = useRef(null)
 
     const [style, setStyle] = useState({
         textAlign: 'center',
         position: "fixed",
-        top: '200px',
+        top: '300px',
         left: '0',
         right: '0',
     });
@@ -105,8 +102,8 @@ function Homepage() {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             setScrollY(scrollPosition);
-            const newTop = Math.max(-20, 200 - scrollPosition); // Move upwards
-            const newLeft = Math.max(-window.innerWidth + 220, 0 - scrollPosition * 3); // Move left
+            const newTop = Math.max(-15, 300 - scrollPosition); // Move upwards
+            const newLeft = Math.max(-window.innerWidth + 210, 0 - scrollPosition * 3); // Move left
             const newScale = Math.max(0.43, 1 - (scrollPosition / 200))
 
             // set Styles for header when scrolling
