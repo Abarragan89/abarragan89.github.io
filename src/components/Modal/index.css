@@ -1,6 +1,6 @@
 /* styles for the modal */
 .modalBackdrop {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   left: 0;
   top: 0;
   bottom: 0;
@@ -18,17 +18,17 @@
   margin: 50px auto;
   position: relative;
   top: -1000px;
-  padding: 20px;
-  background-color: var(--black);
+  padding: 30px 20px;
   background-color: rgb(0, 0, 0);
-  box-shadow: var(--font-color) 0px 0px 15px -5px;
+  box-shadow: var(--font-color) 0px 0px 20px -2px;
+  border: 1px solid rgba(255, 255, 255, 0.551);
   animation: modalSlideUp 0.45s both;
 }
 
 .closeModalX {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 8px;
+  right: 10px;
   color: var(--green-accent);
 }
 

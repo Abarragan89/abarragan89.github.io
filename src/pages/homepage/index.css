@@ -98,7 +98,20 @@
 
 .ratings-key-main-div {
   display: flex;
-  justify-content: space-between;
+  width: fit-content;
+  margin: 0 auto;
+  position: sticky;
+  top: 70px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  padding: 5px 20px;
+  border-radius: 0 0 8px 8px;
+  margin-top: -35px;
+  justify-content: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--green-accent);
+  border-top: none;
 }
 .star-rating-key-div {
   display: flex;

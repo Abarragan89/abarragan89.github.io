@@ -96,7 +96,6 @@ function Homepage() {
         right: '0',
     });
     const [downArrowStyle, setDownArrowStyle] = useState({ display: 'block' });
-    // const [developerSubtitleStyles, setDeveloperSubtitleStyles] = useState({})
 
     useEffect(() => {
         const handleScroll = () => {
@@ -123,16 +122,6 @@ function Homepage() {
             } else {
                 setDownArrowStyle({ display: 'block' })
             }
-
-            // check if about me subtitle is coming and replace over developer ratings
-            // const aboutMeSubEl = aboutMeSubitleEl.current.getBoundingClientRect();
-
-            // make developer rating title disappear when about me is taking over
-            // if (aboutMeSubEl.y <= 100) {
-            //     setDeveloperSubtitleStyles({ opacity: '0' })
-            // } else {
-            //     setDeveloperSubtitleStyles({ opacity: '1' })
-            // }
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -156,14 +145,9 @@ function Homepage() {
             <canvas ref={canvasEl} id='home-section'></canvas>
 
 
-            {/* <div
-                className='homepage-subheadings'
-                data-aos='flip-up'
-                data-aos-offset='200'
-                data-aos-duration='1200'
-                style={developerSubtitleStyles}
-            >
-                <h2>Developer Ratings</h2>
+            <section id='ratings'>
+                <Heading text='Developer Ratings' />
+                {/* Ratings Key */}
                 <div className='ratings-key-main-div'>
                     <div className='star-rating-key-div'>
                         <p>★</p>
@@ -185,10 +169,6 @@ function Homepage() {
                         <h5>Proficient</h5>
                     </div>
                 </div>
-            </div> */}
-
-            <section id='ratings'>
-                <Heading text='Developer Ratings' />
                 <StatSection />
             </section>
 

@@ -33,7 +33,6 @@ function NavLinks({ closeMobileMenu, isMobile }) {
 
     useEffect(() => {
         const handleObserver = (entries) => {
-            console.log('entries ', entries)
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setActiveSection(entry.target.id);
@@ -47,7 +46,6 @@ function NavLinks({ closeMobileMenu, isMobile }) {
 
         sections.forEach((section) => {
             const sectionElement = document.getElementById(section.id);
-            console.log('section element ', sectionElement)
             if (sectionElement) observer.observe(sectionElement);
         });
 
