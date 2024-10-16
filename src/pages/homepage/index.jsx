@@ -17,7 +17,7 @@ function Homepage() {
         const canvas = canvasEl.current
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.height = window.innerHeight + 60;
 
         window.addEventListener('resize', function () {
             canvas.width = window.innerWidth;
@@ -121,7 +121,7 @@ function Homepage() {
             });
 
             // Make Dowon arrow disappear
-            if (scrollPosition > 10) {
+            if (scrollPosition > 30) {
                 setDownArrowStyle({ display: 'none' })
             } else {
                 setDownArrowStyle({ display: 'block' })
@@ -156,7 +156,7 @@ function Homepage() {
                 </div>
             </div>
 
-            <canvas ref={canvasEl}></canvas>
+            <canvas ref={canvasEl} id='home-section'></canvas>
 
 
             {/* <div
@@ -190,23 +190,26 @@ function Homepage() {
                 </div>
             </div> */}
 
-            <Heading text='Developer Ratings' id='ratings' />
+            <section id='ratings'>
+                <Heading text='Developer Ratings' />
+                <StatSection />
+            </section>
 
+            <section id='about'>
+                <Heading text='About Me' />
+                <About />
+            </section>
 
-            <StatSection />
+            <section id='projects'>
+                <Heading text='Projects' />
+                <Project />
+            </section>
 
-            <Heading text='About Me' id='about' />
+            <section id='resume'>
+                <Heading text='Resume' />
+                <PrintResume />
+            </section>
 
-            <About />
-
-            <Heading text='Projects' id='projects' />
-
-
-            <Project />
-
-            <Heading text='Resume' id='resume' />
-
-            <PrintResume />
 
         </main>
     )

@@ -92,10 +92,11 @@ function About() {
                         <CardImgSection
                             imgSrc='/images/small/MFMlogo.png'
                             title='Math Fact Missions'
+                            reverse={true}
                         >
                             <ul className='list-in-card'>
                                 <li>Over 500 users</li>
-                                <li>Check it out <a href='https://www.math-fact-missions.com' target='_blank' rel="noopener noreferrer">here</a></li>
+                                <li>Check it out <a href='https://www.math-fact-missions.com' target='_blank' rel="noopener noreferrer">here</a>!</li>
                             </ul>
                         </CardImgSection>
                         <CardImgSection
@@ -105,7 +106,17 @@ function About() {
                         >
                             <ul className='list-in-card'>
                                 <li>Published on App Store</li>
-                                <li>Check it out <a href='https://apps.apple.com/us/app/cannon-ball-sea/id6736433554' target='_blank' rel="noopener noreferrer">here</a></li>
+                                <li>Check it out <a href='https://apps.apple.com/us/app/cannon-ball-sea/id6736433554' target='_blank' rel="noopener noreferrer">here</a>!</li>
+                            </ul>
+                        </CardImgSection>
+                        <CardImgSection
+                            reverse={true}
+                            imgSrc='/images/small/lunarisLogo.png'
+                            title='Lunaris'
+                        >
+                            <ul className='list-in-card'>
+                                <li>Mobile-designed Expense Tracker (PWA)</li>
+                                <li>Check it out <a href='https://lunaris-finance.herokuapp.com/' target='_blank' rel="noopener noreferrer">here</a>!</li>
                             </ul>
                         </CardImgSection>
                     </Card>

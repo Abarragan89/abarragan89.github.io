@@ -23,7 +23,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
     const sections = [
         { id: 'ratings' },
         { id: 'projects'},
-        { id: 'homepage-title' },
+        { id: 'home-section' },
         { id: 'resume'},
         { id: 'about'},
     ];
@@ -42,7 +42,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
         };
 
         const observer = new IntersectionObserver(handleObserver, {
-            threshold: .7, // Trigger when 70% of the section is visible
+            threshold: .3, // Trigger when 70% of the section is visible
         });
 
         sections.forEach((section) => {
@@ -63,7 +63,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
                 onClick={closeHamburger}
                 className={'link-el'}
             >
-                <a href="/#homepage-main" className={`${activeSection === 'homepage-title' ? 'active' : ''}`}>Home</a>
+                <a href="/#homepage-main" className={`${activeSection === 'home-section' ? 'active' : ''}`}>Home</a>
             </motion.li >
 
             {/* <span className='link-dot'></span> */}
@@ -71,7 +71,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.05 }}
+                transition={{ delay: 0.15 }}
                 onClick={closeHamburger}
                 className={'link-el'}
             >
@@ -83,7 +83,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.20 }}
+                transition={{ delay: 0.25 }}
                 className={`link-el`}
                 onClick={closeHamburger}
             >
@@ -95,7 +95,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.20 }}
+                transition={{ delay: 0.35 }}
                 className={`link-el`}
                 onClick={closeHamburger}
             >
@@ -107,7 +107,7 @@ function NavLinks({ closeMobileMenu, isMobile }) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.40 }}
+                transition={{ delay: 0.45 }}
                 className={`link-el`}
                 onClick={closeHamburger}
             >

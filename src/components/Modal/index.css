@@ -20,7 +20,7 @@
   top: -1000px;
   padding: 15px;
   border-radius: 20px;
-  background-color: var(--black);
+  background-color: var(--card-bg);
   box-shadow: var(--font-color) 0px 0px 15px 0px;
   animation: modalSlideUp 0.45s both;
 }

@@ -9,7 +9,7 @@
 .link-el:first-child {
   margin-left: 0;
 }
-.link-el:hover {
+.link-el a:hover {
   color: var(--font-color);
 }
 .link-el a {

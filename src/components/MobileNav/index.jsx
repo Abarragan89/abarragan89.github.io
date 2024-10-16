@@ -5,24 +5,24 @@ import './index.css';
 
 import { useState } from 'react';
 
-function MobileNav () {
+function MobileNav() {
     const [open, setOpen] = useState(false)
-    const hamburgerIcon = <RxHamburgerMenu className='hamburger' size='30px' color='rgb(14, 193, 68)' onClick={()=> setOpen(!open)}/>
-    const closeIcon = <IoCloseOutline className='hamburger' size='35px' color='rgb(14, 193, 68)' onClick={()=> setOpen(!open)}/>
+    const hamburgerIcon = <RxHamburgerMenu className='hamburger' size='30px' color='rgb(14, 193, 68)' onClick={() => setOpen(!open)} />
+    const closeIcon = <IoCloseOutline className='hamburger' size='35px' color='rgb(14, 193, 68)' onClick={() => setOpen(!open)} />
 
 
-    function closeMobileMenu () {
+    function closeMobileMenu() {
         setOpen(false);
     }
 
     return (
         <div className='mobile-nav'>
             {open ? closeIcon : hamburgerIcon}
-            {open && 
-            <NavLinks
-            isMobile={true} 
-            closeMobileMenu={closeMobileMenu}
-            />}
+            {open &&
+                <NavLinks
+                    isMobile={true}
+                    closeMobileMenu={closeMobileMenu}
+                />}
         </div>
     )
 }

@@ -1,10 +1,9 @@
 import './index.css'
 
-export default function Heading({ text, id }) {
+export default function Heading({ text }) {
     return (
         <div
             className='homepage-subheadings'
-            id={id}
         >
             <h2>{text}</h2>
         </div>
