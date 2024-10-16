@@ -24,11 +24,24 @@
   box-shadow: var(--font-color) 0px 0px 15px -5px;
   animation: modalSlideUp 0.45s both;
 }
+
+.closeModalX {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--green-accent);
+}
+
+.closeModalX:hover {
+  cursor: pointer;
+  color: var(--font-color);
+}
+
 .modal-picture {
   border: 1px solid gray;
   width: 50%;
   border-radius: 10px;
-  margin: 15px
+  margin: 15px;
 }
 
 .modal-title {
@@ -56,39 +69,21 @@
   justify-content: space-evenly;
 }
 .modal-links {
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-radius: 5px;
   font-family: var(--body-font);
-  font-weight: 700;
-  text-decoration: none;
-  color: black;
-  background-color: var(--green-accent);
+  color: var(--green-accent);
+  font-size: .95rem;
+  border: 1px solid var(--green-accent);
   transition: 0.3s;
 }
 .modal-links:hover {
-  background-color: var(--yellow-accent);
+  background-color: var(--green-accent);
+  color: var(--black);
   cursor: pointer;
 }
 .modal-links:active {
   background-color: var(--font-color);
-}
-.modal-btn-close {
-  border-radius: 5px;
-  font-family: var(--body-font);
-  font-weight: 700;
-  font-size: 1rem;
-  color: white;
-  background-color: rgb(198, 4, 4);
-  border: none;
-  transition: 0.3s;
-  padding: 0 10px;
-}
-.modal-btn-close:active {
-  background-color: var(--font-color);
-}
-.modal-btn-close:hover {
-  color: black;
-  cursor: pointer;
 }
 
 @keyframes modalSlideUp {
