@@ -20,14 +20,13 @@
   top: -1000px;
   padding: 30px 20px;
   background-color: rgb(0, 0, 0);
-  box-shadow: rgb(131, 129, 129) 0px 0px 20px -2px;
+  box-shadow: var(--gray) 0px 0px 20px -2px;
   border: 1px solid rgb(71, 70, 70);
   animation: modalSlideUp 0.45s both;
 }
 
 .closeModalX {
   position: absolute;
-  /* color: var(--font-color); */
   color: rgb(71, 70, 70);
   top: 8px;
   right: 10px;
