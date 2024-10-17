@@ -6,7 +6,7 @@ function Modal({ project, onClose }) {
     return (
         <div className='modalBackdrop' onClick={onClose}>
             <div className="modalContainer" onClick={(e) => e.stopPropagation()}>
-                <IoCloseOutline className='closeModalX' size='30px' onClick={onClose} />
+                <IoCloseOutline className='closeModalX' size='37px' onClick={onClose} />
                 <h3 className='modal-title'>{project.name}</h3>
                 <img className='modal-picture' src={`images/large/${project.photoRoute}.png`} alt='snapshot of chosen project' />
                 <p className='modal-description'>{project.description}</p>

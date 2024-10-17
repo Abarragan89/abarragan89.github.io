@@ -20,21 +20,22 @@
   top: -1000px;
   padding: 30px 20px;
   background-color: rgb(0, 0, 0);
-  box-shadow: var(--font-color) 0px 0px 20px -2px;
-  border: 1px solid rgba(255, 255, 255, 0.551);
+  box-shadow: rgb(131, 129, 129) 0px 0px 20px -2px;
+  border: 1px solid rgb(71, 70, 70);
   animation: modalSlideUp 0.45s both;
 }
 
 .closeModalX {
   position: absolute;
+  /* color: var(--font-color); */
+  color: rgb(71, 70, 70);
   top: 8px;
   right: 10px;
-  color: var(--green-accent);
 }
 
 .closeModalX:hover {
   cursor: pointer;
-  color: var(--font-color);
+  color: var(--green-accent);
 }
 
 .modal-picture {
@@ -73,7 +74,7 @@
   border-radius: 5px;
   font-family: var(--body-font);
   color: var(--green-accent);
-  font-size: .95rem;
+  font-size: 0.95rem;
   border: 1px solid var(--green-accent);
   transition: 0.3s;
 }
