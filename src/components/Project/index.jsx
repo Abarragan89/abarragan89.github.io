@@ -17,7 +17,7 @@ function Project() {
         {
             name: 'Cannon Ball Sea',
             photoRoute: 'cannon-ball',
-            description: 'My first published game on the App Store. 45 levels of fun! Try to hit the TNT handle and watch it explode. Obstacles stand in your way and things do get challenging. Use points earned to level up you cannon and cannon balls to complete all 45 levels and collect all stars! Created using React Native.',
+            description: 'My first published game on the App Store. 45 levels of fun! Try to hit the TNT handle and watch it explode. Obstacles stand in your way and things do get challenging. Use points earned to level up your cannon and cannon balls to complete all 45 levels and collect all stars! Created using React Native.',
             url: 'https://apps.apple.com/us/app/cannon-ball-sea/id6736433554',
             github: 'https://github.com/Abarragan89/cannon-ball',
             alt: 'link for cannon ball in app store',

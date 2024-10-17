@@ -31,7 +31,7 @@ export default function StatSection() {
             ]
         },
         {
-            category: 'Frontend',
+            category: 'Front-End',
             ratings: [
                 {
                     name: 'React.js/Next.js',
@@ -60,7 +60,7 @@ export default function StatSection() {
             ]
         },
         {
-            category: 'Backend',
+            category: 'Back-End',
             ratings: [
                 {
                     name: 'Express.js',

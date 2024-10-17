@@ -8,16 +8,16 @@ export default function Layout({ children }) {
     const [loadedElements, setLoadedElements] = useState(false)
     // useEffect(() => {
     // }, [loadedElements]);
-    
+
     // refresh on scroll package to ensure attributes are added after they have been loaded
     useLayoutEffect(() => {
         if (!loadedElements) {
-            Aos.init()
+            Aos.init({ delay: 0, once: true })
             setLoadedElements(true)
         } else {
-            Aos.init({ delay: 0 })
+            Aos.init({ delay: 0, once: true })
         };
-        setTimeout(() => Aos.refresh(), 500)
+        setTimeout(() => Aos.refresh({ delay: 0, once: true }), 500)
     }, [])
 
     return (
