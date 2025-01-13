@@ -25,6 +25,16 @@ function Project() {
 
         },
         {
+            name: 'Unfinished Pages',
+            photoRoute: 'unfinished-pages',
+            description: 'Complete blogging platform build on the Next.js framework utilizing Prisma ORM, S3 for image storage, NextAuth authentication, and Slate.js for customized text editor. Users can comment on blogs, like blogs, and make a request to become and editor to create and publish their own blogs. SEO optimized and complete with email notifications when engagement occurs on a your blog or a blog you engaged with.',
+            url: 'https://www.unfinishedpages.com/',
+            github: 'https://github.com/Abarragan89/unfinished-pages',
+            alt: 'snapshot of unfinished pages website',
+            technologies: 'TypeScript | Next.Js | Prisma | NextAuth | Slate.Js'
+
+        },
+        {
             name: 'Lunaris Finance',
             photoRoute: 'lunaris-large',
             description: 'This is a mobile-optimized full-stack expense tracker (PWA). Enter your income, track expenses, customize categories, and view net profit monthly. Lunaris saves history for breakdowns of past months and yearly snapshots, helping you identify spending trends. Built with Python, Flask, and SQLAlchemy for SQL database access.',
@@ -44,16 +54,16 @@ function Project() {
             technologies: 'React.Js | MongoDB | Express.Js | GraphQL'
 
         },
-        {
-            name: 'The Sunday Social',
-            photoRoute: 'the-sunday-social',
-            description: 'The Sunday Social is a social media app for those who want to connect once a week—specifically on Sundays. It features a laid-back, beach vibe where users can create profiles, find friends through searchable traits, make posts, comment, like, and message each other. The app uses Socket.io for real-time messaging and group chatting. Join the wave today!',
-            url: 'https://the-sunday-social-b780c9b989cc.herokuapp.com/',
-            github: 'https://github.com/Abarragan89/the-sunday-social',
-            alt: 'landing page for The Sunday Social website',
-            technologies: 'React.Js | MySQL | Socket.io | GraphQL | Nodemailer'
+        // {
+        //     name: 'The Sunday Social',
+        //     photoRoute: 'the-sunday-social',
+        //     description: 'The Sunday Social is a social media app for those who want to connect once a week—specifically on Sundays. It features a laid-back, beach vibe where users can create profiles, find friends through searchable traits, make posts, comment, like, and message each other. The app uses Socket.io for real-time messaging and group chatting. Join the wave today!',
+        //     url: 'https://the-sunday-social-b780c9b989cc.herokuapp.com/',
+        //     github: 'https://github.com/Abarragan89/the-sunday-social',
+        //     alt: 'landing page for The Sunday Social website',
+        //     technologies: 'React.Js | MySQL | Socket.io | GraphQL | Nodemailer'
 
-        },
+        // },
         {
             name: 'Dinner and Drinks',
             photoRoute: 'dinner-drinks-large',
