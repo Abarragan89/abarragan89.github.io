@@ -21,7 +21,7 @@ function About() {
                             data-aos='fade-up'
                             data-aos-offset='200'
                         >
-                            Hi, my name is Anthony. I'm a full stack developer. I'm also a teacher to a class of 5th graders and a teacher assistant to adults who are interested in learning web development. I began my developer journey back in 2019 and haven't stopped since. I love problem solving and creating software solutions to help myself and others. I'm a philosopher at heart and a life-long learner. Contact me if you'd like me to help you build something or have any job opportunities!
+                            Hi, I'm Anthony, a Full-Stack Web Developer & Software Engineer with expertise in TypeScript, Next.js, React, Node.js, Flask, SQL, NoSQL, and ORMs like Sequelize and Prisma. I've developed applications like Math Fact Mission, a web app with over 1,000 active users, Cannon Ball Sea, a game published on the App Store, and Unfinished Pages, a blogging platform. I'm passionate about creating efficient, scalable digital solutions, whether on the front-end or back-end. With a keen eye for problem-solving and a drive for continuous learning, I aim to build seamless, user-focused experiences. If you're looking for a developer who can bring your ideas to life, let's connect!
                         </p>
                     </figcaption>
                 </figure>
