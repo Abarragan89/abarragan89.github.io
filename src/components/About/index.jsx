@@ -111,12 +111,12 @@ function About() {
                         </CardImgSection>
                         <CardImgSection
                             reverse={true}
-                            imgSrc='/images/small/lunarisLogo.png'
-                            title='Lunaris'
+                            imgSrc='/images/small/unfinishedPages.png'
+                            title='Unfinished Pages'
                         >
                             <ul className='list-in-card'>
-                                <li>Mobile-designed Expense Tracker (PWA)</li>
-                                <li>Check it out <a href='https://lunaris-finance.herokuapp.com/' target='_blank' rel="noopener noreferrer">here</a>!</li>
+                                <li>Custom Blogging Platform</li>
+                                <li>Check it out <a href='https://unfinishedpages.com/' target='_blank' rel="noopener noreferrer">here</a>!</li>
                             </ul>
                         </CardImgSection>
                     </Card>
