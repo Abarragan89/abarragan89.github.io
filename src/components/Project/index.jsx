@@ -146,7 +146,6 @@ function Project() {
         //     url: 'https://abarragan89.github.io/snake-game/',
         //     github: 'https://github.com/Abarragan89/snake-game',
         //     alt: 'landing page for Snake Game website'
-
         // }
     ];
 
