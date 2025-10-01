@@ -6,6 +6,24 @@ function Project() {
     // Photos are 1000 by 800 PX
     const photoData = [
         {
+            name: 'JotterBlog',
+            photoRoute: 'jotterblog',
+            description: 'Complete classroom blogging platform built on the Next.js framework utilizing Prisma ORM, S3 for image storage, NextAuth authentication, and full integration with Google Classroom. Essays are autograded with teacher supplied rubrics using OpenAI\'s GPT-5 API, with feedback provided to students. Assessments with short answer questions can also be created and autograded with AI to get instant feedback on class performance.',
+            url: 'https://jotterblog.com/',
+            github: 'https://github.com/Abarragan89/classroom-journals',
+            alt: 'landing page for JotterBlog website',
+            technologies: 'Next.Js | TypeScript | Postgres | Prisma | Google API | Stripe API | OpenAI API'
+        },
+        {
+            name: 'TacBlok',
+            photoRoute: 'tacblok',
+            description: 'Real time gameplay with friends using Socket.io. Make a lobby and send the link to a friend. Play Gridlock with a friends or Detonate with up to 4 players. Gridlock blends connect 4, tic tac toe, and adds a twist. Detonate is a game of trickery. Bombs placed on a map, defuse them to win. Bombs can be infered be minesweeper style clues. Built with React, Node, Express, and Socket.io.',
+            url: 'https://tacblock.com/',
+            github: 'https://github.com/Abarragan89/tacblok',
+            alt: 'landing page for Tacblok website',
+            technologies: 'Next.Js | TypeScript | Socket.io,| Express.Js'
+        },
+        {
             name: 'Math Fact Missions',
             photoRoute: 'mathFactMissions',
             description: 'This is a full-stack, subscription-based Next.js app for teachers. Teachers create student accounts, track progress, and edit details via a dashboard. Students complete missions, play review games, and take quizzes to earn points and unlock upgrades for Three.js avatars, while learning their math facts!',
@@ -34,26 +52,26 @@ function Project() {
             technologies: 'TypeScript | Next.Js | Prisma | NextAuth | Slate.Js'
 
         },
-        {
-            name: 'Lunaris Finance',
-            photoRoute: 'lunaris-large',
-            description: 'This is a mobile-optimized full-stack expense tracker (PWA). Enter your income, track expenses, customize categories, and view net profit monthly. Lunaris saves history for breakdowns of past months and yearly snapshots, helping you identify spending trends. Built with Python, Flask, and SQLAlchemy for SQL database access.',
-            url: 'https://lunaris-finance.herokuapp.com/',
-            github: 'https://github.com/Abarragan89/lunar',
-            alt: 'landing page for Lunaris Finance',
-            technologies: 'Python | Flask | SQLAlchemy | Charts.py'
+        // {
+        //     name: 'Lunaris Finance',
+        //     photoRoute: 'lunaris-large',
+        //     description: 'This is a mobile-optimized full-stack expense tracker (PWA). Enter your income, track expenses, customize categories, and view net profit monthly. Lunaris saves history for breakdowns of past months and yearly snapshots, helping you identify spending trends. Built with Python, Flask, and SQLAlchemy for SQL database access.',
+        //     url: 'https://lunaris-finance.herokuapp.com/',
+        //     github: 'https://github.com/Abarragan89/lunar',
+        //     alt: 'landing page for Lunaris Finance',
+        //     technologies: 'Python | Flask | SQLAlchemy | Charts.py'
 
-        },
-        {
-            name: 'Who Nose That?!',
-            photoRoute: 'who-nose-that-large',
-            description: 'Create your own Jeopardy-style game boards with Who Nose That! Edit or use public game boards and generate flashcards from questions with a click. Students can study flashcards via their login, and there\'s a bonus round for correct answers. Designed for student engagement and teacher usability, anyone can create an account and make their own board—perfect for parties and gatherings!',
-            url: 'https://who-nose-that.com',
-            github: 'https://github.com/Abarragan89/trivia_maker',
-            alt: 'landing page for Who Nose That website',
-            technologies: 'React.Js | MongoDB | Express.Js | GraphQL'
+        // },
+        // {
+        //     name: 'Who Nose That?!',
+        //     photoRoute: 'who-nose-that-large',
+        //     description: 'Create your own Jeopardy-style game boards with Who Nose That! Edit or use public game boards and generate flashcards from questions with a click. Students can study flashcards via their login, and there\'s a bonus round for correct answers. Designed for student engagement and teacher usability, anyone can create an account and make their own board—perfect for parties and gatherings!',
+        //     url: 'https://who-nose-that.com',
+        //     github: 'https://github.com/Abarragan89/trivia_maker',
+        //     alt: 'landing page for Who Nose That website',
+        //     technologies: 'React.Js | MongoDB | Express.Js | GraphQL'
 
-        },
+        // },
         // {
         //     name: 'The Sunday Social',
         //     photoRoute: 'the-sunday-social',
@@ -64,16 +82,16 @@ function Project() {
         //     technologies: 'React.Js | MySQL | Socket.io | GraphQL | Nodemailer'
 
         // },
-        {
-            name: 'Dinner and Drinks',
-            photoRoute: 'dinner-drinks-large',
-            description: 'Let us help you find food and alcohol recipes based on cuisine, dietary restrictions, or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.',
-            url: 'https://abarragan89.github.io/dinner-drinks/',
-            github: 'https://github.com/Abarragan89/dinner-drinks',
-            alt: 'landing page for Dinner and Drinks website',
-            technologies: 'JavaScript| SpoonacularAPI | CocktailDB | Storage API '
+        // {
+        //     name: 'Dinner and Drinks',
+        //     photoRoute: 'dinner-drinks-large',
+        //     description: 'Let us help you find food and alcohol recipes based on cuisine, dietary restrictions, or liquor available. Just select your craving, dietary lifestyle, and available alcohol, and several recipes will generate using the Spoonacular and Cocktails DB APIs.',
+        //     url: 'https://abarragan89.github.io/dinner-drinks/',
+        //     github: 'https://github.com/Abarragan89/dinner-drinks',
+        //     alt: 'landing page for Dinner and Drinks website',
+        //     technologies: 'JavaScript| SpoonacularAPI | CocktailDB | Storage API '
 
-        },
+        // },
         // {
         //     name: 'Math Madness',
         //     photoRoute: 'math-madness-large',
