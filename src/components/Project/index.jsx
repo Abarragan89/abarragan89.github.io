@@ -18,7 +18,7 @@ function Project() {
             name: 'TacBlok',
             photoRoute: 'tacblok',
             description: 'Real time gameplay with friends using Socket.io. Make a lobby and send the link to a friend. Play Gridlock with a friends or Detonate with up to 4 players. Gridlock blends connect 4, tic tac toe, and adds a twist. Detonate is a game of trickery. Bombs placed on a map, defuse them to win. Bombs can be infered be minesweeper style clues. Built with React, Node, Express, and Socket.io.',
-            url: 'https://tacblock.com/',
+            url: 'https://tacblok.com/',
             github: 'https://github.com/Abarragan89/tacblok',
             alt: 'landing page for Tacblok website',
             technologies: 'Next.Js | TypeScript | Socket.io,| Express.Js'
@@ -46,7 +46,7 @@ function Project() {
             name: 'Unfinished Pages',
             photoRoute: 'unfinished-pages',
             description: 'Complete blogging platform build on the Next.js framework utilizing Prisma ORM, S3 for image storage, NextAuth authentication, and Slate.js for customized text editor. Users can comment on blogs, like blogs, and make a request to become and editor to create and publish their own blogs. SEO optimized and complete with email notifications when engagement occurs on a your blog or a blog you engaged with.',
-            url: 'https://www.unfinishedpages.com/',
+            url: 'https://unfinishedpages.com/',
             github: 'https://github.com/Abarragan89/unfinished-pages',
             alt: 'snapshot of unfinished pages website',
             technologies: 'TypeScript | Next.Js | Prisma | NextAuth | Slate.Js'
